@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5ae3c662ae43b3268f163e5ecc63f4998c77a1b0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5ae3c662ae43b3268f163e5ecc63f4998c77a1b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5ae3c662ae43b3268f163e5ecc63f4998c77a1b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5ae3c662ae43b3268f163e5ecc63f4998c77a1b0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@5ae3c66](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/5ae3c662ae43b3268f163e5ecc63f4998c77a1b0)
+from [uiceds/cee-492-term-project-fall-2022-shans@e3794c1](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/e3794c18fa9931b2117ab471d811b9a03d345d6d)
 on August 30, 2022.
 </em></small>
 
