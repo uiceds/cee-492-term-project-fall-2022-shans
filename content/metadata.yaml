@@ -16,11 +16,11 @@ authors:s
       - Department of Something, University of Whatever
     funders:
 
-github: sadafs2
+    github: sadafs2
     name: Sadaf Shafie 
     initials: SS
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: 
+      twitter: 
     email: sadafs2@illinois.edu
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
