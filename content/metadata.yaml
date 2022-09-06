@@ -14,23 +14,19 @@ authors:
     email: john.doe@something.com
     affiliations:
       - Department of Something, University of Whatever
-    funders:
-
     github: sadafs2
     name: Sadaf Shafie 
     initials: SS
     orcid: XXXX-XXXX-XXXX-XXXX
-      twitter: 
+      twitter:  None
     email: sadafs2@illinois.edu
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
-    funders:
-      - Grant XXXXXXXX
-github: Shirin_Qiam
+    github: Shirin_Qiam
     name: Shirin
     initials: SQ
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: 
+    twitter: None
     email: sqiam2@illinois.edu
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
