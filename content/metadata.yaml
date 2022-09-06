@@ -10,12 +10,13 @@ authors:
     name: Arthur Bilheri
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: I dont like birds
-    email: arthurc4@illinois.edu
-    affiliations: Department of Something, University of Whatever
-  - github: negins2
-    name: Negin Shafie
-    initials: NS
+    twitter: johndoe
+    email: john.doe@something.com
+    affiliations:
+      - Department of Something, University of Whatever
+    github: sadafs2
+    name: Sadaf Shafie 
+    initials: SS
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: NA
     email: negins2@illinois.edu
