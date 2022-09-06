@@ -8,15 +8,16 @@ lang: en-US
 authors:
   - github: artbil94
     name: Arthur Bilheri
-    initials: JD
+    initials: AB
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    twitter: I dont like birds
+    email: arthurc4@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - Hogwarts School of Witchcraft
+      - University Of Illinois @ Urbana-Champaign
     funders:
-      - Grant XXXXXXXX
-  - github: janeroe
+      - My work
+  - github: Jane Roe
     name: Jane Roe
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
