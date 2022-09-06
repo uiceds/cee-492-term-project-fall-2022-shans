@@ -11,23 +11,12 @@ authors:
   - github: artbil94
     name: Arthur Bilheri
     initials: JD
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    twitter: johndoe
+    email: john.doe@something.com
     affiliations:
       - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-  - 
-
-
-
-
-
-
-
-
+    funders:
 
 github: sadafs2
     name: Sadaf Shafie 
