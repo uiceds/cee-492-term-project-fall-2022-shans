@@ -30,6 +30,8 @@ laborum
 Lorem
 magna
 mollit
+negin
+negins
 nisi
 nostrud
 nulla
@@ -41,8 +43,6 @@ proident
 qui
 quis
 reprehenderit
-Sadaf
-sadafs
 sed
 Shafie
 sint
