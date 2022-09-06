@@ -8,11 +8,11 @@ lang: en-US
 authors:
   - github: artbil94
     name: Arthur Bilheri
-    initials: JD
+    initials: AB
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
-    affiliations: Department of Something, University of Whatever
+    twitter: I dont like birds 
+    email: arthurc4@illinois.edu
+    affiliations: Hogwarts school of witchcraft
   - github: negins2
     name: negin Shafie 
     initials: NS
@@ -22,10 +22,18 @@ authors:
     affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders: none
   - github: Shirin-qiam
-    name: Shirin
+    name: Shirin Qiam
     initials: SQ
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: NA
     email: sqiam2@illinois.edu
+    affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+    funders: none
+  - github: sadafs2
+    name: Sadaf Shafie
+    initials: SS
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: NA
+    email: sadafs2@illinois.edu
     affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders: none
