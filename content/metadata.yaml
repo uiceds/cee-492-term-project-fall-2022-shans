@@ -13,11 +13,19 @@ authors:
     twitter: johndoe
     email: john.doe@something.com
     affiliations: Department of Something, University of Whatever
-    github: negins2
+  - github: negins2
     name: negin Shafie 
     initials: NS
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: NA
     email: negins2@illinois.edu
+    affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+    funders: none
+  - github: Shirin-qiam
+    name: Shirin
+    initials: SQ
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: NA
+    email: sqiam2@illinois.edu
     affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders: none
