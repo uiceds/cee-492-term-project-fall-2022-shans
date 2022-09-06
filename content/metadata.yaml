@@ -12,11 +12,10 @@ authors:
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
     email: john.doe@something.com
-    affiliations:
-      - Department of Something, University of Whatever
-    github: sadafs2
-    name: Sadaf Shafie 
-    initials: SS
+    affiliations: Department of Something, University of Whatever
+    github: negins2
+    name: negin Shafie 
+    initials: NS
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: NA
     email: negins2@illinois.edu
