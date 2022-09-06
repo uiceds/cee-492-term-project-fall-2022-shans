@@ -6,7 +6,15 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
+  - github: artbil94
+    name: Arthur Bilheri
+    initials: JD
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: I dont like birds
+    email: arthurc4@illinois.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - github: johndoe
     name: John Doe
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
@@ -15,8 +23,8 @@ authors:
     affiliations:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders:
-      - Grant XXXXXXXX
-  - github: janeroe
+      - My work
+  - github: Jane Roe
     name: Jane Roe
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
