@@ -12,11 +12,10 @@ authors:
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: I dont like birds
     email: arthurc4@illinois.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - github: johndoe
-    name: John Doe
-    initials: JD
+    affiliations: Department of Something, University of Whatever
+  - github: negins2
+    name: Negin Shafie
+    initials: NS
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: NA
     email: negins2@illinois.edu
