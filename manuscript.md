@@ -5,9 +5,9 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-08-30'
+date-meta: '2022-09-06'
 author-meta:
-- John Doe
+- Arthur Bilheri
 - Jane Roe
 header-includes: |-
   <!--
@@ -19,15 +19,15 @@ header-includes: |-
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2022-08-30" />
-  <meta name="citation_publication_date" content="2022-08-30" />
+  <meta name="dc.date" content="2022-09-06" />
+  <meta name="citation_publication_date" content="2022-09-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="Arthur Bilheri" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,21 +65,21 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e3794c18fa9931b2117ab471d811b9a03d345d6d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@e3794c1](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/e3794c18fa9931b2117ab471d811b9a03d345d6d)
-on August 30, 2022.
+from [uiceds/cee-492-term-project-fall-2022-shans@794ae48](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/794ae48e18140fee7acae55a411af9f4aa5a7a32)
+on September 6, 2022.
 </em></small>
 
 ## Authors
 
 
 
-+ **John Doe**<br>
++ **Arthur Bilheri**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
+    [artbil94](https://github.com/artbil94)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
