@@ -28,9 +28,10 @@ header-includes: |-
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Arthur Bilheri" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Hogwarts School of Witchcraft" />
+  <meta name="citation_author_institution" content="University Of Illinois @ Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="twitter:creator" content="@I dont like birds" />
   <meta name="citation_author" content="Jane Roe" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
@@ -41,9 +42,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9d6d213b7b4369b1a832ba60b8afce26fdfcfed/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9d6d213b7b4369b1a832ba60b8afce26fdfcfed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9d6d213b7b4369b1a832ba60b8afce26fdfcfed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +66,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/794ae48e18140fee7acae55a411af9f4aa5a7a32/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9d6d213b7b4369b1a832ba60b8afce26fdfcfed/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@794ae48](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/794ae48e18140fee7acae55a411af9f4aa5a7a32)
+from [uiceds/cee-492-term-project-fall-2022-shans@b9d6d21](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b9d6d213b7b4369b1a832ba60b8afce26fdfcfed)
 on September 6, 2022.
 </em></small>
 
@@ -81,17 +82,17 @@ on September 6, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [artbil94](https://github.com/artbil94)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [I dont like birds](https://twitter.com/I dont like birds)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Hogwarts School of Witchcraft; University Of Illinois @ Urbana-Champaign
+     · Funded by My work
   </small>
 
 + **Jane Roe**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [Jane Roe](https://github.com/Jane Roe)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
