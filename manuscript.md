@@ -7,9 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2022-09-06'
 author-meta:
-- Arthur Bilheri
-- Negin Shafie
-- Jane Roe
+- Sadaf Shafie
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -28,27 +26,19 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Arthur Bilheri" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@I dont like birds" />
-  <meta name="citation_author" content="Negin Shafie" />
+  <meta name="citation_author" content="Sadaf Shafie" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@NA" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/99878979513e1bdc0d5fa57e919ca0610e9d0ccc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/99878979513e1bdc0d5fa57e919ca0610e9d0ccc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/99878979513e1bdc0d5fa57e919ca0610e9d0ccc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/01afda0f254032e0d6ab16f56254aa63631b6ac8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/01afda0f254032e0d6ab16f56254aa63631b6ac8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/01afda0f254032e0d6ab16f56254aa63631b6ac8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +60,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/99878979513e1bdc0d5fa57e919ca0610e9d0ccc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/01afda0f254032e0d6ab16f56254aa63631b6ac8/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@9987897](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/99878979513e1bdc0d5fa57e919ca0610e9d0ccc)
+from [uiceds/cee-492-term-project-fall-2022-shans@01afda0](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/01afda0f254032e0d6ab16f56254aa63631b6ac8)
 on September 6, 2022.
 </em></small>
 
@@ -80,36 +70,16 @@ on September 6, 2022.
 
 
 
-+ **Arthur Bilheri**<br>
++ **Sadaf Shafie**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [artbil94](https://github.com/artbil94)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [I dont like birds](https://twitter.com/I dont like birds)<br>
-  <small>
-     Department of Something, University of Whatever
-  </small>
-
-+ **Negin Shafie**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [negins2](https://github.com/negins2)
+    [sadafs2](https://github.com/sadafs2)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [NA](https://twitter.com/NA)<br>
   <small>
      Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
-     · Funded by My work
-  </small>
-
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [Jane Roe](https://github.com/Jane Roe)<br>
-  <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     · Funded by none
   </small>
 
 
