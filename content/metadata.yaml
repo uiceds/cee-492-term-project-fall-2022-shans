@@ -6,7 +6,30 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: sadafs2
+<<<<<<< HEAD
+=======
+  - github: artbil94
+    name: Arthur Bilheri
+    initials: JD
+  - github: janeroe
+    name: Jane Roe
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+  - 
+
+
+
+
+
+
+
+
+
+github: sadafs2
     name: Sadaf Shafie 
     initials: SS
     orcid: XXXX-XXXX-XXXX-XXXX
@@ -16,11 +39,12 @@ authors:
       - Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders:
       - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+
+
+
+
+
+
+
+
+
