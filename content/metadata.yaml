@@ -1,5 +1,5 @@
 ---
-title: "Manuscript Title"
+title: "Rail Track Change Detection Based On Components' Health Conditions"
 keywords:
   - markdown
   - publishing
@@ -14,7 +14,7 @@ authors:
     email: arthurc4@illinois.edu
     affiliations: Hogwarts school of witchcraft
   - github: negins2
-    name: negin Shafie 
+    name: Negin Shafie 
     initials: NS
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: NA
@@ -37,3 +37,10 @@ authors:
     email: sadafs2@illinois.edu
     affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
     funders: none
+
+
+##Introduction
+
+This document reports group project materials for the CEE492 course, conducted by Shirin Qiam, Arthur Bilheri, Sadaf Shafie, and Negin Shafie (Group Name:SHANS). In this project we are going to investigate the potential relation between the changes in track and the components' health conditions. 
+   
+     
