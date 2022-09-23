@@ -1,5 +1,5 @@
 ---
-title: Rail Track Change Detection Based On Components' Health Conditions
+title: Relationship Between Track Geometry and Components Health Conditions
 keywords:
 - markdown
 - publishing
@@ -8,7 +8,7 @@ lang: en-US
 date-meta: '2022-09-23'
 author-meta:
 - Arthur Bilheri
-- negin Shafie
+- Negin Shafie
 - Shirin Qiam
 - Sadaf Shafie
 header-includes: |-
@@ -17,10 +17,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
-  <meta name="citation_title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
-  <meta property="og:title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
-  <meta property="twitter:title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
+  <meta name="dc.title" content="Relationship Between Track Geometry and Components Health Conditions" />
+  <meta name="citation_title" content="Relationship Between Track Geometry and Components Health Conditions" />
+  <meta property="og:title" content="Relationship Between Track Geometry and Components Health Conditions" />
+  <meta property="twitter:title" content="Relationship Between Track Geometry and Components Health Conditions" />
   <meta name="dc.date" content="2022-09-23" />
   <meta name="citation_publication_date" content="2022-09-23" />
   <meta name="dc.language" content="en-US" />
@@ -33,7 +33,7 @@ header-includes: |-
   <meta name="citation_author_institution" content="Hogwarts school of witchcraft" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@I dont like birds" />
-  <meta name="citation_author" content="negin Shafie" />
+  <meta name="citation_author" content="Negin Shafie" />
   <meta name="citation_author_institution" content="Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@NA" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d9c839a11d17f96a3b922c6b9bd20520b9462cca/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d9c839a11d17f96a3b922c6b9bd20520b9462cca/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d9c839a11d17f96a3b922c6b9bd20520b9462cca/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d9c839a11d17f96a3b922c6b9bd20520b9462cca/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@175ad60](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/175ad60b4dfab97c2d1ab09e80338dd7d156b020)
+from [uiceds/cee-492-term-project-fall-2022-shans@d9c839a](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/d9c839a11d17f96a3b922c6b9bd20520b9462cca)
 on September 23, 2022.
 </em></small>
 
@@ -96,7 +96,7 @@ on September 23, 2022.
      Hogwarts school of witchcraft
   </small>
 
-+ **negin Shafie**<br>
++ **Negin Shafie**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
@@ -132,9 +132,6 @@ on September 23, 2022.
      · Funded by none
   </small>
 
-
-
-## Abstract {.page_break_before}
 
 
 ## Introduction {.page_break_before}
