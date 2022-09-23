@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-22'
+date-meta: '2022-09-23'
 author-meta:
 - Arthur Bilheri
 - negin Shafie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
   <meta property="og:title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
   <meta property="twitter:title" content="Rail Track Change Detection Based On Components&#39; Health Conditions" />
-  <meta name="dc.date" content="2022-09-22" />
-  <meta name="citation_publication_date" content="2022-09-22" />
+  <meta name="dc.date" content="2022-09-23" />
+  <meta name="citation_publication_date" content="2022-09-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/3bc3c1b6f5b1da87c0f9e561c505b499a66d2b04/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/3bc3c1b6f5b1da87c0f9e561c505b499a66d2b04/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/3bc3c1b6f5b1da87c0f9e561c505b499a66d2b04/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/3bc3c1b6f5b1da87c0f9e561c505b499a66d2b04/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/175ad60b4dfab97c2d1ab09e80338dd7d156b020/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@3bc3c1b](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/3bc3c1b6f5b1da87c0f9e561c505b499a66d2b04)
-on September 22, 2022.
+from [uiceds/cee-492-term-project-fall-2022-shans@175ad60](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/175ad60b4dfab97c2d1ab09e80338dd7d156b020)
+on September 23, 2022.
 </em></small>
 
 ## Authors
@@ -137,9 +137,9 @@ on September 22, 2022.
 ## Abstract {.page_break_before}
 
 
-## Introduction
+## Introduction {.page_break_before}
 
-This is a report.
+Railroad tracks have four main components: rail, ties, fastening systems, and ballast. The rail is the main component that supports the loads transmitted by the trains. The fastening system is responsible for fastening the rail to the ties and keeping the rail in a proper position. Fastening systems are made of spikes, tie plates, anchors, and sometimes clips. The ties are the interface between the rails and ballast. The two main materials used for ties in the United States are timber and concrete. The last layer on the railroad superstructure is the ballast. Its main functions are to spread the loads on the ground and to provide proper drainage for the track system.  
 
 
 
