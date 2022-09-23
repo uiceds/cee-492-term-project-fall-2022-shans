@@ -1,5 +1,4 @@
 content/01.abstract.md:5:Convolutional
-content/01.abstract.md:5:Datasets
 content/01.abstract.md:5:DNN
 content/01.abstract.md:5:FRA
 content/01.abstract.md:5:LRAIL
