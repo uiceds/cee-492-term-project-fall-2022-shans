@@ -19,7 +19,7 @@ milimeters
 Negin
 Negin’s
 negins
-Qiam
+qiam
 RailTEC
 ROI
 Sadaf
@@ -31,7 +31,7 @@ SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-Tieplate
+tieplate
 TieplateCondition
 UIUC
 Urbana

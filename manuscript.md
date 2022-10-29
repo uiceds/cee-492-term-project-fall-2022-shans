@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@09f5932](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/09f5932cdcccfe2c542544799c0bc69546ed964c)
+from [uiceds/cee-492-term-project-fall-2022-shans@c1299d3](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/c1299d353dd73a11abbed2db52139f595edb3fc0)
 on October 29, 2022.
 </em></small>
 
@@ -198,13 +198,13 @@ Since we have only 0 or 1 for having or not having an anchor in the raw data, we
 
 The "describe" function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure @fig:describe_anc_ask represents the result. 
 
-![](images/describe_ask_anc.PNG){#fig:describe_anc_ask}
+![](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=2.5in}
 
 <u> Plotting corrplot for data: </u> 
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
 
-![](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
+![](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask height=4in}
 
 ## References {.page_break_before}
 
