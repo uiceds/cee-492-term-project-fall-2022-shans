@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1299d353dd73a11abbed2db52139f595edb3fc0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@c1299d3](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/c1299d353dd73a11abbed2db52139f595edb3fc0)
+from [uiceds/cee-492-term-project-fall-2022-shans@303871e](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/303871e6c3b3af716a8e12ba0c12da96789b4e26)
 on October 29, 2022.
 </em></small>
 
@@ -176,7 +176,7 @@ Table: Description of data
 ## Exploratory Data Analysis {.page_break_before}
 Negin's part
 
-### Does Askew Angle relate to number of anchors?
+### Does Askew Angle relate to the number of anchors?
 Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle.  Figure @fig:Anchor shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie. 
 
 
@@ -198,13 +198,26 @@ Since we have only 0 or 1 for having or not having an anchor in the raw data, we
 
 The "describe" function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure @fig:describe_anc_ask represents the result. 
 
-![](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=2.5in}
+![](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=1.5in}
 
 <u> Plotting corrplot for data: </u> 
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
 
 ![](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask height=4in}
+
+The corrplot indicates that there is no correlation between askew angle and anchors. However, this idea comes to mind that comparing the statistics for situations with a different total number of anchors assures us that we don't have any relationship between askew angle and anchors. Therefore, we filter the data based on each value we can have as the total number of anchors (0 to 4) and find their distribution of askew angle using the "histogram" function. 
+
+<u> Plotting histogram for different values of total number of anchors: </u> 
+
+Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc hsows these histograms. 
+
+![](images/hist_all_ask_anc.PNG)
+{#fig:hist_all_ask_anc height=1.5in}
+
+Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
+
+![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=1.5in}
 
 ## References {.page_break_before}
 
