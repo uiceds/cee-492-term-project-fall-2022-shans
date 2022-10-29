@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@f4fbc09](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af)
+from [uiceds/cee-492-term-project-fall-2022-shans@09f5932](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/09f5932cdcccfe2c542544799c0bc69546ed964c)
 on October 29, 2022.
 </em></small>
 
@@ -151,6 +151,8 @@ table {
 }
 </style>
 
+{#tbl:data_description}
+
 | **Column name** | **Type** | **Range** | **Unit** | **Observation** |
 |---|---|---|---|---|
 | SectionID | int | 0-inf |  | The ID number of section containing the tie. Each section is 2m wide.  |
@@ -166,9 +168,9 @@ table {
 | Tieplate_Right | int | 0-inf |  | Number of tieplate on left/right side of tie |
 | TieplateCondition_Right | int | 1-5 |  | Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted |
 | Latitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
-| Longitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |{#tbl:data_description}
+| Longitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
 
-Description of data
+Table: Description of data
 
 
 ## Exploratory Data Analysis {.page_break_before}
@@ -179,8 +181,6 @@ Anchors are spring steel clips that attach to the underside of the rail baseplat
 
 
 ![](images/Anchor.PNG){#fig:Anchor}
-
-Regions of interest for anchors
 
 <u> Selecting related columns: </u>  
 
@@ -194,9 +194,17 @@ Using the "filter" function, we choose only ties with wooden material. The new d
 
 Since we have only 0 or 1 for having or not having an anchor in the raw data, we need to know the total number of anchors for each tie. Therefore, we add a column to our data frame representing the total number of anchors for each tie by adding columns for anchors in each ROI. 
 
+<u> Describing statistical features of data: </u> 
+
+The "describe" function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure @fig:describe_anc_ask represents the result. 
+
+![](images/describe_ask_anc.PNG){#fig:describe_anc_ask}
+
 <u> Plotting corrplot for data: </u> 
 
-The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure 2. shows the corrplot for the data. 
+The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
+
+![](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
 
 ## References {.page_break_before}
 

@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/09f5932cdcccfe2c542544799c0bc69546ed964c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af">uiceds/cee-492-term-project-fall-2022-shans@f4fbc09</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/09f5932cdcccfe2c542544799c0bc69546ed964c">uiceds/cee-492-term-project-fall-2022-shans@09f5932</a>
 on October 29, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -158,7 +158,9 @@ table {
   font-size: 11px;
 }
 </style>
+<p>{#tbl:data_description}</p>
 <table>
+<caption>Description of data</caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 20%" />
@@ -276,7 +278,6 @@ table {
 </tr>
 </tbody>
 </table>
-<p>Description of data</p>
 <h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p>Negin’s part</p>
 <h3 id="does-askew-angle-relate-to-number-of-anchors">Does Askew Angle relate to number of anchors?</h3>
@@ -286,15 +287,26 @@ table {
 <img src="images/Anchor.PNG" alt="Figure 1: " /><figcaption aria-hidden="true"><span>Figure 1:</span> </figcaption>
 </figure>
 </div>
-<p>Regions of interest for anchors</p>
 <p><u> Selecting related columns: </u></p>
 <p>To create the data frame, using the “select” function in Julia, we select columns about askew angle and anchors, which are “Askew_Angle”, “Material”, “AnchorROI_1”, “AnchorROI_2”, “AnchorROI_3”, “AnchorROI_4”. The material is important because we only have anchors for wooden ties. Therefore, the data frame has 89982 rows and six columns.</p>
 <p><u> Filtering wooden ties: </u></p>
 <p>Using the “filter” function, we choose only ties with wooden material. The new data frame for wooden ties has 33687 columns which shows more than half of the ties are concrete.</p>
 <p><u> Adding total number of anchors: </u></p>
 <p>Since we have only 0 or 1 for having or not having an anchor in the raw data, we need to know the total number of anchors for each tie. Therefore, we add a column to our data frame representing the total number of anchors for each tie by adding columns for anchors in each ROI.</p>
+<p><u> Describing statistical features of data: </u></p>
+<p>The “describe” function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure <a href="#fig:describe_anc_ask">2</a> represents the result.</p>
+<div id="fig:describe_anc_ask" class="fignos">
+<figure>
+<img src="images/describe_ask_anc.PNG" alt="Figure 2: " /><figcaption aria-hidden="true"><span>Figure 2:</span> </figcaption>
+</figure>
+</div>
 <p><u> Plotting corrplot for data: </u></p>
-<p>The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure 2. shows the corrplot for the data.</p>
+<p>The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure <a href="#fig:corrplot_anc_ask">3</a> shows the corrplot for the data.</p>
+<div id="fig:corrplot_anc_ask" class="fignos">
+<figure>
+<img src="images/corrplot_ask_anc.PNG" alt="Figure 3: " /><figcaption aria-hidden="true"><span>Figure 3:</span> </figcaption>
+</figure>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
