@@ -1,5 +1,5 @@
 ---
-title: Relationship Between Track Geometry and Components Health Conditions
+title: Relationship Between Track Tie Situation and Its Components Health Conditions
 keywords:
 - markdown
 - publishing
@@ -17,10 +17,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Relationship Between Track Geometry and Components Health Conditions" />
-  <meta name="citation_title" content="Relationship Between Track Geometry and Components Health Conditions" />
-  <meta property="og:title" content="Relationship Between Track Geometry and Components Health Conditions" />
-  <meta property="twitter:title" content="Relationship Between Track Geometry and Components Health Conditions" />
+  <meta name="dc.title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
+  <meta name="citation_title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
+  <meta property="og:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
+  <meta property="twitter:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta name="dc.date" content="2022-10-29" />
   <meta name="citation_publication_date" content="2022-10-29" />
   <meta name="dc.language" content="en-US" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/2f388b7d5abdb081eac17b358748e0e9cfba5f49/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/2f388b7d5abdb081eac17b358748e0e9cfba5f49/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/2f388b7d5abdb081eac17b358748e0e9cfba5f49/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6fb38175be5ab19eeddac4e3bd9a42c908f28b1a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6fb38175be5ab19eeddac4e3bd9a42c908f28b1a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6fb38175be5ab19eeddac4e3bd9a42c908f28b1a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/2f388b7d5abdb081eac17b358748e0e9cfba5f49/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6fb38175be5ab19eeddac4e3bd9a42c908f28b1a/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@2f388b7](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/2f388b7d5abdb081eac17b358748e0e9cfba5f49)
+from [uiceds/cee-492-term-project-fall-2022-shans@6fb3817](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/6fb38175be5ab19eeddac4e3bd9a42c908f28b1a)
 on October 29, 2022.
 </em></small>
 
@@ -224,7 +224,7 @@ Different numbers of bins are because of the different numbers of data we have i
 The last graph we plot is a boxplot which provides a good sense of statistics to compare skew angle with different total numbers of anchors. Figure @fig:box_ask_anc shows these boxplots and confirms no such difference between the mean and other statistics of askew angle.
 
 ![](images/box_ask_anc.PNG)
-{#fig:box_ask_anc height=2in}
+{#fig:box_ask_anc height=1in}
 
 <u> Conclusion: </u>
 
@@ -243,12 +243,12 @@ To create the data frame, we select columns about askew angle and spikes, which 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corr_ask_spi shows the corrplot for ROI 1. As the corrplot for other regions of interest are similar to ROI 1, we do not put it on the report. For the rest of this part, we just consider ROI 1 because the results are the same for all the regions. 
 
 ![](images/corrplot_ask_spi.PNG)
-{#fig:corr_ask_spi height=4in}
+{#fig:corr_ask_spi height=2in}
 
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatter_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
 ![](images/scatter_ask_spi.PNG)
-{#fig:scatter_ask_spi height=2in}
+{#fig:scatter_ask_spi height=1in}
 
 <u> Correlation between maximum askew angle and the number of spikes: </u> 
 
