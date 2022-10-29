@@ -28,4 +28,6 @@ content/01.abstract.md:67:corrplot
 content/01.abstract.md:69:corrplot
 content/01.abstract.md:69:corrplot
 content/01.abstract.md:73:corrplot
-content/01.abstract.md:77:hsows
+content/01.abstract.md:86:boxplot
+content/01.abstract.md:88:boxplot
+content/01.abstract.md:88:boxplots

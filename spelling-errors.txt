@@ -3,6 +3,8 @@ AnchorROI
 artbil
 baseplate
 Bilheri
+boxplot
+boxplots
 CFR
 Champaign
 contactless
@@ -15,7 +17,6 @@ EDA
 FastenerConditionROI
 FRA
 histask
-hsows
 LRAIL
 milimeters
 Negin
@@ -33,7 +34,7 @@ SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-Tieplate
+tieplate
 TieplateCondition
 UIUC
 Urbana

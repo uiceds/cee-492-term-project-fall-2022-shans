@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/226daca16ade30c79c7c75d491701cf9957b4306/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/226daca16ade30c79c7c75d491701cf9957b4306/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/226daca16ade30c79c7c75d491701cf9957b4306/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/303871e6c3b3af716a8e12ba0c12da96789b4e26/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/226daca16ade30c79c7c75d491701cf9957b4306/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@303871e](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/303871e6c3b3af716a8e12ba0c12da96789b4e26)
+from [uiceds/cee-492-term-project-fall-2022-shans@226daca](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/226daca16ade30c79c7c75d491701cf9957b4306)
 on October 29, 2022.
 </em></small>
 
@@ -210,14 +210,21 @@ The corrplot indicates that there is no correlation between askew angle and anch
 
 <u> Plotting histogram for different values of total number of anchors: </u> 
 
-Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc hsows these histograms. 
+Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc shows these histograms. 
 
-![](images/hist_all_ask_anc.PNG)
-{#fig:hist_all_ask_anc height=1.5in}
+
+{#fig:hist_all_ask_anc height=2in}
 
 Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
 
-![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=1.5in}
+![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=2in}
+
+<u> Plotting boxplot: </u> 
+
+The last graph we plot is a boxplot which provides a good sense of statistics to compare skew angle with different total numbers of anchors. Figure ... shows these boxplots and confirms no such difference between the mean and other statistics of askew angle.
+
+![](images/box_ask_anc.PNG)
+{#fig:box_ask_anc height=2in}
 
 ## References {.page_break_before}
 
