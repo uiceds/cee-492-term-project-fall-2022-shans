@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf">uiceds/cee-492-term-project-fall-2022-shans@b8e0977</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af">uiceds/cee-492-term-project-fall-2022-shans@f4fbc09</a>
 on October 29, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -280,9 +280,13 @@ table {
 <h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p>Negin’s part</p>
 <h3 id="does-askew-angle-relate-to-number-of-anchors">Does Askew Angle relate to number of anchors?</h3>
-<p>Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle. Figure ?? shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie.</p>
-<p><img src="images/Anchor.PNG" id="fig:Anchor" />
-Regions of interest for anchors</p>
+<p>Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle. Figure <a href="#fig:Anchor">1</a> shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie.</p>
+<div id="fig:Anchor" class="fignos">
+<figure>
+<img src="images/Anchor.PNG" alt="Figure 1: " /><figcaption aria-hidden="true"><span>Figure 1:</span> </figcaption>
+</figure>
+</div>
+<p>Regions of interest for anchors</p>
 <p><u> Selecting related columns: </u></p>
 <p>To create the data frame, using the “select” function in Julia, we select columns about askew angle and anchors, which are “Askew_Angle”, “Material”, “AnchorROI_1”, “AnchorROI_2”, “AnchorROI_3”, “AnchorROI_4”. The material is important because we only have anchors for wooden ties. Therefore, the data frame has 89982 rows and six columns.</p>
 <p><u> Filtering wooden ties: </u></p>
