@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/8cc1073ea4989934d55199d6f09ffc1fc845021c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/8cc1073ea4989934d55199d6f09ffc1fc845021c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/8cc1073ea4989934d55199d6f09ffc1fc845021c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/8cc1073ea4989934d55199d6f09ffc1fc845021c/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/8cc1073ea4989934d55199d6f09ffc1fc845021c">uiceds/cee-492-term-project-fall-2022-shans@8cc1073</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf">uiceds/cee-492-term-project-fall-2022-shans@b8e0977</a>
 on October 29, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -160,132 +160,129 @@ table {
 </style>
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
-<col style="width: 21%" />
-<col style="width: 13%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><strong>Column name</strong></th>
-<th style="text-align: center;"><strong>Type</strong></th>
-<th style="text-align: center;"><strong>Range</strong></th>
-<th style="text-align: center;"><strong>Unit</strong></th>
+<th><strong>Column name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Range</strong></th>
+<th><strong>Unit</strong></th>
 <th><strong>Observation</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">SectionID</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;"></td>
+<td>SectionID</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
 <td>The ID number of section containing the tie. Each section is 2m wide.</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Distance_m</td>
-<td style="text-align: center;">float</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;">meters</td>
+<td>Distance_m</td>
+<td>float</td>
+<td>0-inf</td>
+<td>meters</td>
 <td>The position of the tie. The distance is computed from the beginning of the survey. The unit is meter</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Material</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">Wooden, Concrete</td>
-<td style="text-align: center;"></td>
+<td>Material</td>
+<td>string</td>
+<td>Wooden, Concrete</td>
+<td></td>
 <td>The material of the tie</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Rating</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">0-3 (Wooden) 0-2 (Concrete)</td>
-<td style="text-align: center;"></td>
+<td>Rating</td>
+<td>int</td>
+<td>0-3 (Wooden) 0-2 (Concrete)</td>
+<td></td>
 <td>The rating of tie based on condition of crack on surface of tie. 0: good. 3 or 2 is bad.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Askew_Angle</td>
-<td style="text-align: center;">float</td>
-<td style="text-align: center;">-inf to inf</td>
-<td style="text-align: center;">degrees</td>
+<td>Askew_Angle</td>
+<td>float</td>
+<td>-inf to inf</td>
+<td>degrees</td>
 <td>Askew angle of the tie. This is angle between the horizontal line and the center line of the tie (passing through middle of tie) positive if we need to rotate the tie clockwise to make the center line fit the horizontal line and it is negative if we need to rotate the tie counter-clockwise. The unit is degrees.</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">FastenerConditionROI_1</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">1, 2, 3, 20</td>
-<td style="text-align: center;"></td>
+<td>FastenerConditionROI_1</td>
+<td>int</td>
+<td>1, 2, 3, 20</td>
+<td></td>
 <td>The condition of fastener in ROI 1 to 4. 1: Good, 2: Covered, 3: Missing and 20: Defective</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">SpikeTotalROI_1 to 4</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;"></td>
+<td>SpikeTotalROI_1 to 4</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
 <td>Number of spike in each ROI on tie</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">SpikeMean_Height_ROI1_mm</td>
-<td style="text-align: center;">float</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;">milimeters</td>
+<td>SpikeMean_Height_ROI1_mm</td>
+<td>float</td>
+<td>0-inf</td>
+<td>milimeters</td>
 <td>The mean height of all tie in each ROI on tie. The unit is millimeter</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">SpikeNearRailROI_1</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;"></td>
+<td>SpikeNearRailROI_1</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
 <td>Number of spike is near the rail boundary in each ROI on tie</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">AnchorROI_1</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;"></td>
+<td>AnchorROI_1</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
 <td>Number of anchor in each ROI (relating to the tie)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Tieplate_Right</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">0-inf</td>
-<td style="text-align: center;"></td>
+<td>Tieplate_Right</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
 <td>Number of tieplate on left/right side of tie</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">TieplateCondition_Right</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">1-5</td>
-<td style="text-align: center;"></td>
+<td>TieplateCondition_Right</td>
+<td>int</td>
+<td>1-5</td>
+<td></td>
 <td>Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Latitude</td>
-<td style="text-align: center;">float</td>
-<td style="text-align: center;">-90 to +90</td>
-<td style="text-align: center;">degrees</td>
+<td>Latitude</td>
+<td>float</td>
+<td>-90 to +90</td>
+<td>degrees</td>
 <td>GPS coordinates of the center of the tie</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Longitude</td>
-<td style="text-align: center;">float</td>
-<td style="text-align: center;">-90 to +90</td>
-<td style="text-align: center;">degrees</td>
+<td>Longitude</td>
+<td>float</td>
+<td>-90 to +90</td>
+<td>degrees</td>
 <td>GPS coordinates of the center of the tie</td>
 </tr>
 </tbody>
 </table>
-<p>{#tbl:data_description}</p>
+<p>Description of data</p>
 <h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <p>Negin’s part</p>
 <h3 id="does-askew-angle-relate-to-number-of-anchors">Does Askew Angle relate to number of anchors?</h3>
-<p>Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle. Figure <a href="#fig:Anchor">1</a> shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie.</p>
-<div id="fig:Anchor" class="fignos">
-<figure>
-<img src="images/Anchor.PNG" alt="Figure 1: " /><figcaption aria-hidden="true"><span>Figure 1:</span> </figcaption>
-</figure>
-</div>
+<p>Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle. Figure ?? shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie.</p>
+<p><img src="images/Anchor.PNG" id="fig:Anchor" />
+Regions of interest for anchors</p>
 <p><u> Selecting related columns: </u></p>
 <p>To create the data frame, using the “select” function in Julia, we select columns about askew angle and anchors, which are “Askew_Angle”, “Material”, “AnchorROI_1”, “AnchorROI_2”, “AnchorROI_3”, “AnchorROI_4”. The material is important because we only have anchors for wooden ties. Therefore, the data frame has 89982 rows and six columns.</p>
 <p><u> Filtering wooden ties: </u></p>
