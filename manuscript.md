@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/86260c19267d69803e7acd27be22bf49cbc49712/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/86260c19267d69803e7acd27be22bf49cbc49712/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/86260c19267d69803e7acd27be22bf49cbc49712/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a47359b82bb9cbd844875ffdb727e33290b6f660/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a47359b82bb9cbd844875ffdb727e33290b6f660/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a47359b82bb9cbd844875ffdb727e33290b6f660/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/86260c19267d69803e7acd27be22bf49cbc49712/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a47359b82bb9cbd844875ffdb727e33290b6f660/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@86260c1](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/86260c19267d69803e7acd27be22bf49cbc49712)
+from [uiceds/cee-492-term-project-fall-2022-shans@a47359b](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a47359b82bb9cbd844875ffdb727e33290b6f660)
 on October 29, 2022.
 </em></small>
 
@@ -143,7 +143,7 @@ These components are inspected using the LRAIL technology that combines 2D image
 Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride.
 Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.
 
-The purpose of this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. The approaches of this project consist of but are not limited to EDA methods, regressions, and correlation models. The data can be found in [Project](https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7) , “LRAIL” contains the component health conditions,  “Geometry 1” and “Geometry 2” include the geometry data for that same track, and “Datasets” describes each of the above. Table @tbl:data_description shows columns of the dataset, their feaures and a breif dscriptions for them. 
+The purpose of this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. The approaches of this project consist of but are not limited to EDA methods, regressions, and correlation models. The data can be found in [Project](https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7) , “LRAIL” contains the component health conditions,  “Geometry 1” and “Geometry 2” include the geometry data for that same track, and “Datasets” describes each of the above. Table \@ref{tbl:data_description} shows columns of the dataset, their feaures and a breif dscriptions for them. 
 
 <style scoped>
 table {
