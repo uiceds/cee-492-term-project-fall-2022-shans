@@ -10,6 +10,7 @@ Champaign
 contactless
 Convolutional
 corrplot
+coulmns
 Datasets
 DNN
 dont
@@ -22,7 +23,7 @@ milimeters
 Negin
 Negin’s
 negins
-Qiam
+qiam
 RailTEC
 ROI
 Sadaf
@@ -30,11 +31,12 @@ sadafs
 SectionID
 Shafie
 Shirin
+spi
 SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-tieplate
+Tieplate
 TieplateCondition
 UIUC
 Urbana
