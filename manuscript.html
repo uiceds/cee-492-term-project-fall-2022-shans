@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fee1a91050a9d7cd532736aed0a0b64dcd394970/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fee1a91050a9d7cd532736aed0a0b64dcd394970/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fee1a91050a9d7cd532736aed0a0b64dcd394970/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/668b22b10a534de8e92a36876805ad917561339a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/668b22b10a534de8e92a36876805ad917561339a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/668b22b10a534de8e92a36876805ad917561339a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fee1a91050a9d7cd532736aed0a0b64dcd394970/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/668b22b10a534de8e92a36876805ad917561339a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/fee1a91050a9d7cd532736aed0a0b64dcd394970">uiceds/cee-492-term-project-fall-2022-shans@fee1a91</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/668b22b10a534de8e92a36876805ad917561339a">uiceds/cee-492-term-project-fall-2022-shans@668b22b</a>
 on October 29, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -153,6 +153,126 @@ Department of Civil and Environmental Engineering, University of Illinois at Urb
 <p>Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride.
 Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.</p>
 <p>The purpose of this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. The approaches of this project consist of but are not limited to EDA methods, regressions, and correlation models. The data can be found in <a href="https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7">Project</a> , “LRAIL” contains the component health conditions, “Geometry 1” and “Geometry 2” include the geometry data for that same track, and “Datasets” describes each of the above.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Column name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Range</strong></th>
+<th><strong>Unit</strong></th>
+<th><strong>Observation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SectionID</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
+<td>The ID number of section containing the tie. Each section is 2m wide.</td>
+</tr>
+<tr class="even">
+<td>Distance_m</td>
+<td>float</td>
+<td>0-inf</td>
+<td>meters</td>
+<td>The position of the tie. The distance is computed from the beginning of the survey. The unit is meter</td>
+</tr>
+<tr class="odd">
+<td>Material</td>
+<td>string</td>
+<td>Wooden, Concrete</td>
+<td></td>
+<td>The material of the tie</td>
+</tr>
+<tr class="even">
+<td>Rating</td>
+<td>int</td>
+<td>0-3 (Wooden) 0-2 (Concrete)</td>
+<td></td>
+<td>The rating of tie based on condition of crack on surface of tie. 0: good. 3 or 2 is bad.</td>
+</tr>
+<tr class="odd">
+<td>Askew_Angle</td>
+<td>float</td>
+<td>-inf to inf</td>
+<td>degrees</td>
+<td>Askew angle of the tie. This is angle between the horizontal line and the center line of the tie (passing through middle of tie) positive if we need to rotate the tie clockwise to make the center line fit the horizontal line and it is negative if we need to rotate the tie counter-clockwise. The unit is degrees.</td>
+</tr>
+<tr class="even">
+<td>FastenerConditionROI_1</td>
+<td>int</td>
+<td>1, 2, 3, 20</td>
+<td></td>
+<td>The condition of fastener in ROI 1 to 4. 1: Good, 2: Covered, 3: Missing and 20: Defective</td>
+</tr>
+<tr class="odd">
+<td>SpikeTotalROI_1 to 4</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
+<td>Number of spike in each ROI on tie</td>
+</tr>
+<tr class="even">
+<td>SpikeMean_Height_ROI1_mm</td>
+<td>float</td>
+<td>0-inf</td>
+<td>milimeters</td>
+<td>The mean height of all tie in each ROI on tie. The unit is millimeter</td>
+</tr>
+<tr class="odd">
+<td>SpikeNearRailROI_1</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
+<td>Number of spike is near the rail boundary in each ROI on tie</td>
+</tr>
+<tr class="even">
+<td>AnchorROI_1</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
+<td>Number of anchor in each ROI (relating to the tie)</td>
+</tr>
+<tr class="odd">
+<td>Tieplate_Right</td>
+<td>int</td>
+<td>0-inf</td>
+<td></td>
+<td>Number of tieplate on left/right side of tie</td>
+</tr>
+<tr class="even">
+<td>TieplateCondition_Right</td>
+<td>int</td>
+<td>1-5</td>
+<td></td>
+<td>Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted</td>
+</tr>
+<tr class="odd">
+<td>Latitude</td>
+<td>float</td>
+<td>-90 to +90</td>
+<td>degrees</td>
+<td>GPS coordinates of the center of the tie</td>
+</tr>
+<tr class="even">
+<td>Longitude</td>
+<td>float</td>
+<td>-90 to +90</td>
+<td>degrees</td>
+<td>GPS coordinates of the center of the tie</td>
+</tr>
+</tbody>
+</table>
+<h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<p>Negin’s part</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">

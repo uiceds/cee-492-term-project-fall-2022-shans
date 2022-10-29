@@ -11,3 +11,14 @@ content/01.abstract.md:8:contactless
 content/01.abstract.md:10:Datasets
 content/01.abstract.md:10:EDA
 content/01.abstract.md:10:LRAIL
+content/01.abstract.md:14:SectionID
+content/01.abstract.md:19:ROI
+content/01.abstract.md:20:ROI
+content/01.abstract.md:21:milimeters
+content/01.abstract.md:21:ROI
+content/01.abstract.md:22:ROI
+content/01.abstract.md:23:ROI
+content/01.abstract.md:24:tieplate
+content/01.abstract.md:25:tieplate
+content/01.abstract.md:30:Negin
+content/01.abstract.md:30:Negin's
