@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@b8e0977](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b8e0977519cfa5b6e893b9a0caf5b7da572f55cf)
+from [uiceds/cee-492-term-project-fall-2022-shans@f4fbc09](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f4fbc09ee89b0cab7aa73bfc5705c63ac58276af)
 on October 29, 2022.
 </em></small>
 
@@ -167,6 +167,7 @@ table {
 | TieplateCondition_Right | int | 1-5 |  | Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted |
 | Latitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
 | Longitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |{#tbl:data_description}
+
 Description of data
 
 
@@ -178,6 +179,7 @@ Anchors are spring steel clips that attach to the underside of the rail baseplat
 
 
 ![](images/Anchor.PNG){#fig:Anchor}
+
 Regions of interest for anchors
 
 <u> Selecting related columns: </u>  
