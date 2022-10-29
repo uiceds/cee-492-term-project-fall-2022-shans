@@ -8,12 +8,8 @@ content/01.abstract.md:5:UIUC
 content/01.abstract.md:7:CFR
 content/01.abstract.md:7:superelevation
 content/01.abstract.md:8:contactless
-content/01.abstract.md:10:breif
-content/01.abstract.md:10:dataset
 content/01.abstract.md:10:Datasets
-content/01.abstract.md:10:dscriptions
 content/01.abstract.md:10:EDA
-content/01.abstract.md:10:feaures
 content/01.abstract.md:10:LRAIL
 content/01.abstract.md:20:SectionID
 content/01.abstract.md:25:ROI
@@ -26,3 +22,8 @@ content/01.abstract.md:30:tieplate
 content/01.abstract.md:31:tieplate
 content/01.abstract.md:38:Negin
 content/01.abstract.md:38:Negin's
+content/01.abstract.md:41:baseplate
+content/01.abstract.md:56:ROI
+content/01.abstract.md:58:corrplot
+content/01.abstract.md:60:corrplot
+content/01.abstract.md:60:corrplot
