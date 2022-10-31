@@ -7,6 +7,7 @@ boxplot
 boxplots
 CFR
 Champaign
+concretecon
 contactless
 Convolutional
 corrplot
@@ -21,11 +22,11 @@ FastenerConditionROI
 FRA
 histask
 innerjoin
-LRAIL
+Lrail
 milimeters
 Negin
 negins
-qiam
+Qiam
 RailTEC
 ROI
 Sadaf
@@ -39,7 +40,8 @@ SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-Tieplate
+TieMaterial
+tieplate
 TieplateCondition
 UIUC
 Urbana

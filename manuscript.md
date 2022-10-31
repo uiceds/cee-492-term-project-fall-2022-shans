@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d6e4af05a6d8b68a62fbd80f2ce698d92e6fee40/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d6e4af05a6d8b68a62fbd80f2ce698d92e6fee40/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d6e4af05a6d8b68a62fbd80f2ce698d92e6fee40/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cd3c942623f5f4454251d5980d1d56d446a6ea4d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cd3c942623f5f4454251d5980d1d56d446a6ea4d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cd3c942623f5f4454251d5980d1d56d446a6ea4d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d6e4af05a6d8b68a62fbd80f2ce698d92e6fee40/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cd3c942623f5f4454251d5980d1d56d446a6ea4d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@d6e4af0](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/d6e4af05a6d8b68a62fbd80f2ce698d92e6fee40)
+from [uiceds/cee-492-term-project-fall-2022-shans@cd3c942](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/cd3c942623f5f4454251d5980d1d56d446a6ea4d)
 on October 31, 2022.
 </em></small>
 
@@ -175,16 +175,16 @@ Table 1: Description of data
 
 ## Exploratory Data Analysis {.page_break_before}
 ### Statistical Analysis on Track Elements-Tie
-In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure {#fig:Tie_Material} shows the total number of each tie material. The total number of ties is 89985.  62.5 percent of the ties are made of concrete (56295 ties) and the remaining 37.5 percent are wooden ties (33690 ties).
+In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure {#fig:TieMaterial} shows the total number of each tie material. The total number of ties is 89985.  62.5 percent of the ties are made of concrete (56295 ties) and the remaining 37.5 percent are wooden ties (33690 ties).
 
-![](images/tie_material.PNG){#fig:Tie_Material}
+![](images/tiematerial.PNG){#fig:TieMaterial}
 
-The data set provides condition ratings for each type of tie. Figure {#fig:concrete con}  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to get rid of the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
+The data set provides condition ratings for each type of tie. Figure {#fig:concretecon}  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to get rid of the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
 
-![](images/concrete_con.PNG){#fig:concrete_con}
+![](images/concretecon.PNG){#fig:concretecon}
 
 The same process was done to get the health condition of wooden ties. Figure 3 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties. figure 3 illustrates wooden tie condition ratings. The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
-![](images/wood con.PNG){#fig:wood con}
+![](images/woodcon.PNG){#fig:woodcon}
 Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this deliverable.
 ### Statistical Analysis on Track Elements-Tieplate
 Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of the wooden ties. 
