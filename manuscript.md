@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d4cc2dc8d01d0225967ea7444e6b4530aa76b522/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d4cc2dc8d01d0225967ea7444e6b4530aa76b522/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d4cc2dc8d01d0225967ea7444e6b4530aa76b522/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a309575d3b27b23cd242cfe0567178f09cd7839c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a309575d3b27b23cd242cfe0567178f09cd7839c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a309575d3b27b23cd242cfe0567178f09cd7839c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d4cc2dc8d01d0225967ea7444e6b4530aa76b522/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a309575d3b27b23cd242cfe0567178f09cd7839c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@d4cc2dc](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/d4cc2dc8d01d0225967ea7444e6b4530aa76b522)
+from [uiceds/cee-492-term-project-fall-2022-shans@a309575](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a309575d3b27b23cd242cfe0567178f09cd7839c)
 on October 31, 2022.
 </em></small>
 
@@ -258,12 +258,12 @@ During the EDA section we tried to look for relationships between the gauge of t
 To be reasonable in this section, the analysis are divided between concrete and Wooden ties, since they have different characteristics that make it harder compare both together.
 The most directly relationship is the gauge of the track and the condition of the ties. Based on the technology used the concrete ties are graded from 0 (Good) to 2 (Bad). 1 (Fair) is a intermediate condition.
 
-![](images/Gauge and Tie Rating Concrete.png)
+![](content/images/Gauge and Tie Rating Concrete.png)
 
 Intuitively we can think that bad ties would have wide gauge, but for this specific region it is not the case. Comparing the median values we see that the values are not too far from each other. Another interesting finding is that the max value does not have big changes when changing the tie rating, indicating that any tie rating can have a gauge defect.
 Now let’s look to the same criteria but for Wooden ties. Wooden ties have one more bin for classification, still following the same idea as 0 being Good and 3 being Bad. 
 
-![](images/Gauge and Tie Rating Wooden.png)
+![](content/images/Gauge and Tie Rating Wooden.png)
 
 First thing to mention is that the Good ties (Condition 0) has more outliers than the other ones, this can be related to the fact that there are a lot more ties with this condition than the other ones. In contrast to the concrete ties, the median gets slightly higher when we have a bad condition tie, indicating that the condition of the tie can be related to the gauge of the track. Comparing the max values, only condition zero (Good) and 3 (Bad) have higher max values. It makes sense for condition 3 (Bad) ties but measurement errors should be account for condition 0 (Good) ties.
 The next component to be investigated is the tie plate. Only wooden ties have tie plates. Their main function is to support the rail and distribute the load on the ties. Normal wooden ties have two tie plates – one per rail. The metric used to analyze the data is the number of defective tie plates per tie, 0 being a tie with 2 tie plates and 2 a tie plate without tie plates in good condition. 
