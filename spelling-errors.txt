@@ -22,11 +22,11 @@ FastenerConditionROI
 FRA
 histask
 innerjoin
-Lrail
+LRAIL
 milimeters
 Negin
 negins
-Qiam
+qiam
 RailTEC
 ROI
 Sadaf
