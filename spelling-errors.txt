@@ -11,6 +11,7 @@ contactless
 Convolutional
 corrplot
 coulmns
+dataset
 Datasets
 DNN
 dont
@@ -23,7 +24,7 @@ milimeters
 Negin
 Negin’s
 negins
-qiam
+Qiam
 RailTEC
 ROI
 Sadaf
@@ -37,7 +38,7 @@ SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-Tieplate
+tieplate
 TieplateCondition
 UIUC
 Urbana
