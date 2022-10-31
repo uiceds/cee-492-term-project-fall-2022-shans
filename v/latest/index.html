@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/25305206776f2b884b1b3b5bc4fe0d7af0a5d030/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/25305206776f2b884b1b3b5bc4fe0d7af0a5d030/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/25305206776f2b884b1b3b5bc4fe0d7af0a5d030/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/25305206776f2b884b1b3b5bc4fe0d7af0a5d030/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/25305206776f2b884b1b3b5bc4fe0d7af0a5d030">uiceds/cee-492-term-project-fall-2022-shans@2530520</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a">uiceds/cee-492-term-project-fall-2022-shans@5b46df9</a>
 on October 31, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -279,23 +279,48 @@ table {
 </table>
 <h2 class="page_break_before" id="exploratory-data-analysis">Exploratory Data Analysis</h2>
 <h3 id="statistical-analysis-on-track-elements-tie">Statistical Analysis on Track Elements-Tie</h3>
-<p>In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties. There are two types of ties in the track under study: concrete ties, and wooden ties. Figure 1 shows the total number of each tie material. The total number of ties is 89985. 62.5 percent of the ties are made of concrete (56295 ties) and the remaining 37.5 percent are wooden ties (33690 ties).
-<img src="images/tie_material.PNG" id="fig:Types_of_Tie_Material" />
-The data set provides condition ratings for each type of tie. Figure 2 illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to get rid of the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate’s percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition.</p>
-<p>The same process was done to get the health condition of wooden ties. Figure 3 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties. figure 3 illustrates wooden tie condition ratings. The percentages of different condition rates are as follows: 98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties.</p>
-<p>Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this deliverable.
+<p>In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties. There are two types of ties in the track under study: concrete ties, and wooden ties. Figure {#fig:Tie_Material} shows the total number of each tie material. The total number of ties is 89985. 62.5 percent of the ties are made of concrete (56295 ties) and the remaining 37.5 percent are wooden ties (33690 ties).</p>
+<div id="fig:Tie_Material" class="fignos">
+<figure>
+<img src="images/tie_material.PNG" alt="Figure 1: " /><figcaption aria-hidden="true"><span>Figure 1:</span> </figcaption>
+</figure>
+</div>
+<p>The data set provides condition ratings for each type of tie. Figure {#fig:concrete con} illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to get rid of the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate’s percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition.</p>
+<div id="fig:concrete_con" class="fignos">
+<figure>
+<img src="images/concrete_con.PNG" alt="Figure 2: " /><figcaption aria-hidden="true"><span>Figure 2:</span> </figcaption>
+</figure>
+</div>
+<p>The same process was done to get the health condition of wooden ties. Figure 3 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties. figure 3 illustrates wooden tie condition ratings. The percentages of different condition rates are as follows: 98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties.
+<img src="images/wood%20con.PNG" id="fig:wood" />
+Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this deliverable.
 ### Statistical Analysis on Track Elements-Tieplate
 Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of the wooden ties.
-Following the same methodology explained under ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure 4, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions.</p>
+Following the same methodology explained under ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure {#fig:tieplate}, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions.</p>
+<div id="fig:tieplate" class="fignos">
+<figure>
+<img src="images/tieplate.PNG" alt="Figure 3: " /><figcaption aria-hidden="true"><span>Figure 3:</span> </figcaption>
+</figure>
+</div>
 <h3 id="statistical-analysis-on-track-elements-anchor">Statistical Analysis on Track Elements-Anchor</h3>
-<p>We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 channels in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations).</p>
-<h3 id="statistical-analysis-on-track-elements-fastener">Statistical Analysis on Track Elements-Fastener</h3>
-<p>Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure 6.
-### Does Askew Angle relate to the number of anchors?
-Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle. Figure <a href="#fig:Anchor">1</a> shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie.</p>
+<p>We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 channels in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure {#fig:Anchor} illustrates this.</p>
 <div id="fig:Anchor" class="fignos">
 <figure>
-<img src="images/Anchor.PNG" alt="Figure 1: " /><figcaption aria-hidden="true"><span>Figure 1:</span> </figcaption>
+<img src="images/Anchor.PNG" alt="Figure 4: " /><figcaption aria-hidden="true"><span>Figure 4:</span> </figcaption>
+</figure>
+</div>
+<h3 id="statistical-analysis-on-track-elements-fastener">Statistical Analysis on Track Elements-Fastener</h3>
+<p>Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure {#fig:fastener}.</p>
+<div id="fig:fastener" class="fignos">
+<figure>
+<img src="images/fastener.PNG" alt="Figure 5: " /><figcaption aria-hidden="true"><span>Figure 5:</span> </figcaption>
+</figure>
+</div>
+<h3 id="does-askew-angle-relate-to-the-number-of-anchors">Does Askew Angle relate to the number of anchors?</h3>
+<p>Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle. Figure <a href="#fig:Anchor">6</a> shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie.</p>
+<div id="fig:Anchor" class="fignos">
+<figure>
+<img src="images/Anchor.PNG" alt="Figure 6: " /><figcaption aria-hidden="true"><span>Figure 6:</span> </figcaption>
 </figure>
 </div>
 <p><u> Selecting related columns: </u></p>
@@ -305,17 +330,17 @@ Anchors are spring steel clips that attach to the underside of the rail baseplat
 <p><u> Adding total number of anchors: </u></p>
 <p>Since we have only 0 or 1 for having or not having an anchor in the raw data, we need to know the total number of anchors for each tie. Therefore, we add a column to our data frame representing the total number of anchors for each tie by adding columns for anchors in each ROI.</p>
 <p><u> Describing statistical features of data: </u></p>
-<p>The “describe” function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure <a href="#fig:describe_anc_ask">2</a> represents the result.</p>
+<p>The “describe” function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure <a href="#fig:describe_anc_ask">7</a> represents the result.</p>
 <div id="fig:describe_anc_ask" class="fignos">
 <figure>
-<img src="images/describe_ask_anc.PNG" style="height:2in" alt="Figure 2: " /><figcaption aria-hidden="true"><span>Figure 2:</span> </figcaption>
+<img src="images/describe_ask_anc.PNG" style="height:2in" alt="Figure 7: " /><figcaption aria-hidden="true"><span>Figure 7:</span> </figcaption>
 </figure>
 </div>
 <p><u> Plotting corrplot for data: </u></p>
-<p>The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure <a href="#fig:corrplot_anc_ask">3</a> shows the corrplot for the data.</p>
+<p>The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure <a href="#fig:corrplot_anc_ask">8</a> shows the corrplot for the data.</p>
 <div id="fig:corrplot_anc_ask" class="fignos">
 <figure>
-<img src="images/corrplot_ask_anc.PNG" style="height:4in" alt="Figure 3: " /><figcaption aria-hidden="true"><span>Figure 3:</span> </figcaption>
+<img src="images/corrplot_ask_anc.PNG" style="height:4in" alt="Figure 8: " /><figcaption aria-hidden="true"><span>Figure 8:</span> </figcaption>
 </figure>
 </div>
 <p>The corrplot indicates that there is no correlation between askew angle and anchors. However, this idea comes to mind that comparing the statistics for situations with a different total number of anchors assures us that we don’t have any relationship between askew angle and anchors. Therefore, we filter the data based on each value we can have as the total number of anchors (0 to 4) and find their distribution of askew angle using the “histogram” function.</p>
@@ -323,10 +348,10 @@ Anchors are spring steel clips that attach to the underside of the rail baseplat
 <p>Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure ?? shows these histograms.</p>
 <p><img src="images/hist_all_ask_anc.PNG" />
 {#fig:hist_all_ask_anc height=2in}</p>
-<p>Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure <a href="#fig:norm_histask_anc">4</a> represents no meaningful difference between these two conditions.</p>
+<p>Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure <a href="#fig:norm_histask_anc">9</a> represents no meaningful difference between these two conditions.</p>
 <div id="fig:norm_histask_anc" class="fignos">
 <figure>
-<img src="images/norm_hist_ask_anc.PNG" style="height:2in" alt="Figure 4: " /><figcaption aria-hidden="true"><span>Figure 4:</span> </figcaption>
+<img src="images/norm_hist_ask_anc.PNG" style="height:2in" alt="Figure 9: " /><figcaption aria-hidden="true"><span>Figure 9:</span> </figcaption>
 </figure>
 </div>
 <p><u> Plotting boxplot: </u></p>
