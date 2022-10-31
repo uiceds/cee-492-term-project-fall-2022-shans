@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/06abef0cfe98e9616cf3d31e1d376494c28fdab6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/06abef0cfe98e9616cf3d31e1d376494c28fdab6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/06abef0cfe98e9616cf3d31e1d376494c28fdab6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/06abef0cfe98e9616cf3d31e1d376494c28fdab6/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/06abef0cfe98e9616cf3d31e1d376494c28fdab6">uiceds/cee-492-term-project-fall-2022-shans@06abef0</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/e54c6bc27c7bf548ee2599b8405b84c92af2a16e">uiceds/cee-492-term-project-fall-2022-shans@e54c6bc</a>
 on October 31, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -410,26 +410,59 @@ The most directly relationship is the gauge of the track and the condition of th
 <p>Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn.
 So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track.
 Box plots for concrete tie is shown below in {#fig:Concrete_curve}. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad).
-The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature.
-<img src="images/Concrete_curve.PNG" id="fig:Concrete_curve" />
-Box plots for wooden ties is shown below in {#fig:Wooden_curve}. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. But, like what we saw in Concrete ties, the range of each box shows That curvature is not the only participating factor in tie deterioration.
-<img src="images/Wooden_curve.PNG" id="fig:Wooden_curve" /></p>
+The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature.</p>
+<div id="fig:Concrete_curve" class="fignos">
+<figure>
+<img src="images/Concrete_curve.PNG" alt="Figure 10: " /><figcaption aria-hidden="true"><span>Figure 10:</span> </figcaption>
+</figure>
+</div>
+<p>Box plots for wooden ties is shown below in {#fig:Wooden_curve}. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. But, like what we saw in Concrete ties, the range of each box
+shows That curvature is not the only participating factor in tie deterioration.</p>
+<div id="fig:Wooden_curve" class="fignos">
+<figure>
+<img src="images/Wooden_curve.PNG" alt="Figure 11: " /><figcaption aria-hidden="true"><span>Figure 11:</span> </figcaption>
+</figure>
+</div>
 <h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-number-of-spikes-per-tie">Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?</h3>
-<p>We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame. Figure below shows a box plot, in which the medians show an increase in curvature degree for higher spike numbers. Which is true, since ties and rail need more stability and lateral resistance in sharper curves. Although, the first box from the left is not covering a great range of curvature degrees, it is still considered not desirable since all the spikes are missing.
-<img src="images/Spike_Curve.PNG" id="fig:Spike_Curve" />
-### Is there a meaningful relation between the Degree of Curvature and Gauge?
-First, we looked at the correlation plot shown in figure {#fig:curve_gauge} to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate.
-<img src="images/curve_gauge.PNG" id="fig:curve_gauge" />
-The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater.
-By looking at the Curve histogram, shown in figure {#fig:Curve_Histogram} , we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. Also, the Gauge histogram in {#fig:Gauge_Histogram} suggests that a significant percentage of the measured gauges, are actually in good condition. But, since we are interested in the parts of the track with a considerable curvature or bad gauge, we decided to look at positive and negative curvature separately, and the results were not what we assumed would be.<br />
-<img src="images/Gauge_Histogram.PNG" id="fig:Gauge_Histogram" />
-<img src="images/Curve_Histogram.jpeg" id="fig:Curve_Histogram" />
-Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation also was calculated using corr function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge.
-Although we do not know what is causing this difference, this is an interesting finding and can be further discussed.
-<img src="images/Neg_curve.PNG" id="fig:Neg_curve" />
-<img src="images/Pos_Curve.PNG" id="fig:Pos_Curve" />
-### Predictive Modeling
-As our next step, we want to use this dataset and the information we gained about it to develop a predictive model. Our goal is to identify track degradation predictors and their contribution weight to the overall degradation. By doing so, we can know about the probable defects in track before they actually happen, which is categorized as preventive maintenance practice. This maintenance method is more cost-efficient and can aim the railroad companies in better allocating their resources.</p>
+<p>We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame. Figure below shows a box plot, in which the medians show an increase in curvature degree for higher spike numbers. Which is true, since ties and rail need more stability and lateral resistance in sharper curves. Although, the first box from the left is not covering a great range of curvature degrees, it is still considered not desirable since all the spikes are missing.</p>
+<div id="fig:Spike_Curve" class="fignos">
+<figure>
+<img src="images/Spike_Curve.PNG" alt="Figure 12: " /><figcaption aria-hidden="true"><span>Figure 12:</span> </figcaption>
+</figure>
+</div>
+<h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-gauge">Is there a meaningful relation between the Degree of Curvature and Gauge?</h3>
+<p>First, we looked at the correlation plot shown in figure {#fig:curve_gauge} to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate.</p>
+<div id="fig:curve_gauge" class="fignos">
+<figure>
+<img src="images/curve_gauge.PNG" alt="Figure 13: " /><figcaption aria-hidden="true"><span>Figure 13:</span> </figcaption>
+</figure>
+</div>
+<p>The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater.
+By looking at the Curve histogram, shown in figure {#fig:Curve_Histogram} , we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. Also, the Gauge histogram in {#fig:Gauge_Histogram} suggests that a significant percentage of the measured gauges, are actually in good condition. But, since we are interested in the parts of the track with a considerable curvature or bad gauge, we decided to look at positive and negative curvature separately, and the results were not what we assumed would be.</p>
+<div id="fig:Gauge_Histogram" class="fignos">
+<figure>
+<img src="images/Gauge_Histogram.PNG" alt="Figure 14: " /><figcaption aria-hidden="true"><span>Figure 14:</span> </figcaption>
+</figure>
+</div>
+<div id="fig:Curve_Histogram" class="fignos">
+<figure>
+<img src="images/Curve_Histogram.jpeg" alt="Figure 15: " /><figcaption aria-hidden="true"><span>Figure 15:</span> </figcaption>
+</figure>
+</div>
+<p>Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation also was calculated using corr function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge.
+Although we do not know what is causing this difference, this is an interesting finding and can be further discussed.</p>
+<div id="fig:Neg_curve" class="fignos">
+<figure>
+<img src="images/Neg_curve.PNG" alt="Figure 16: " /><figcaption aria-hidden="true"><span>Figure 16:</span> </figcaption>
+</figure>
+</div>
+<div id="fig:Pos_Curve" class="fignos">
+<figure>
+<img src="images/Pos_Curve.PNG" alt="Figure 17: " /><figcaption aria-hidden="true"><span>Figure 17:</span> </figcaption>
+</figure>
+</div>
+<h3 id="predictive-modeling">Predictive Modeling</h3>
+<p>As our next step, we want to use this dataset and the information we gained about it to develop a predictive model. Our goal is to identify track degradation predictors and their contribution weight to the overall degradation. By doing so, we can know about the probable defects in track before they actually happen, which is categorized as preventive maintenance practice. This maintenance method is more cost-efficient and can aim the railroad companies in better allocating their resources.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
