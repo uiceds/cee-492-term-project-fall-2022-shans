@@ -49,3 +49,8 @@ content/01.abstract.md:138:corrplot
 content/01.abstract.md:138:corrplot
 content/01.abstract.md:149:EDA
 content/01.abstract.md:171:dataset
+content/01.abstract.md:192:dataframe
+content/01.abstract.md:192:dataset
+content/01.abstract.md:192:dataset
+content/01.abstract.md:192:innerjoin
+content/01.abstract.md:192:Lrail

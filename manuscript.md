@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0727f3884fc52705353aefa66be3975aee6a1c34/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0727f3884fc52705353aefa66be3975aee6a1c34/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0727f3884fc52705353aefa66be3975aee6a1c34/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0727f3884fc52705353aefa66be3975aee6a1c34/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@5b46df9](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/5b46df97cd350f1619d0ab5bf2cf21cad9b3c46a)
+from [uiceds/cee-492-term-project-fall-2022-shans@0727f38](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/0727f3884fc52705353aefa66be3975aee6a1c34)
 on October 31, 2022.
 </em></small>
 
@@ -321,6 +321,27 @@ For concrete ties there were no ties with zero defective fasteners (all four fas
  ![](images/Gauge_and_Fasteners_Concrete.png)
  
 Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.
+
+###Is there a meaningful relation between the Degree of Curvature and Tie Condition?
+
+Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn. 
+So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track. 
+Box plots for concrete tie is shown below. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
+The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature. 
+Box plots for wooden ties is shown below. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. But, like what we saw in Concrete ties, the range of each box shows That curvature is not the only participating factor in tie deterioration. 
+
+###Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
+We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame. Figure below shows a box plot, in which the medians show an increase in curvature degree for higher spike numbers. Which is true, since ties and rail need more stability and lateral resistance in sharper curves. Although, the first box from the left is not covering a great range of curvature degrees, it is still considered not desirable since all the spikes are missing. 
+
+
+
+
+
+
+
+
+
+
 
 
 ## References {.page_break_before}

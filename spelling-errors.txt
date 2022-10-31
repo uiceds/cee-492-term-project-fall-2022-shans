@@ -11,6 +11,7 @@ contactless
 Convolutional
 corrplot
 coulmns
+dataframe
 dataset
 Datasets
 DNN
@@ -19,11 +20,12 @@ EDA
 FastenerConditionROI
 FRA
 histask
-LRAIL
+innerjoin
+Lrail
 milimeters
 Negin
 negins
-Qiam
+qiam
 RailTEC
 ROI
 Sadaf
