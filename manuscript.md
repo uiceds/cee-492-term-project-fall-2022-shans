@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@53fcbe3](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/53fcbe30f5889ce967bdb846a90c9601467cec67)
+from [uiceds/cee-492-term-project-fall-2022-shans@c99efc6](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/c99efc6a3cd5595f374de661377d09471bd1fe16)
 on November 1, 2022.
 </em></small>
 
@@ -325,9 +325,10 @@ For concrete ties there were no ties with zero defective fasteners (all four fas
  
 Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.
 
-### Is there a meaningful relation between the Degree of Curvature and Gauge?
+### Is there a meaningful relation between the Degree of Curvature and Gauge Deviation?
 
 Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn. 
+
 First, we looked at the correlation plot shown in figure @fig:curve_gauge to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate. 
 
 ![](images/corrplot.jpeg){#fig:curve_gauge}
@@ -345,7 +346,7 @@ By looking at the Curve histogram we realized that the majority of this specific
 
 So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track. 
 Box plots for concrete tie is shown below in @fig:Concrete_curve. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
-The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature, and curvature is not the only participating factor in tie deterioration.
+The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.
 
 ![](images/Concrete_curve.png){#fig:Concrete_curve}
 
