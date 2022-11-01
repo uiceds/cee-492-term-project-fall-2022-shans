@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-10-31'
+date-meta: '2022-11-01'
 author-meta:
 - Arthur Bilheri
 - Negin Shafie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta property="og:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta property="twitter:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
-  <meta name="dc.date" content="2022-10-31" />
-  <meta name="citation_publication_date" content="2022-10-31" />
+  <meta name="dc.date" content="2022-11-01" />
+  <meta name="citation_publication_date" content="2022-11-01" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/390c47b13635e9c931ce4124fadd786957f0d66e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/390c47b13635e9c931ce4124fadd786957f0d66e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/390c47b13635e9c931ce4124fadd786957f0d66e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e54c6bc27c7bf548ee2599b8405b84c92af2a16e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/390c47b13635e9c931ce4124fadd786957f0d66e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@e54c6bc](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/e54c6bc27c7bf548ee2599b8405b84c92af2a16e)
-on October 31, 2022.
+from [uiceds/cee-492-term-project-fall-2022-shans@390c47b](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/390c47b13635e9c931ce4124fadd786957f0d66e)
+on November 1, 2022.
 </em></small>
 
 ## Authors
