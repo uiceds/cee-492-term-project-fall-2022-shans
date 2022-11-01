@@ -25,11 +25,11 @@ FRA
 hcat
 histask
 innerjoin
-LRAIL
+Lrail
 milimeters
 Negin
 negins
-qiam
+Qiam
 RailTEC
 ROI
 Sadaf
@@ -45,7 +45,7 @@ SpikeTotalROI
 superelevation
 thamn
 TieMaterial
-tieplate
+Tieplate
 TieplateCondition
 UIUC
 Urbana
