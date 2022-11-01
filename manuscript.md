@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/419e396e0b928fd8e30043fcc322cfa0a63fb6cc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/419e396e0b928fd8e30043fcc322cfa0a63fb6cc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/419e396e0b928fd8e30043fcc322cfa0a63fb6cc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/24c4b37c84726b640a6fbf35dcccaea95af5ed29/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/24c4b37c84726b640a6fbf35dcccaea95af5ed29/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/24c4b37c84726b640a6fbf35dcccaea95af5ed29/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/419e396e0b928fd8e30043fcc322cfa0a63fb6cc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/24c4b37c84726b640a6fbf35dcccaea95af5ed29/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@419e396](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/419e396e0b928fd8e30043fcc322cfa0a63fb6cc)
+from [uiceds/cee-492-term-project-fall-2022-shans@24c4b37](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/24c4b37c84726b640a6fbf35dcccaea95af5ed29)
 on November 1, 2022.
 </em></small>
 
@@ -175,30 +175,33 @@ Table 1: Description of data
 
 ## Exploratory Data Analysis {.page_break_before}
 ### Statistical Analysis on Track Elements-Tie
-In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure {#fig:TieMaterial} shows the total number of each tie material. The total number of ties is 89985.  62.5 percent of the ties are made of concrete (56295 ties) and the remaining 37.5 percent are wooden ties (33690 ties).
+In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:TieMaterial shows the total number of each tie material. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
 
 ![](images/tiematerial.PNG){#fig:TieMaterial}
 
-The data set provides condition ratings for each type of tie. Figure {#fig:concretecon}  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to get rid of the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
+The data set provides condition ratings for each type of tie. Figure @fig:concretecon  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to eliminate the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
 
 ![](images/concretecon.PNG){#fig:concretecon}
 
-The same process was done to get the health condition of wooden ties. Figure 3 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties. figure 3 illustrates wooden tie condition ratings. The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
+The same process was done to get the health condition of wooden ties. Figure @fig:woodcon shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties.  The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
+
 ![](images/woodcon.PNG){#fig:woodcon}
-Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this deliverable.
+
+Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this report.
+
 ### Statistical Analysis on Track Elements-Tieplate
-Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of the wooden ties. 
-Following the same methodology explained under ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure {#fig:tieplate}, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions. 
+Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of wooden ties. 
+Following the same methodology explained for ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure @fig:tieplate, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions. 
 
 ![](images/tieplate.PNG){#fig:tieplate}
 
 ### Statistical Analysis on Track Elements-Anchor
-We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 channels in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure {#fig:anchorr} illustrates this.
+We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 columns in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure @fig:anchorr illustrates this.
 
 ![](images/anchorr.PNG){#fig:anchorr}
 
 ### Statistical Analysis on Track Elements-Fastener
-Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure {#fig:fastener}. 
+Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure @fig:fastener. 
 
 ![](images/fastener.PNG){#fig:fastener}
 
@@ -230,7 +233,7 @@ The "describe" function gives a good overview of the statistical features of the
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
 
-![](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask height=4in}
+![](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
 
 The corrplot indicates that there is no correlation between askew angle and anchors. However, this idea comes to mind that comparing the statistics for situations with a different total number of anchors assures us that we don't have any relationship between askew angle and anchors. Therefore, we filter the data based on each value we can have as the total number of anchors (0 to 4) and find their distribution of askew angle using the "histogram" function. 
 
@@ -239,18 +242,18 @@ The corrplot indicates that there is no correlation between askew angle and anch
 Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc shows these histograms. 
 
 ![](images/hist_all_ask_anc.PNG)
-{#fig:hist_all_ask_anc height=2in}
+{#fig:hist_all_ask_anc}
 
 Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
 
-![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=2in}
+![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc}
 
 <u> Plotting boxplot: </u> 
 
 The last graph we plot is a boxplot which provides a good sense of statistics to compare skew angle with different total numbers of anchors. Figure @fig:bo_ask_anc shows these boxplots and confirms no such difference between the mean and other statistics of askew angle.
 
 ![](images/box_ask_anc.PNG)
-{#fig:bo_ask_anc height=2in}
+{#fig:bo_ask_anc}
 
 <u> Conclusion: </u>
 
@@ -269,18 +272,18 @@ To create the data frame, we select columns about askew angle and spikes, which 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corr_ask_spi shows the corrplot for ROI 1. As the corrplot for other regions of interest are similar to ROI 1, we do not put it on the report. For the rest of this part, we just consider ROI 1 because the results are the same for all the regions. 
 
 ![](images/corrplot_ask_spi.PNG)
-{#fig:corr_ask_spi height=4in}
+{#fig:corr_ask_spi}
 
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatt_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
 ![](images/scatter_ask_spi.PNG)
-{#fig:scatt_ask_spi height="50%"}
+{#fig:scatt_ask_spi}
 
 <u> Correlation between maximum askew angle and the number of spikes: </u> 
 
 Using "corr" function, we find the correlation value between the maximum askew angle and the number of spikes which is about -0.64. Therefore, we say they are correlated, and there is a relationship between the maximum askew angle and the number of spikes. The same results happen for other regions of interest and even the total number of spikes in all regions.   
 
-<u> Relationship between Gauge Deviation and Concrete Tie Rating </u>
+### Relationship between Gauge Deviation and Concrete Tie Rating 
 
 During the EDA section we tried to look for relationships between the gauge of the track and the component’s condition. The Gauge Deviation is the difference between the standard gauge (4’-8.5”) and the measured gauge. So a value close to 0 indicates that the gauge is correct. Due to the train traffic and tie degradation the gauge deviation tends to increase over time. When it reaches certain limits, it is called a defect and maintenance must be made to restore the gauge. Negative values usually mean that the tie was installed with a tighter gauge or that there was a measurement error and should be considered outliers if it is too tight, around -1 in or less.
 To be reasonable in this section, the analysis are divided between concrete and Wooden ties, since they have different characteristics that make it harder compare both together.
@@ -290,7 +293,7 @@ The most directly relationship is the gauge of the track and the condition of th
 
 Intuitively we can think that bad ties would have wide gauge, but for this specific region it is not the case. Comparing the median values we see that the values are not too far from each other. Another interesting finding is that the max value does not have big changes when changing the tie rating, indicating that any tie rating can have a gauge defect.
 
-<u> Relationship between Gauge Deviation and Wooden Tie Rating </u>
+### Relationship between Gauge Deviation and Wooden Tie Rating 
 
 Now let’s look to the same criteria but for Wooden ties. Wooden ties have one more bin for classification, still following the same idea as 0 being Good and 3 being Bad. The following graph shows the distribution of gauge deviation by each wooden tie rating.
 
@@ -298,7 +301,7 @@ Now let’s look to the same criteria but for Wooden ties. Wooden ties have one 
 
 First thing to mention is that the Good ties (Condition 0) has more outliers than the other ones, this can be related to the fact that there are a lot more ties with this condition than the other ones. In contrast to the concrete ties, the median gets slightly higher when we have a bad condition tie, indicating that the condition of the tie can be related to the gauge of the track. Comparing the max values, only condition zero (Good) and 3 (Bad) have higher max values. It makes sense for condition 3 (Bad) ties but measurement errors should be account for condition 0 (Good) ties.
 
-<u> Relationship between Gauge Deviation and Tie Plate Condition </u>
+### Relationship between Gauge Deviation and Tie Plate Condition 
 
 The next component to be investigated is the tie plate. Only wooden ties have tie plates. Their main function is to support the rail and distribute the load on the ties. Normal wooden ties have two tie plates – one per rail. The metric used to analyze the data is the number of defective tie plates per tie, 0 being a tie with 2 tie plates and 2 a tie plate without tie plates in good condition. The following graph shows the distribution of gauge deviation by the number of defectives tie plates per wooden tie.
 
@@ -306,9 +309,9 @@ The next component to be investigated is the tie plate. Only wooden ties have ti
 
 Again, the number of outliers for ties with two tie plates must be taken into consideration since this is the highest population on the dataset. The main takeaway is that the number of defective tie plates are not directly related to the gauge.
 
-<u> Relationship between Gauge Deviation and Number of Defective Fasteners on Wooden Ties </u>
+### Relationship between Gauge Deviation and Number of Defective Fasteners on Wooden Ties 
 
-Fasteners are the components that have hold down force to hold the rails connected to the tie plates. They are used in very specific situations in the railroad, such as tight curves, switches and grade crossings. When used, each tie has four fasteners, two per rail, one on each side of the rail. Fasteners may or may not used in wooden ties but must be used in concrete ties. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per wooden tie.
+Fasteners are the components that have hold down force to hold the rails connected to the tie plates. They are used in very specific situations in the railroad, such as tight curves, switches and grade crossings. When used, each tie has four fasteners, two per rail, one on each side of the rail. Fasteners may or may not be used in wooden ties but must be used in concrete ties. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per wooden tie.
 
 ![](images/Gauge_and_Fasteners_Wooden.png)
 
@@ -322,47 +325,45 @@ For concrete ties there were no ties with zero defective fasteners (all four fas
  
 Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.
 
-### Is there a meaningful relation between the Degree of Curvature and Tie Condition?
+### Is there a meaningful relation between the Degree of Curvature and Gauge?
 
 Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn. 
+First, we looked at the correlation plot shown in figure @fig:curve_gauge to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate. 
+
+![](images/corrplot.jpeg){#fig:curve_gauge}
+
+The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater. 
+By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater thamn 0.1 and less than -0.1. Also, the Gauge histogram in @fig:Gauge_Histogram suggests that a significant percentage of the measured gauges, are actually in good condition. 
+
+![](images/Gauge_Histogram.png){#fig:Gauge_Histogram}
+
+![](content/images/curvehisto.jpeg){#fig:Curve_Histogram}
+
+ We also looked at the positive and negative curvature separately. Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation was calculated using corr function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. Although we do not know what is causing this difference, this is an interesting finding and can be further discussed. 
+
+### Is there a meaningful relation between the Degree of Curvature and Tie Condition?
+
 So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track. 
-Box plots for concrete tie is shown below in {#fig:Concrete_curve}. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
+Box plots for concrete tie is shown below in @fig:Concrete_curve. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
 The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature. 
 
-![](images/Concrete_curve.PNG){#fig:Concrete_curve}
+![](images/Concrete_curve.png){#fig:Concrete_curve}
 
-Box plots for wooden ties is shown below in {#fig:Wooden_curve}. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. But, like what we saw in Concrete ties, the range of each box 
-shows That curvature is not the only participating factor in tie deterioration. 
+Box plots for wooden ties is shown below in @fig:Wooden_curve. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. But, like what we saw in Concrete ties, the range of each box shows That curvature is not the only participating factor in tie deterioration. 
 
-![](images/Wooden_curve.PNG){#fig:Wooden_curve}
+![](images/Wooden_curve.png){#fig:Wooden_curve}
 
 ### Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
 
-We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame. Figure below shows a box plot, in which the medians show an increase in curvature degree for higher spike numbers. Which is true, since ties and rail need more stability and lateral resistance in sharper curves. Although, the first box from the left is not covering a great range of curvature degrees, it is still considered not desirable since all the spikes are missing. 
+We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for grater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![](images/Spike_Curve.PNG){#fig:Spike_Curve}
+![](images/Spike_Curve.png){#fig:Spike_Curve}
 
-### Is there a meaningful relation between the Degree of Curvature and Gauge?
-First, we looked at the correlation plot shown in figure {#fig:curve_gauge} to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate. 
 
-![](images/curve_gauge.PNG){#fig:curve_gauge}
 
-The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater. 
-By looking at the Curve histogram, shown in figure {#fig:Curve_Histogram} , we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. Also, the Gauge histogram in {#fig:Gauge_Histogram} suggests that a significant percentage of the measured gauges, are actually in good condition. But, since we are interested in the parts of the track with a considerable curvature or bad gauge, we decided to look at positive and negative curvature separately, and the results were not what we assumed would be.  
 
-![](images/Gauge_Histogram.PNG){#fig:Gauge_Histogram}
-
-![](images/Curve_Histogram.jpeg){#fig:Curve_Histogram}
-
-Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation also was calculated using corr function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. 
-Although we do not know what is causing this difference, this is an interesting finding and can be further discussed.
-
-![](images/Neg_curve.PNG){#fig:Neg_curve}
-
-![](images/Pos_Curve.PNG){#fig:Pos_Curve}
-
-### Predictive Modeling
-As our next step, we want to use this dataset and the information we gained about it to develop a predictive model. Our goal is to identify track degradation predictors and their contribution weight to the overall degradation. By doing so, we can know about the probable defects in track before they actually happen, which is categorized as preventive maintenance practice. This maintenance method is more cost-efficient and can aim the railroad companies in better allocating their resources. 
+## Predictive Modeling {.page_break_before}
+As our next step, we want to use this dataset and the information we gained about it to develop a predictive model. Our goal is to identify track degradation predictors and their contribution weight to the overall degradation. By doing so, we can know about the probable defects in track before they actually happen, which is categorized as preventive maintenance practice. This maintenance method is more cost-efficient and can aim the railroad companies in better allocating their resources. Based on our results we decided to move on with the relationship between Gauge, Curve, Tie Condition, Number of Spikes, and maximum Askew Angle. 
 
 
 
