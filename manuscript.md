@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cb1adb54d4a8bfb2f286397e93b44193b9964ef0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cb1adb54d4a8bfb2f286397e93b44193b9964ef0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cb1adb54d4a8bfb2f286397e93b44193b9964ef0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/cb1adb54d4a8bfb2f286397e93b44193b9964ef0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@cb1adb5](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/cb1adb54d4a8bfb2f286397e93b44193b9964ef0)
+from [uiceds/cee-492-term-project-fall-2022-shans@53fcbe3](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/53fcbe30f5889ce967bdb846a90c9601467cec67)
 on November 1, 2022.
 </em></small>
 
@@ -333,29 +333,29 @@ First, we looked at the correlation plot shown in figure @fig:curve_gauge to inv
 ![](images/corrplot.jpeg){#fig:curve_gauge}
 
 The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater. 
-By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater thamn 0.1 and less than -0.1. Also, the Gauge histogram in @fig:Gauge_Histogram suggests that a significant percentage of the measured gauges, are actually in good condition. 
+By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater than 0.1 and less than -0.1. Also, the Gauge histogram in @fig:Gauge_Histogram suggests that a significant percentage of the measured gauges, are actually in good condition. 
 
 ![](images/Gauge_Histogram.png){#fig:Gauge_Histogram}
 
-![](content/images/curvehisto.jpeg){#fig:Curve_Histogram}
+![](images/curvehistogram.png){#fig:Curve_Histogram}
 
- We also looked at the positive and negative curvature separately. Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation was calculated using corr function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. Although we do not know what is causing this difference, this is an interesting finding and can be further discussed. 
+ We also looked at the positive and negative curvature separately. Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation was calculated using cor function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. Although we do not know what is causing this difference, this is an interesting finding and can be further discussed. 
 
 ### Is there a meaningful relation between the Degree of Curvature and Tie Condition?
 
 So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track. 
 Box plots for concrete tie is shown below in @fig:Concrete_curve. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
-The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature. 
+The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature, and curvature is not the only participating factor in tie deterioration.
 
 ![](images/Concrete_curve.png){#fig:Concrete_curve}
 
-Box plots for wooden ties is shown below in @fig:Wooden_curve. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. But, like what we saw in Concrete ties, the range of each box shows That curvature is not the only participating factor in tie deterioration. 
+Box plots for wooden ties is shown below in @fig:Wooden_curve. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
 
 ![](images/Wooden_curve.png){#fig:Wooden_curve}
 
 ### Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
 
-We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for grater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
+We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
 ![](images/Spike_Curve.png){#fig:Spike_Curve}
 
