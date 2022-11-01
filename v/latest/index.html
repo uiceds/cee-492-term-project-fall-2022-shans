@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/53fcbe30f5889ce967bdb846a90c9601467cec67/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/53fcbe30f5889ce967bdb846a90c9601467cec67">uiceds/cee-492-term-project-fall-2022-shans@53fcbe3</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/c99efc6a3cd5595f374de661377d09471bd1fe16">uiceds/cee-492-term-project-fall-2022-shans@c99efc6</a>
 on November 1, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -410,9 +410,9 @@ The most directly relationship is the gauge of the track and the condition of th
 <img src="images/Gauge_and_Fasteners_Concrete.png" />
 </figure>
 <p>Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.</p>
-<h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-gauge">Is there a meaningful relation between the Degree of Curvature and Gauge?</h3>
-<p>Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn.
-First, we looked at the correlation plot shown in figure <a href="#fig:curve_gauge">11</a> to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate.</p>
+<h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-gauge-deviation">Is there a meaningful relation between the Degree of Curvature and Gauge Deviation?</h3>
+<p>Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn.</p>
+<p>First, we looked at the correlation plot shown in figure <a href="#fig:curve_gauge">11</a> to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate.</p>
 <div id="fig:curve_gauge" class="fignos">
 <figure>
 <img src="images/corrplot.jpeg" alt="Figure 11: " /><figcaption aria-hidden="true"><span>Figure 11:</span> </figcaption>
@@ -434,7 +434,7 @@ By looking at the Curve histogram we realized that the majority of this specific
 <h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-tie-condition">Is there a meaningful relation between the Degree of Curvature and Tie Condition?</h3>
 <p>So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track.
 Box plots for concrete tie is shown below in <a href="#fig:Concrete_curve">14</a>. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad).
-The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only high degrees of curvature, and curvature is not the only participating factor in tie deterioration.</p>
+The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.</p>
 <div id="fig:Concrete_curve" class="fignos">
 <figure>
 <img src="images/Concrete_curve.png" alt="Figure 14: " /><figcaption aria-hidden="true"><span>Figure 14:</span> </figcaption>
