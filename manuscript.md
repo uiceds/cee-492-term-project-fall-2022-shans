@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dd581d8a638aee83d467de1972e65dffcc00193a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dd581d8a638aee83d467de1972e65dffcc00193a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dd581d8a638aee83d467de1972e65dffcc00193a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dd581d8a638aee83d467de1972e65dffcc00193a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@dd581d8](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/dd581d8a638aee83d467de1972e65dffcc00193a)
+from [uiceds/cee-492-term-project-fall-2022-shans@58ecf39](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/58ecf39707f480502ee0adbc098fffa9dca89551)
 on November 21, 2022.
 </em></small>
 
@@ -325,36 +325,36 @@ Concrete ties are less prone to have gauge problems related to defective fastene
 
 Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn. 
 
-First, we looked at the correlation plot shown in figure @fig:curve_gauge to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate. 
+First, we looked at the correlation plot shown in figure @fig:1 to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate. 
 
-![](images/corrplot.jpeg){#fig:curve_gauge}
+![Correlation Between Gauge and Degree of Curvature](content/images/1.jpeg){#fig:1=4in}
 
 The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater. 
-By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater than 0.1 and less than -0.1. Also, the Gauge histogram in @fig:Gauge_Histogram suggests that a significant percentage of the measured gauges, are actually in good condition. 
+By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater than 0.1 and less than -0.1. Also, the Gauge histogram in @fig:2 suggests that a significant percentage of the measured gauges, are actually in good condition. 
 
-![](images/Gauge_Histogram.png){#fig:Gauge_Histogram}
+![Gauge Histogram](content/images/2.png){#fig:2=4in}
 
-![](images/curvehistogram.png){#fig:Curve_Histogram}
+![Filtered Curvature Histogram](content/images/3.png){#fig:3=4in}
 
  We also looked at the positive and negative curvature separately. Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation was calculated using cor function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. Although we do not know what is causing this difference, this is an interesting finding and can be further discussed. 
 
 ### Is there a meaningful relation between the Degree of Curvature and Tie Condition?
 
 So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track. 
-Box plots for concrete tie is shown below in @fig:Concrete_curve. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
+Box plots for concrete tie is shown below in @fig:4. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
 The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.
 
-![](images/Concrete_curve.png){#fig:Concrete_curve}
+![Filtered Curvature Histogram](content/images/4.png){#fig:4=4in}
 
-Box plots for wooden ties is shown below in @fig:Wooden_curve. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
+Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
 
-![](images/Wooden_curve.png){#fig:Wooden_curve}
+![Filtered Curvature Histogram](content/images/5.png){#fig:5=4in}
 
 ### Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
 
 We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![](images/Spike_Curve.png){#fig:Spike_Curve}
+![Filtered Curvature Histogram](content/images/6.png){#fig:6=4in}
 
 
 
@@ -396,6 +396,16 @@ The first approach is creating a two layer Neural Network model. The input data 
 This low accuracy means the model needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
 The second approach is similar to the first one, but  it has three dense layers instead of two to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had an accuracy of 0.104.
 Figure 3 illustrates the scatter plot of the three layer model results for wooden ties.
+
+### Decision Tree
+The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, DecisionTree. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
+This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
+
+### Random Forest
+The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 4 and figure 5 represent the results for wooden ties and concrete ties respectively. 
+Plot #4
+Plot #5
+
 
 ### Conclusion
 Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of these methods could provide a satisfactory level of accuracy and as we can see in their figures, all of them show no pattern. Our first hypothesis on this is maybe there is not an efficient way of predicting the gauge based on the track data we currently have. To be more specific, it is possible that there are other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set, or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the potential items that have an impact on the gauge are listed below:

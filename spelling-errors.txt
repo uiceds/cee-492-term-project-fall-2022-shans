@@ -12,11 +12,12 @@ concretecon
 consistant
 contactless
 Convolutional
-Corrplot
+corrplot
 coulmns
 dataframe
 dataset
 Datasets
+DecisionTree
 DNN
 dont
 EDA
@@ -26,11 +27,11 @@ Frac
 hcat
 histask
 innerjoin
-Lrail
+LRAIL
 milimeters
 Negin
 negins
-Qiam
+qiam
 RailTEC
 ReLU
 RMSE
