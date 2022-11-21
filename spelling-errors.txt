@@ -47,7 +47,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 TieMaterial
-Tieplate
+tieplate
 TieplateCondition
 UIUC
 Urbana

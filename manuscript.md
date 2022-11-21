@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/20d60019e4e598db6b55e56923632b4c31ed4f18/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/20d60019e4e598db6b55e56923632b4c31ed4f18/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/20d60019e4e598db6b55e56923632b4c31ed4f18/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/276049e0ac554e20f3fc9441d8a16726b5d9e528/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/276049e0ac554e20f3fc9441d8a16726b5d9e528/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/276049e0ac554e20f3fc9441d8a16726b5d9e528/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/20d60019e4e598db6b55e56923632b4c31ed4f18/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/276049e0ac554e20f3fc9441d8a16726b5d9e528/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@20d6001](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/20d60019e4e598db6b55e56923632b4c31ed4f18)
+from [uiceds/cee-492-term-project-fall-2022-shans@276049e](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/276049e0ac554e20f3fc9441d8a16726b5d9e528)
 on November 21, 2022.
 </em></small>
 
@@ -273,8 +273,7 @@ The first thing we can plot to check whether some variables are correlated or no
 
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatt_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
-![Scatter plot for askew angle and spike](images/scatter_ask_spi.PNG)
-{#fig:scatt_ask_spi height=2in}
+![Scatter plot for askew angle and spike](images/scatter_ask_spi.PNG){#fig:scatt_ask_spi height=2in}
 
 <u> Correlation between maximum askew angle and the number of spikes: </u> 
 
@@ -368,8 +367,8 @@ We followed four approaches to create the predictive model, including two layer 
 
 ### Data Cleaning
 First step towards creating a predictive model is having a proper data frame with all the input values lined up. It is worth noting that we separated concrete and timber ties into two data frames, and analyzed them separately. As it is mentioned in the EDA section of the project, the dominant tie material in this track is timber. Since concrete and timber behave differently in a significant way, we thought the correct approach is to divide them. To create the clean data frame, we selected the most relevant track features as our input data. The output data is the gauge which is a number between 0 and 1. As mentioned in the EDA phase of the project, this is the difference between the existing gauge value in the track, and the standard gauge. Numbers closer to 0 mean the gauge is better compared to the ones with higher values. Also, the negative values indicate the gauge is tighter than the normal value. A list of the input and output data for each tie material is provided below:
-Wooden Tie
-1.1 Input Data 
+1. Wooden Tie
+    a.Input Data 
 1.1.1 Rating : Condition of Tie- Ranked from 1 to 4
 1.1.2 Askew Angle
 1.1.3 Degree of Curve 	
@@ -379,7 +378,7 @@ Wooden Tie
 1.1.7 Frac_Def_Fasteners
 1.2 Output Data
 1.2.1 Gauge 
-Concrete Tie
+2. Concrete Tie
 2.1 Input Data	
 2.1.1 Rating
 2.1.2 Askew_Angle		
