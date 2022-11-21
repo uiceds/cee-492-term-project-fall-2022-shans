@@ -26,7 +26,7 @@ Frac
 hcat
 histask
 innerjoin
-Lrail
+LRAIL
 milimeters
 Negin
 negins
@@ -47,7 +47,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 TieMaterial
-tieplate
+Tieplate
 TieplateCondition
 UIUC
 Urbana

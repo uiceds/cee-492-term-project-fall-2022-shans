@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d8468b9ae6e5c24975daae1299287941beb14df/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d8468b9ae6e5c24975daae1299287941beb14df/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d8468b9ae6e5c24975daae1299287941beb14df/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fadf32e4d4593e8c22233f58aa7e46329911b375/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fadf32e4d4593e8c22233f58aa7e46329911b375/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fadf32e4d4593e8c22233f58aa7e46329911b375/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d8468b9ae6e5c24975daae1299287941beb14df/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/fadf32e4d4593e8c22233f58aa7e46329911b375/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@9d8468b](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/9d8468b9ae6e5c24975daae1299287941beb14df)
+from [uiceds/cee-492-term-project-fall-2022-shans@fadf32e](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/fadf32e4d4593e8c22233f58aa7e46329911b375)
 on November 21, 2022.
 </em></small>
 
@@ -368,25 +368,25 @@ We followed four approaches to create the predictive model, including two layer 
 ### Data Cleaning
 First step towards creating a predictive model is having a proper data frame with all the input values lined up. It is worth noting that we separated concrete and timber ties into two data frames, and analyzed them separately. As it is mentioned in the EDA section of the project, the dominant tie material in this track is timber. Since concrete and timber behave differently in a significant way, we thought the correct approach is to divide them. To create the clean data frame, we selected the most relevant track features as our input data. The output data is the gauge which is a number between 0 and 1. As mentioned in the EDA phase of the project, this is the difference between the existing gauge value in the track, and the standard gauge. Numbers closer to 0 mean the gauge is better compared to the ones with higher values. Also, the negative values indicate the gauge is tighter than the normal value. A list of the input and output data for each tie material is provided below:
 
-1. Wooden Tie
-    + Input Data 
-1.1.1 Rating : Condition of Tie- Ranked from 1 to 4
-1.1.2 Askew Angle
-1.1.3 Degree of Curve 	
-1.1.4 Total Number of Spikes	
-1.1.5 Total Number of Anchor	
-1.1.6 Frac_Def_TiePlate	
-1.1.7 Frac_Def_Fasteners
-    + Output Data
-1.2.1 Gauge 
-2. Concrete Tie
-    + Input Data	
-2.1.1 Rating
-2.1.2 Askew_Angle		
-2.1.3 Curve	
-2.1.4 Frac_Def_Fasteners
-    + Output Data
-2.2.1 Gauge
+1. Wooden Tie:
+    + Input Data:
+        1. Rating : Condition of Tie- Ranked from 1 to 4
+        2. Askew Angle
+        3. Degree of Curve 	
+        4. Total Number of Spikes	
+        5. Total Number of Anchor	
+        6. Frac_Def_TiePlate	
+        7. Frac_Def_Fasteners
+    + Output Data:
+        1. Gauge 
+2. Concrete Tie:
+    + Input Data:	
+        1. Rating
+        2. Askew_Angle		
+        3. Curve	
+        4. Frac_Def_Fasteners
+    + Output Data:
+        1. Gauge
 
     
 ### Neural Network Modeling
