@@ -77,8 +77,8 @@ content/01.abstract.md:229:dataset
 content/01.abstract.md:229:EDA
 content/01.abstract.md:233:EDA
 content/01.abstract.md:233:EDA
-content/01.abstract.md:255:ReLU
-content/01.abstract.md:255:RMSE
-content/01.abstract.md:269:dataset
-content/01.abstract.md:269:dataset
+content/01.abstract.md:257:ReLU
+content/01.abstract.md:257:RMSE
+content/01.abstract.md:274:dataset
+content/01.abstract.md:274:dataset
 content/deleteme.md:225:frac
