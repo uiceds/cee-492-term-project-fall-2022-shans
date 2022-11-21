@@ -8,7 +8,7 @@
   <meta name="author" content="Negin Shafie" />
   <meta name="author" content="Shirin Qiam" />
   <meta name="author" content="Sadaf Shafie" />
-  <meta name="dcterms.date" content="2022-11-01" />
+  <meta name="dcterms.date" content="2022-11-21" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Relationship Between Track Tie Situation and Its Components Health Conditions</title>
   <style>
@@ -50,8 +50,8 @@
   <meta name="citation_title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta property="og:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta property="twitter:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
-  <meta name="dc.date" content="2022-11-01" />
-  <meta name="citation_publication_date" content="2022-11-01" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/740e3182396fc22bac4d80d320e024768e821de7/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/740e3182396fc22bac4d80d320e024768e821de7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/740e3182396fc22bac4d80d320e024768e821de7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c99efc6a3cd5595f374de661377d09471bd1fe16/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/740e3182396fc22bac4d80d320e024768e821de7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/c99efc6a3cd5595f374de661377d09471bd1fe16">uiceds/cee-492-term-project-fall-2022-shans@c99efc6</a>
-on November 1, 2022.
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/740e3182396fc22bac4d80d320e024768e821de7">uiceds/cee-492-term-project-fall-2022-shans@740e318</a>
+on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -455,6 +455,9 @@ The median values showed with the lines inside each box indicate that bad ties c
 </div>
 <h2 class="page_break_before" id="predictive-modeling">Predictive Modeling</h2>
 <p>As our next step, we want to use this dataset and the information we gained about it to develop a predictive model. Our goal is to identify track degradation predictors and their contribution weight to the overall degradation. By doing so, we can know about the probable defects in track before they actually happen, which is categorized as preventive maintenance practice. This maintenance method is more cost-efficient and can aim the railroad companies in better allocating their resources. Based on our results we decided to move on with the relationship between Gauge, Curve, Tie Condition, Number of Spikes, and maximum Askew Angle.</p>
+<p>We tried to develop a predictive model based on what we have learned about our dataset in the Exploratory Data Analysis section. In the EDA phase, we analyzed the dataset by plotting the distribution of different conditions of various elements of the track, followed by attempting to find potential correlations between different attributes of the track elements. The results suggest that most of the elements under study are not correlated to each other. However, our team believes that there could be a meaningful relation between the track components’ condition or existence and gauge. As mentioned before, gauge is the distance between two rails, which has a standard value that needs to be maintained. Wide gauges would cause derailment, and that is why gauge is considered to be among one of the most important features of the track when it comes to inspection, or defect prediction. Therefore, we decided to have gauge as the output of our predictive model. Having a model that accurately predicts gauge could be a helpful tool for the railroad industry since it will decrease the need for geometry data collection.
+We followed four approaches to create the predictive model, including two layer Neural Network model, three layer Neural Network model, Decision Tree, and Random Forest. The accuracy of all models are unanimously low, which suggests there is not a considerable correlation between the input values, and the output data. More detailed explanation and suggested path forward is provided in the following sections of this project deliverable.</p>
+<h3 id="data-cleaning">Data Cleaning</h3>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
