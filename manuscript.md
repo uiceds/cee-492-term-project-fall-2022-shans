@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/402cfd3c73a761f2fc13a94818bad64430c854e8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/402cfd3c73a761f2fc13a94818bad64430c854e8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/402cfd3c73a761f2fc13a94818bad64430c854e8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d2fc5f0d390c4adbb2d16f5122218da3bb0f1475/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d2fc5f0d390c4adbb2d16f5122218da3bb0f1475/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d2fc5f0d390c4adbb2d16f5122218da3bb0f1475/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/402cfd3c73a761f2fc13a94818bad64430c854e8/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d2fc5f0d390c4adbb2d16f5122218da3bb0f1475/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@402cfd3](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/402cfd3c73a761f2fc13a94818bad64430c854e8)
+from [uiceds/cee-492-term-project-fall-2022-shans@d2fc5f0](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/d2fc5f0d390c4adbb2d16f5122218da3bb0f1475)
 on November 21, 2022.
 </em></small>
 
@@ -241,19 +241,19 @@ The corrplot indicates that there is no correlation between askew angle and anch
 
 Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc shows these histograms. 
 
-![](images/hist_all_ask_anc.PNG)
-{#fig:hist_all_ask_anc}
+![Histogram of different number of Anchors](images/hist_all_ask_anc.PNG)
+{#fig:hist_all_ask_anc height=2in}
 
 Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
 
-![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc}
+![](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=2in}
 
 <u> Plotting boxplot: </u> 
 
 The last graph we plot is a boxplot which provides a good sense of statistics to compare skew angle with different total numbers of anchors. Figure @fig:bo_ask_anc shows these boxplots and confirms no such difference between the mean and other statistics of askew angle.
 
 ![](images/box_ask_anc.PNG)
-{#fig:bo_ask_anc}
+{#fig:bo_ask_anc height=2in}
 
 <u> Conclusion: </u>
 
@@ -277,7 +277,7 @@ The first thing we can plot to check whether some variables are correlated or no
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatt_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
 ![](images/scatter_ask_spi.PNG)
-{#fig:scatt_ask_spi}
+{#fig:scatt_ask_spi height=2in}
 
 <u> Correlation between maximum askew angle and the number of spikes: </u> 
 
