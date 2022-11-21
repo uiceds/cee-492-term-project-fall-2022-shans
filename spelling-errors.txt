@@ -12,7 +12,7 @@ concretecon
 consistant
 contactless
 Convolutional
-Corrplot
+corrplot
 coulmns
 dataframe
 dataset
@@ -27,10 +27,11 @@ Frac
 hcat
 histask
 innerjoin
-LRAIL
+Lrail
 milimeters
 Negin
 negins
+NN
 qiam
 RailTEC
 Rateing
@@ -49,8 +50,9 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 TieMaterial
-TiePlate
+tieplate
 TieplateCondition
+Tieplates
 UIUC
 Urbana
 woodcon
