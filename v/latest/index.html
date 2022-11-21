@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b0c3a142ea6e7233e502409ad71ea09079a1e32c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b0c3a142ea6e7233e502409ad71ea09079a1e32c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b0c3a142ea6e7233e502409ad71ea09079a1e32c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b0c3a142ea6e7233e502409ad71ea09079a1e32c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/7537077c6e14b1432705c8d2f6397f4fe088c47a">uiceds/cee-492-term-project-fall-2022-shans@7537077</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b0c3a142ea6e7233e502409ad71ea09079a1e32c">uiceds/cee-492-term-project-fall-2022-shans@b0c3a14</a>
 on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -505,20 +505,20 @@ We followed four approaches to create the predictive model, including two layer 
 </ul></li>
 </ol>
 <h3 id="neural-network-modeling">Neural Network Modeling</h3>
-<p>The first approach is creating a two layer Neural Network model. The input data is fed into the model, then two Dense layers, followed by the ReLU function is applied to the data. The loss function in the gradient descent method is Cross-Entropy for these models. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model. Root Mean Squared Error (RMSE) as the evaluation criteria was about 0.107 and 0.11 for wooden and concrete ties, respectively, which is considerable in comparison to the mean value for the output (about 0.15). Figure 1 and Figure 2 represent the scatter plot of the model for wooden ties and concrete ties respectively.</p>
-<p><img src="images/A.png" alt="Two Layer NN for Wooden Ties" />){#fig:TieMaterial}</p>
-<p><img src="images/B.png" alt="Two Layer NN for Concrete Ties" />){#fig:TieMaterial}</p>
+<p>The first approach is creating a two layer Neural Network model. The input data is fed into the model, then two Dense layers, followed by the ReLU function is applied to the data. The loss function in the gradient descent method is Cross-Entropy for these models. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model. Root Mean Squared Error (RMSE) as the evaluation criteria was about 0.107 and 0.11 for wooden and concrete ties, respectively, which is considerable in comparison to the mean value for the output (about 0.15). Figure 16 and Figure 17 represent the scatter plot of the model for wooden ties and concrete ties respectively.</p>
+<p><img src="images/A.png" alt="Two Layer NN for Wooden Ties" />){#fig:Two Layer NN for Wooden Ties}</p>
+<p><img src="images/B.png" alt="Two Layer NN for Concrete Ties" />){#fig:Two Layer NN for Concrete Ties}</p>
 <p>This low accuracy means the model needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However, none of the mentioned methods lead to an improved model accuracy.
 The second approach is similar to the first one, but it has three dense layers instead of two to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had an accuracy of 0.104.
-Figure 3 illustrates the scatter plot of the three layer model results for wooden ties.</p>
-<p><img src="images/C.png" alt="Three Layer NN for Wooden Ties" />){#fig:TieMaterial}</p>
+Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.</p>
+<p><img src="images/C.png" alt="Three Layer NN for Wooden Ties" />){#fig:Three Layer NN for Wooden Ties}</p>
 <h3 id="decision-tree">Decision Tree</h3>
 <p>The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, DecisionTree. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model.
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory.</p>
 <h3 id="random-forest">Random Forest</h3>
-<p>The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 4 and figure 5 represent the results for wooden ties and concrete ties respectively.</p>
-<p><img src="images/D.png" alt="Random Forest for Wooden Ties" />){#fig:TieMaterial}</p>
-<p><img src="images/E.png" alt="Random Forest for Concrete Ties" />){#fig:TieMaterial}</p>
+<p>The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively.</p>
+<p><img src="images/D.png" alt="Random Forest for Wooden Ties" />){#fig:Random Forest for Wooden Ties}</p>
+<p><img src="images/E.png" alt="Random Forest for Concrete Ties" />){#fig:Random Forest for Concrete Ties}</p>
 <h3 id="conclusion">Conclusion</h3>
 <p>Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of these methods could provide a satisfactory level of accuracy and as we can see in their figures, all of them show no pattern. Our first hypothesis on this is maybe there is not an efficient way of predicting the gauge based on the track data we currently have. To be more specific, it is possible that there are other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set, or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the potential items that have an impact on the gauge are listed below:</p>
 <ol type="1">
