@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/806dfe346f5c5a432c6d99ee9260af4623fa656b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/806dfe346f5c5a432c6d99ee9260af4623fa656b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/806dfe346f5c5a432c6d99ee9260af4623fa656b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/827ba5a9340c0e1a943026e4448be04255e9c5c8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/827ba5a9340c0e1a943026e4448be04255e9c5c8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/827ba5a9340c0e1a943026e4448be04255e9c5c8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/806dfe346f5c5a432c6d99ee9260af4623fa656b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/827ba5a9340c0e1a943026e4448be04255e9c5c8/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@806dfe3](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/806dfe346f5c5a432c6d99ee9260af4623fa656b)
+from [uiceds/cee-492-term-project-fall-2022-shans@827ba5a](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/827ba5a9340c0e1a943026e4448be04255e9c5c8)
 on November 21, 2022.
 </em></small>
 
@@ -398,6 +398,15 @@ The first approach is creating a two layer Neural Network model. The input data 
 This low accuracy means the model needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
 The second approach is similar to the first one, but  it has three dense layers instead of two to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had an accuracy of 0.104.
 Figure 3 illustrates the scatter plot of the three layer model results for wooden ties.
+
+Conclusion
+Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of these methods could provide a satisfactory level of accuracy and as we can see in their figures, all of them show no pattern. Our first hypothesis on this is maybe there is not an efficient way of predicting the gauge based on the track data we currently have. To be more specific, it is possible that there are other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set, or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the potential items that have an impact on the gauge are listed below:
+  1) Ballast condition 
+  2) Lateral strength of the track provided by the shoulder ballast
+  3) Longitudinal strength of the track provided by crib ballast
+  4) Vertical loads including static, dynamic and impact loads
+  5) Speed of the trains ( It does not directly affect the gauge, but since the loads transferred from the wheels to track is heavily dependent on the        speed, it could be a good idea to study speed individually.) 
+A better solution could be collecting multiple data sets from the same section of the track over time. This helps monitoring the track condition with the passage of time, which provides more insight on the pattern of the defections on the track, which in our case is the gauge. Adapting this method, we can track the gauge over time, and identify the sections of the track in which the gauge is getting wider aggressively, and by analyzing track features of those sections we can identify the elements with dominant impacts on the gauge, and new models could be applied to them to check for potential correlation, and ultimately having a working predictive model. It is also worth noting that if the current dataset had a time stamp, it was possible to compare the gauge situation with just one dataset. 
 
 
 
