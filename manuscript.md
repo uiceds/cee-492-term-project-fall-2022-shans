@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@a0bb6ee](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821)
+from [uiceds/cee-492-term-project-fall-2022-shans@7537077](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/7537077c6e14b1432705c8d2f6397f4fe088c47a)
 on November 21, 2022.
 </em></small>
 
@@ -287,7 +287,7 @@ During the EDA section we tried to look for relationships between the gauge of t
 To be reasonable in this section, the analysis are divided between concrete and Wooden ties, since they have different characteristics that make it harder compare both together.
 The most directly relationship is the gauge of the track and the condition of the ties. Based on the technology used the concrete ties are graded from 0 (Good) to 2 (Bad). 1 (Fair) is a intermediate condition. The following graph represents the distribution of gauge deviation by each concrete tie rating.
 
-![](images/Gauge_and_Tie_Rating_Concrete.png)
+![](images/Gauge_and_Tie_Rating_Concrete_2.png)
 
 Intuitively we can think that bad ties would have wide gauge, but for this specific region it is not the case. Comparing the median values we see that the values are not too far from each other. Another interesting finding is that the max value does not have big changes when changing the tie rating, indicating that any tie rating can have a gauge defect.
 
@@ -295,7 +295,7 @@ Intuitively we can think that bad ties would have wide gauge, but for this speci
 
 Now let’s look to the same criteria but for Wooden ties. Wooden ties have one more bin for classification, still following the same idea as 0 being Good and 3 being Bad. The following graph shows the distribution of gauge deviation by each wooden tie rating.
 
-![](images/Gauge_and_Tie_Rating_Wooden.png)
+![](images/Gauge_and_Tie_Rating_Wooden_2.png)
 
 First thing to mention is that the Good ties (Condition 0) has more outliers than the other ones, this can be related to the fact that there are a lot more ties with this condition than the other ones. In contrast to the concrete ties, the median gets slightly higher when we have a bad condition tie, indicating that the condition of the tie can be related to the gauge of the track. Comparing the max values, only condition zero (Good) and 3 (Bad) have higher max values. It makes sense for condition 3 (Bad) ties but measurement errors should be account for condition 0 (Good) ties.
 
@@ -303,7 +303,7 @@ First thing to mention is that the Good ties (Condition 0) has more outliers tha
 
 The next component to be investigated is the tie plate. Only wooden ties have tie plates. Their main function is to support the rail and distribute the load on the ties. Normal wooden ties have two tie plates – one per rail. The metric used to analyze the data is the number of defective tie plates per tie, 0 being a tie with 2 tie plates and 2 a tie plate without tie plates in good condition. The following graph shows the distribution of gauge deviation by the number of defectives tie plates per wooden tie.
 
-![](images/Gauge_and_Tie_Plate_Wooden.png)
+![](images/Gauge_and_Tie_Plate_Wooden_2.png)
 
 Again, the number of outliers for ties with two tie plates must be taken into consideration since this is the highest population on the dataset. The main takeaway is that the number of defective tie plates are not directly related to the gauge.
 
@@ -311,7 +311,7 @@ Again, the number of outliers for ties with two tie plates must be taken into co
 
 Fasteners are the components that have hold down force to hold the rails connected to the tie plates. They are used in very specific situations in the railroad, such as tight curves, switches and grade crossings. When used, each tie has four fasteners, two per rail, one on each side of the rail. Fasteners may or may not be used in wooden ties but must be used in concrete ties. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per wooden tie.
 
-![](images/Gauge_and_Fasteners_Wooden.png)
+![](images/Gauge_and_Fasteners_Wooden_2.png)
 
 Outside the outliers for ties without any defective fasteners, ties with only two defective fasteners have more variability in gauge. It can be explained by the fact that if the two missing fasteners are on the outside side of the rails, it is likely that the gauge will be widened. The ties with 3 and 4 bad fasteners are not that common, but when they happen they have wider gauge than the ties in better condition. Only one bad fastener does not have much influence in the gauge.
  
@@ -319,7 +319,7 @@ Outside the outliers for ties without any defective fasteners, ties with only tw
  
 For concrete ties there were no ties with zero defective fasteners (all four fasteners present) or with 4 defective fasteners (no fasteners at all). That can be related to the fact of having less concrete ties in the section analyzed. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per concrete tie.
  
- ![](images/Gauge_and_Fasteners_Concrete.png)
+ ![](images/Gauge_and_Fasteners_Concrete_2.png)
  
 Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.
 
@@ -392,28 +392,28 @@ First step towards creating a predictive model is having a proper data frame wit
 
     
 ### Neural Network Modeling
-The first approach is creating a two layer Neural Network model. The input data is fed into the model, then two Dense layers, followed by  the ReLU function is applied to the data. The loss function in the gradient descent method is Cross-Entropy for these models. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model.  Root Mean Squared Error (RMSE) as the evaluation criteria was about 0.107 and 0.11 for wooden and concrete ties, respectively, which is considerable in comparison to the mean value for the output (about 0.15). Figure 16 and Figure 17 represent the scatter plot of the model for wooden ties and concrete ties respectively. 
+The first approach is creating a two layer Neural Network model. The input data is fed into the model, then two Dense layers, followed by  the ReLU function is applied to the data. The loss function in the gradient descent method is Cross-Entropy for these models. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model.  Root Mean Squared Error (RMSE) as the evaluation criteria was about 0.107 and 0.11 for wooden and concrete ties, respectively, which is considerable in comparison to the mean value for the output (about 0.15). Figure 1 and Figure 2 represent the scatter plot of the model for wooden ties and concrete ties respectively. 
 
-![Two Layer NN for Wooden Ties](images/A.png)){#fig:Two Layer NN for Wooden Ties}
+![Two Layer NN for Wooden Ties](images/A.png)){#fig:TieMaterial}
 
-![Two Layer NN for Concrete Ties](images/B.png)){#fig:Two Layer NN for Concrete Ties}
+![Two Layer NN for Concrete Ties](images/B.png)){#fig:TieMaterial}
 
 This low accuracy means the model needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
 The second approach is similar to the first one, but  it has three dense layers instead of two to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had an accuracy of 0.104.
-Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
+Figure 3 illustrates the scatter plot of the three layer model results for wooden ties.
 
-![Three Layer NN for Wooden Ties](images/C.png)){#fig:Three Layer NN for Wooden Ties}
+![Three Layer NN for Wooden Ties](images/C.png)){#fig:TieMaterial}
 
 ### Decision Tree
 The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, DecisionTree. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
 
-### Random Forest 
-The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively. 
+### Random Forest
+The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 4 and figure 5 represent the results for wooden ties and concrete ties respectively. 
 
-![Random Forest for Wooden Ties](images/D.png)){#fig:Random Forest for Wooden Ties}
+![Random Forest for Wooden Ties](images/D.png)){#fig:TieMaterial}
 
-![Random Forest for Concrete Ties](images/E.png)){#fig:Random Forest for Concrete Ties}
+![Random Forest for Concrete Ties](images/E.png)){#fig:TieMaterial}
 
 
 ### Conclusion
