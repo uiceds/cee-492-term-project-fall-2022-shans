@@ -10,7 +10,7 @@ Champaign
 consistant
 contactless
 Convolutional
-corrplot
+Corrplot
 coulmns
 dataframe
 dataset
@@ -25,12 +25,12 @@ Frac
 hcat
 histask
 innerjoin
-LRAIL
+Lrail
 milimeters
 Negin
 negins
 NN
-Qiam
+qiam
 RailTEC
 Rateing
 ReLU
@@ -47,7 +47,7 @@ SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-Tieplate
+TiePlate
 TieplateCondition
 Tieplates
 UIUC
