@@ -30,7 +30,7 @@ Lrail
 milimeters
 Negin
 negins
-Qiam
+qiam
 RailTEC
 ReLU
 RMSE
@@ -47,7 +47,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 TieMaterial
-Tieplate
+TiePlate
 TieplateCondition
 UIUC
 Urbana
