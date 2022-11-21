@@ -408,7 +408,7 @@ Figure 18 illustrates the scatter plot of the three layer model results for wood
 The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, DecisionTree. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
 
-### Random Forest
+### Random Forest 
 The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively. 
 
 ![Random Forest for Wooden Ties](images/D.png)){#fig:Random Forest for Wooden Ties}
