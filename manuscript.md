@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/4f7364cfea26027e0697d83738967aa7b8a3b15d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/4f7364cfea26027e0697d83738967aa7b8a3b15d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/4f7364cfea26027e0697d83738967aa7b8a3b15d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/58ecf39707f480502ee0adbc098fffa9dca89551/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/4f7364cfea26027e0697d83738967aa7b8a3b15d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@58ecf39](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/58ecf39707f480502ee0adbc098fffa9dca89551)
+from [uiceds/cee-492-term-project-fall-2022-shans@4f7364c](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/4f7364cfea26027e0697d83738967aa7b8a3b15d)
 on November 21, 2022.
 </em></small>
 
@@ -344,17 +344,17 @@ So far, we know that there are two different tie materials in our data set with 
 Box plots for concrete tie is shown below in @fig:4. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
 The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.
 
-![Filtered Curvature Histogram](content/images/4.png){#fig:4=4in}
+![Concrete Tie Rateing vs Curve](content/images/4.png){#fig:4=4in}
 
 Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
 
-![Filtered Curvature Histogram](content/images/5.png){#fig:5=4in}
+![Wooden Tie Rating vs Curve](content/images/5.png){#fig:5=4in}
 
 ### Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
 
 We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![Filtered Curvature Histogram](content/images/6.png){#fig:6=4in}
+![Number of Spikes per Tie vs Curve](content/images/6.png){#fig:6=4in}
 
 
 
