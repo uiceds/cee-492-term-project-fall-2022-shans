@@ -30,7 +30,7 @@ Lrail
 milimeters
 Negin
 negins
-qiam
+Qiam
 RailTEC
 ReLU
 RMSE
