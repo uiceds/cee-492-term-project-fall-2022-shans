@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/7537077c6e14b1432705c8d2f6397f4fe088c47a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821">uiceds/cee-492-term-project-fall-2022-shans@a0bb6ee</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/7537077c6e14b1432705c8d2f6397f4fe088c47a">uiceds/cee-492-term-project-fall-2022-shans@7537077</a>
 on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -388,32 +388,32 @@ Following the same methodology explained for ties, we plotted the histogram of d
 To be reasonable in this section, the analysis are divided between concrete and Wooden ties, since they have different characteristics that make it harder compare both together.
 The most directly relationship is the gauge of the track and the condition of the ties. Based on the technology used the concrete ties are graded from 0 (Good) to 2 (Bad). 1 (Fair) is a intermediate condition. The following graph represents the distribution of gauge deviation by each concrete tie rating.</p>
 <figure>
-<img src="images/Gauge_and_Tie_Rating_Concrete.png" />
+<img src="images/Gauge_and_Tie_Rating_Concrete_2.png" />
 </figure>
 <p>Intuitively we can think that bad ties would have wide gauge, but for this specific region it is not the case. Comparing the median values we see that the values are not too far from each other. Another interesting finding is that the max value does not have big changes when changing the tie rating, indicating that any tie rating can have a gauge defect.</p>
 <h3 id="relationship-between-gauge-deviation-and-wooden-tie-rating">Relationship between Gauge Deviation and Wooden Tie Rating</h3>
 <p>Now let’s look to the same criteria but for Wooden ties. Wooden ties have one more bin for classification, still following the same idea as 0 being Good and 3 being Bad. The following graph shows the distribution of gauge deviation by each wooden tie rating.</p>
 <figure>
-<img src="images/Gauge_and_Tie_Rating_Wooden.png" />
+<img src="images/Gauge_and_Tie_Rating_Wooden_2.png" />
 </figure>
 <p>First thing to mention is that the Good ties (Condition 0) has more outliers than the other ones, this can be related to the fact that there are a lot more ties with this condition than the other ones. In contrast to the concrete ties, the median gets slightly higher when we have a bad condition tie, indicating that the condition of the tie can be related to the gauge of the track. Comparing the max values, only condition zero (Good) and 3 (Bad) have higher max values. It makes sense for condition 3 (Bad) ties but measurement errors should be account for condition 0 (Good) ties.</p>
 <h3 id="relationship-between-gauge-deviation-and-tie-plate-condition">Relationship between Gauge Deviation and Tie Plate Condition</h3>
 <p>The next component to be investigated is the tie plate. Only wooden ties have tie plates. Their main function is to support the rail and distribute the load on the ties. Normal wooden ties have two tie plates – one per rail. The metric used to analyze the data is the number of defective tie plates per tie, 0 being a tie with 2 tie plates and 2 a tie plate without tie plates in good condition. The following graph shows the distribution of gauge deviation by the number of defectives tie plates per wooden tie.</p>
 <figure>
-<img src="images/Gauge_and_Tie_Plate_Wooden.png" />
+<img src="images/Gauge_and_Tie_Plate_Wooden_2.png" />
 </figure>
 <p>Again, the number of outliers for ties with two tie plates must be taken into consideration since this is the highest population on the dataset. The main takeaway is that the number of defective tie plates are not directly related to the gauge.</p>
 <h3 id="relationship-between-gauge-deviation-and-number-of-defective-fasteners-on-wooden-ties">Relationship between Gauge Deviation and Number of Defective Fasteners on Wooden Ties</h3>
 <p>Fasteners are the components that have hold down force to hold the rails connected to the tie plates. They are used in very specific situations in the railroad, such as tight curves, switches and grade crossings. When used, each tie has four fasteners, two per rail, one on each side of the rail. Fasteners may or may not be used in wooden ties but must be used in concrete ties. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per wooden tie.</p>
 <figure>
-<img src="images/Gauge_and_Fasteners_Wooden.png" />
+<img src="images/Gauge_and_Fasteners_Wooden_2.png" />
 </figure>
 <p>Outside the outliers for ties without any defective fasteners, ties with only two defective fasteners have more variability in gauge. It can be explained by the fact that if the two missing fasteners are on the outside side of the rails, it is likely that the gauge will be widened. The ties with 3 and 4 bad fasteners are not that common, but when they happen they have wider gauge than the ties in better condition. Only one bad fastener does not have much influence in the gauge.
  
 <u> Relationship between Gauge Deviation and Number of Defective Fasteners on Concrete Ties </u></p>
 <p>For concrete ties there were no ties with zero defective fasteners (all four fasteners present) or with 4 defective fasteners (no fasteners at all). That can be related to the fact of having less concrete ties in the section analyzed. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per concrete tie.</p>
 <figure>
-<img src="images/Gauge_and_Fasteners_Concrete.png" />
+<img src="images/Gauge_and_Fasteners_Concrete_2.png" />
 </figure>
 <p>Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.</p>
 <h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-gauge-deviation">Is there a meaningful relation between the Degree of Curvature and Gauge Deviation?</h3>
