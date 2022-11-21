@@ -1,5 +1,4 @@
 anc
-anchorr
 AnchorROI
 artbil
 baseplate
@@ -8,11 +7,10 @@ boxplot
 boxplots
 CFR
 Champaign
-concretecon
 consistant
 contactless
 Convolutional
-corrplot
+Corrplot
 coulmns
 dataframe
 dataset
@@ -27,7 +25,7 @@ Frac
 hcat
 histask
 innerjoin
-Lrail
+LRAIL
 milimeters
 Negin
 negins
@@ -50,10 +48,9 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 TieMaterial
-tieplate
+Tieplate
 TieplateCondition
 Tieplates
 UIUC
 Urbana
-woodcon
 XXXX

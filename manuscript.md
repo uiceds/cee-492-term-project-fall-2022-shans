@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6c0d6abc72c4e2f7f409d675d80f929e3a5ecdc2/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6c0d6abc72c4e2f7f409d675d80f929e3a5ecdc2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6c0d6abc72c4e2f7f409d675d80f929e3a5ecdc2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6c0d6abc72c4e2f7f409d675d80f929e3a5ecdc2/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@6c0d6ab](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/6c0d6abc72c4e2f7f409d675d80f929e3a5ecdc2)
+from [uiceds/cee-492-term-project-fall-2022-shans@a0bb6ee](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a0bb6eeec8ec691a6a46edadd8f9a96646b3f821)
 on November 21, 2022.
 </em></small>
 
@@ -169,47 +169,49 @@ Table 1: Description of data
 | TieplateCondition_Right | int | 1-5 |  | Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted |
 | Latitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
 | Longitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
+| GAUGE | float | -inf to +inf | inch | distance between rails |
+| CURVE | float | -inf to +inf | degrees | degree of curvature |
 
 
 
 
 ## Exploratory Data Analysis {.page_break_before}
 ### Statistical Analysis on Track Elements-Tie
-In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:TieMaterial shows the total number of each tie material. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
+In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:A4 shows the total number of each tie material. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
 
-![Tie Material](images/A4.png)){#fig:TieMaterial}
+![Tie Material](images/A4.png)){#fig:A4 height=4in}
 
-The data set provides condition ratings for each type of tie. Figure @fig:concretecon  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to eliminate the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
+The data set provides condition ratings for each type of tie. Figure @fig:A1  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to eliminate the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
 
-![Condition of Concrete Ties](images/A1.png)){#fig:TieMaterial}
+![Condition of Concrete Ties](images/A1.png)){#fig:A1 height=4in}
 
-The same process was done to get the health condition of wooden ties. Figure @fig:woodcon shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties.  The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
+The same process was done to get the health condition of wooden ties. Figure @fig:A2 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties.  The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
 
-![Condition of Wooden (Timber) Ties](images/A2.png)){#fig:TieMaterial}
+![Condition of Wooden (Timber) Ties](images/A2.png)){#fig:A2 height=4in}
 
 Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this report.
 
 ### Statistical Analysis on Track Elements-Tieplate
 Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of wooden ties. 
-Following the same methodology explained for ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure @fig:tieplate, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions. 
+Following the same methodology explained for ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure @fig:A3, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions. 
 
-![Condition of Tieplates](images/A3.png)){#fig:TieMaterial}
+![Condition of Tieplates](images/A3.png)){#fig:A3 height=4in}
 
 ### Statistical Analysis on Track Elements-Anchor
-We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 columns in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure @fig:anchorr illustrates this.
+We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 columns in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure @fig:A5 illustrates this.
 
-![Condition of Anchors](images/A3.png)){#fig:TieMaterial}
+![Condition of Anchors](images/A5.png)){#fig:A5 height=4in}
 
 ### Statistical Analysis on Track Elements-Fastener
 Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure @fig:fastener. 
 
-![](images/fastener.PNG){#fig:fastener}
+![](images/fastener.PNG){#fig:fastener height=4in}
 
 ### Does Askew Angle relate to the number of anchors?
 Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle.  Figure @fig:Anchor shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie. 
 
 
-![Anchor Regions](images/Anchor.PNG){#fig:Anchor}
+![Anchor Regions](images/Anchor.PNG){#fig:Anchor height=4in}
 
 <u> Selecting related columns: </u>  
 
