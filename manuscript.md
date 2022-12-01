@@ -392,13 +392,22 @@ First step towards creating a predictive model is having a proper data frame wit
 
     
 ### Neural Network Modeling
-The first approach is creating a two layer Neural Network model. The input data is fed into the model, then two Dense layers, followed by  the ReLU function is applied to the data. The loss function in the gradient descent method is Cross-Entropy for these models. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model.  Root Mean Squared Error (RMSE) as the evaluation criteria was about 0.107 and 0.11 for wooden and concrete ties, respectively, which is considerable in comparison to the mean value for the output (about 0.15). Figure 16 and Figure 17 represent the scatter plot of the model for wooden ties and concrete ties respectively. 
+The first approach is creating a two layer Neural Network model. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model. The input data is fed into the model, and two Dense layers are applied to the data. We used multiple combinations of different activation functions to get the best fitting model. The loss function used in all models is Mean Square Error (MSE). Mentioned combinations are listed below:
+
+1. Dense -> ReLU -> Dense -> Logit
+2. Dense -> ReLU -> Dense -> ReLU
+3. Dense -> Tanh -> Dense -> Logit
+
+
+The Root Mean Squared Error (RMSE) was calculated for the test data, to evaluate the accuracy model. The RMSE value for the best performed model was about 0.107 and 0.11 for wooden and concrete ties, respectively. These amounts are considerable in comparison to the mean values for the output data, which is about 0.15. The performance of the mentioned models on the test data is illustrated in Figure 16 and Figure 17, which represent the wooden ties and concrete ties respectively. 
 
 ![Two Layer NN for Wooden Ties](images/A.png){#fig:Two Layer NN for Wooden Ties height=4in}
 
 ![Two Layer NN for Concrete Ties](images/B.png){#fig:Two Layer NN for Concrete Ties height=4in}
 
-This low accuracy means the model needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
+The RMSE values suggest that the models needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. We also tried to label our data into "bad" and "good" conditions. We set a threshold 
+As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
+The RMSE values suggest that the models needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
 The second approach is similar to the first one, but  it has three dense layers instead of two to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had an accuracy of 0.104.
 Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
 
