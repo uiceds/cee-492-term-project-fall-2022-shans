@@ -164,7 +164,7 @@ Table 1: Description of data
 | SpikeTotalROI_1 to 4 | int | 0-inf |  | Number of spike in each ROI on tie |
 | SpikeMean_Height_ROI1_mm | float | 0-inf | milimeters | The mean height of all tie in each ROI on tie. The unit is millimeter |
 | SpikeNearRailROI_1 | int | 0-inf |  | Number of spike is near the rail boundary in each ROI on tie |
-| AnchorROI_1 | int | 0-inf |  | Number of anchor in each ROI (relating to the tie) |
+| AnchorROI_1 | int | 0-inf |  | Number of anchor in each ROI (relating to the tie) | 
 | Tieplate_Right | int | 0-inf |  | Number of tieplate on left/right side of tie |
 | TieplateCondition_Right | int | 1-5 |  | Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted |
 | Latitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
