@@ -1,5 +1,5 @@
 ---
-title: Relationship Between Track Tie Situation and Its Components' Health Conditions
+title: Relationship Between Track Geometry and Track Components’ Health Conditions
 keywords:
 - markdown
 - publishing
