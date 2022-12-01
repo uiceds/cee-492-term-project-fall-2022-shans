@@ -390,9 +390,9 @@ First step towards creating a predictive model is having a proper data frame wit
     + Output Data:
         1. Gauge
 
-    
+### Regression     
 ### Neural Network Modeling
-The first approach is creating a two layer Neural Network model. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model. The input data is fed into the model, and two Dense layers are applied to the data. We used multiple combinations of different activation functions to get the best fitting model. The loss function used in all models is Mean Square Error (MSE). Mentioned combinations are listed below:
+The first approach is creating a two layer Neural Network model. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model. In order to split the data into two categories (train data and test data), we selected first 150000 rows of the data frame as the train data and the 38000 remaining as the test data. Since different rows of the dataframe are not correlated to each other, this method is considered to be random data selection. The input data is fed into the model, and two Dense layers are applied to the data. We used multiple combinations of different activation functions to get the best fitting model. The loss function used in all models is Mean Square Error (MSE). Mentioned combinations are listed below:
 
 1. Dense -> ReLU -> Dense -> Logit
 2. Dense -> ReLU -> Dense -> ReLU
@@ -405,14 +405,17 @@ The Root Mean Squared Error (RMSE) was calculated for the test data, to evaluate
 
 ![Two Layer NN for Concrete Ties](images/B.png){#fig:Two Layer NN for Concrete Ties height=4in}
 
-The RMSE values suggest that the models needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that based on the results of the explotary data analysis section of the project, had a lower impact on the gauge, such as Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. We also tried to label our data into "bad" and "good" conditions. We set a threshold or the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. Since the majority of the data is in good condition, the total number of "bad" data was 300 which compared to our dataframe size, is not considerable. However,  none of the mentioned methods lead to an improved model accuracy.
-The second approach is similar to the first one, but  it has three dense layers instead of two, to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had three dense layers followed by ReLU functions at each layer, and an accuracy of 0.104.
-Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
+The RMSE values suggest that the models needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that based on the results of the explotary data analysis section of the project, had a lower impact on the gauge, such as Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. We also tried to label our data into "bad" and "good" conditions. We set a threshold for the output data that considers just observations with a Gauge value more than 0.75 as the bad condition. Since the majority of the data is in good condition, the total number of "bad" data was 300 which compared to our dataframe size, is not considerable. However,  none of the mentioned methods lead to an improved model accuracy.
+The second approach is similar to the first one, but  it has three dense layers instead of two, to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. Two combinations of activation functions have been tested in this phase, which are listed below:
+1. Dense -> ReLU -> Dense -> ReLU -> Dense -> ReLU
+2. Dense -> Tanh -> Dense -> Tanh -> Dense -> Logit 
+The best three layer model's accuracy was 0.104, which is relatively low and close to the results of the two layer model. Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
 
 ![Three Layer NN for Wooden Ties](images/C.png){#fig:Three Layer NN for Wooden Ties height=4in}
-
+### Classification
 ### Decision Tree
 The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, DecisionTree. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
+To start with the modeling, we needed to create some sort of labeling for our data. As mentioned in the previous section, the 0.75 gauge treshold did not provide enough "bad" data. We changed the threshold to 0.5, and this time we got around 3000 "bad" samples. This is much better than the previous threshold, but since we have a total of 180000 samples, the ratio between bad samples and good samples is so low, which is known as imbalanced data in Computer Science. To deal with this issue, we randomly picked 3000 good samples, and combined the bad and good samples into a new dataframe. To do so, We used two functions, one for creating this new data frame out of two separate dataframes, and second one was used to shufle these 6000 rows of data. Shufling was done to avoid having a pattern in our data frame. Then we split the data into train data which was used to train the model, and the test data, which was used to evaluate the accuracy of the model. 
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
 
 ### Random Forest
