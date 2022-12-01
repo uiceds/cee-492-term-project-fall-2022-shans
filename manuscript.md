@@ -396,7 +396,7 @@ The first approach is creating a two layer Neural Network model. We used 80% of 
 
 1. Dense -> ReLU -> Dense -> Logit
 2. Dense -> ReLU -> Dense -> ReLU
-3. Dense -> Tanh -> Dense -> Logit
+3. Dense -> Tanh -> Dense -> Logit 
 
 
 The Root Mean Squared Error (RMSE) was calculated for the test data, to evaluate the accuracy model. The RMSE value for the best performed model was about 0.107 and 0.11 for wooden and concrete ties, respectively. These amounts are considerable in comparison to the mean values for the output data, which is about 0.15. The performance of the mentioned models on the test data is illustrated in Figure 16 and Figure 17, which represent the wooden ties and concrete ties respectively. 
