@@ -356,7 +356,7 @@ Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from
 
 We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![Number of Spikes per Tie vs Curve](images/6.PNG){#fig:6 height=4in}
+![Number of Spikes per Tie vs Curve](images/6.PNG){#fig:6 height=4in} 
 
 
 
