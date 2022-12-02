@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0a2959f87b7185c131f8dca45daaac756e5b619c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0a2959f87b7185c131f8dca45daaac756e5b619c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0a2959f87b7185c131f8dca45daaac756e5b619c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dfabdc71321a6656df592382160bcc9d759a8ee6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dfabdc71321a6656df592382160bcc9d759a8ee6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dfabdc71321a6656df592382160bcc9d759a8ee6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/0a2959f87b7185c131f8dca45daaac756e5b619c/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/dfabdc71321a6656df592382160bcc9d759a8ee6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/0a2959f87b7185c131f8dca45daaac756e5b619c">uiceds/cee-492-term-project-fall-2022-shans@0a2959f</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/dfabdc71321a6656df592382160bcc9d759a8ee6">uiceds/cee-492-term-project-fall-2022-shans@dfabdc7</a>
 on December 2, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -535,15 +535,15 @@ We followed four approaches to create the predictive model, including two layer 
 1.1 Dense -&gt; ReLU -&gt; Dense -&gt; ReLU
 1.2 Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
 </ol>
-<p>We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure 16 and Figure 17 represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
-<div id="fig:Two" class="fignos">
+<p>We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure <a href="#fig:2NNRW">21</a> and Figure <a href="#fig:2NNRC">22</a> represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
+<div id="fig:2NNRW" class="fignos">
 <figure>
-<img src="images/A.png" style="height:4in" alt="Figure 21: Two Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 21:</span> Two Layer NN for Wooden Ties</figcaption>
+<img src="images/2NNRW.png" style="height:4in" alt="Figure 21: Two Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 21:</span> Two Layer NN for Wooden Ties</figcaption>
 </figure>
 </div>
-<div id="fig:Two" class="fignos">
+<div id="fig:2NNRC" class="fignos">
 <figure>
-<img src="images/B.png" style="height:4in" alt="Figure 22: Two Layer NN for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 22:</span> Two Layer NN for Concrete Ties</figcaption>
+<img src="images/2NNRC.png" style="height:4in" alt="Figure 22: Two Layer NN for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 22:</span> Two Layer NN for Concrete Ties</figcaption>
 </figure>
 </div>
 <p>We followed two methods to improve the accuracy of the model. First, we deleted some of the input values that based on the results of the explatory analysis phase of the priject, had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. Then we Tried to label the data as “bad and”good” samples. To do so, we set a threshold for the output data that labels observations with gauge values more than 0.75, “bad”. Only 300 observations out of 180000 were labeled “bad”. Given this, we decided to continue with gauge values, instead of labels. None of the methods mentioned above, provides improvement in model accuracy.</p>
@@ -553,8 +553,8 @@ We followed four approaches to create the predictive model, including two layer 
 2.1 Dense -&gt; ReLU -&gt; Dense -&gt; ReLU -&gt; Dense -&gt; ReLU
 2.2 Dense -&gt; Tanh -&gt; Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
 </ol>
-<p>Figure 18 illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.</p>
-<p><img src="images/C.png" id="fig:Three" style="height:4in" alt="Three Layer NN for Wooden Ties" />
+<p>Figure ?? illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.</p>
+<p><img src="images/3NNRW.png" id="fig:3NNRW" style="height:4in" alt="Three Layer NN for Wooden Ties" />
 ### Regression
 Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:</p>
 <ol type="1">

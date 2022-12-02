@@ -34,7 +34,7 @@ histask
 innerjoin
 Kenza
 Logit
-LRAIL
+Lrail
 milimeters
 modelling
 MSE
@@ -42,6 +42,8 @@ Negin
 negins
 Neuran
 NN
+NNRC
+NNRW
 Palese
 perdicted
 priject
