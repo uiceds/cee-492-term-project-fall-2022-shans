@@ -78,7 +78,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-tieplate
+Tieplate
 TieplateCondition
 Tieplates
 UIUC
