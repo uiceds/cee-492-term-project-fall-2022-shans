@@ -30,7 +30,7 @@ milimeters
 Negin
 negins
 NN
-Qiam
+qiam
 RailTEC
 Rateing
 ReLU
@@ -47,7 +47,7 @@ SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
-tieplate
+TiePlate
 TieplateCondition
 Tieplates
 UIUC

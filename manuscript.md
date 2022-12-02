@@ -1,11 +1,11 @@
 ---
-title: Relationship Between Track Geometry and Track Components’ Health Condition
+title: Relationship Between Track Tie Situation and Its Components Health Conditions
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-21'
+date-meta: '2022-12-02'
 author-meta:
 - Arthur Bilheri
 - Negin Shafie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta property="og:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
   <meta property="twitter:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
-  <meta name="dc.date" content="2022-11-21" />
-  <meta name="citation_publication_date" content="2022-11-21" />
+  <meta name="dc.date" content="2022-12-02" />
+  <meta name="citation_publication_date" content="2022-12-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/02b24531ef7080d8811403cf18bd822dc4dfa078/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/02b24531ef7080d8811403cf18bd822dc4dfa078/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/02b24531ef7080d8811403cf18bd822dc4dfa078/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1eaecdc6ff6d8b0176762f1341277d4653eb40a/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1eaecdc6ff6d8b0176762f1341277d4653eb40a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1eaecdc6ff6d8b0176762f1341277d4653eb40a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/02b24531ef7080d8811403cf18bd822dc4dfa078/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/c1eaecdc6ff6d8b0176762f1341277d4653eb40a/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@02b2453](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/02b24531ef7080d8811403cf18bd822dc4dfa078)
-on November 21, 2022.
+from [uiceds/cee-492-term-project-fall-2022-shans@c1eaecd](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/c1eaecdc6ff6d8b0176762f1341277d4653eb40a)
+on December 2, 2022.
 </em></small>
 
 ## Authors
@@ -164,7 +164,7 @@ Table 1: Description of data
 | SpikeTotalROI_1 to 4 | int | 0-inf |  | Number of spike in each ROI on tie |
 | SpikeMean_Height_ROI1_mm | float | 0-inf | milimeters | The mean height of all tie in each ROI on tie. The unit is millimeter |
 | SpikeNearRailROI_1 | int | 0-inf |  | Number of spike is near the rail boundary in each ROI on tie |
-| AnchorROI_1 | int | 0-inf |  | Number of anchor in each ROI (relating to the tie) | 
+| AnchorROI_1 | int | 0-inf |  | Number of anchor in each ROI (relating to the tie) |
 | Tieplate_Right | int | 0-inf |  | Number of tieplate on left/right side of tie |
 | TieplateCondition_Right | int | 1-5 |  | Condition of tieplate. 1: Good, 2: Sunken, 4: Covered, 5: Twisted |
 | Latitude | float | -90 to +90 | degrees | GPS coordinates of the center of the tie |
@@ -356,7 +356,7 @@ Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from
 
 We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![Number of Spikes per Tie vs Curve](images/6.PNG){#fig:6 height=4in} 
+![Number of Spikes per Tie vs Curve](images/6.PNG){#fig:6 height=4in}
 
 
 
@@ -390,34 +390,22 @@ First step towards creating a predictive model is having a proper data frame wit
     + Output Data:
         1. Gauge
 
-### Regression     
+    
 ### Neural Network Modeling
-The first approach is creating a two layer Neural Network model. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model. In order to split the data into two categories (train data and test data), we selected first 150000 rows of the data frame as the train data and the 38000 remaining as the test data. Since different rows of the dataframe are not correlated to each other, this method is considered to be random data selection. The input data is fed into the model, and two Dense layers are applied to the data. We used multiple combinations of different activation functions to get the best fitting model. The loss function used in all models is Mean Square Error (MSE). Mentioned combinations are listed below:
-
-1. Dense -> ReLU -> Dense -> Logit
-2. Dense -> ReLU -> Dense -> ReLU
-3. Dense -> Tanh -> Dense -> Logit 
-
-
-The Root Mean Squared Error (RMSE) was calculated for the test data, to evaluate the accuracy model. The RMSE value for the best performed model was about 0.107 and 0.11 for wooden and concrete ties, respectively. These amounts are considerable in comparison to the mean values for the output data, which is about 0.15. The performance of the mentioned models on the test data is illustrated in Figure 16 and Figure 17, which represent the wooden ties and concrete ties respectively. 
+The first approach is creating a two layer Neural Network model. The input data is fed into the model, then two Dense layers, followed by  the ReLU function is applied to the data. The loss function in the gradient descent method is Cross-Entropy for these models. We used 80% of the data as our training data, and the remaining 20% were used to test the accuracy of the predictive model.  Root Mean Squared Error (RMSE) as the evaluation criteria was about 0.107 and 0.11 for wooden and concrete ties, respectively, which is considerable in comparison to the mean value for the output (about 0.15). Figure 16 and Figure 17 represent the scatter plot of the model for wooden ties and concrete ties respectively. 
 
 ![Two Layer NN for Wooden Ties](images/A.png){#fig:Two Layer NN for Wooden Ties height=4in}
 
 ![Two Layer NN for Concrete Ties](images/B.png){#fig:Two Layer NN for Concrete Ties height=4in}
 
-The RMSE values suggest that the models needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that based on the results of the explotary data analysis section of the project, had a lower impact on the gauge, such as Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. We also tried to label our data into "bad" and "good" conditions. We set a threshold for the output data that considers just observations with a Gauge value more than 0.75 as the bad condition. Since the majority of the data is in good condition, the total number of "bad" data was 300 which compared to our dataframe size, is not considerable. However,  none of the mentioned methods lead to an improved model accuracy.
-The second approach is similar to the first one, but  it has three dense layers instead of two, to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. Two combinations of activation functions have been tested in this phase, which are listed below:
-
-1. Dense -> ReLU -> Dense -> ReLU -> Dense -> ReLU
-2. Dense -> Tanh -> Dense -> Tanh -> Dense -> Logit 
-
-The best three layer model's accuracy was 0.104, which is relatively low and close to the results of the two layer model. Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
+This low accuracy means the model needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that had a lower impact on the gauge including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. As the majority of the data represent a healthy condition of the components, we also set a threshold for the output data that considers just observations with a Gauge value more than 0.5 as the bad condition. The reason for our filter was more probability for a dependency between output and input data as well as more interest in bad situations. However,  none of the mentioned methods lead to an improved model accuracy.
+The second approach is similar to the first one, but  it has three dense layers instead of two to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. The best three layer model had an accuracy of 0.104.
+Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
 
 ![Three Layer NN for Wooden Ties](images/C.png){#fig:Three Layer NN for Wooden Ties height=4in}
-### Classification
+
 ### Decision Tree
 The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, DecisionTree. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
-To start with the modeling, we needed to create some sort of labeling for our data. As mentioned in the previous section, the 0.75 gauge treshold did not provide enough "bad" data. We changed the threshold to 0.5, and this time we got around 3000 "bad" samples. This is much better than the previous threshold, but since we have a total of 180000 samples, the ratio between bad samples and good samples is so low, which is known as imbalanced data in Computer Science. To deal with this issue, we randomly picked 3000 good samples, and combined the bad and good samples into a new dataframe. To do so, We used two functions, one for creating this new data frame out of two separate dataframes, and second one was used to shufle these 6000 rows of data. Shufling was done to avoid having a pattern in our data frame. Then we split the data into train data which was used to train the model, and the test data, which was used to evaluate the accuracy of the model. 
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
 
 ### Random Forest
