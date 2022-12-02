@@ -1,5 +1,5 @@
 ---
-title: Relationship Between Track Tie Situation and Its Components Health Conditions
+title: Relationship Between Track Geometry and Track Components’ Health Conditions
 keywords:
 - markdown
 - publishing
@@ -186,17 +186,17 @@ Table 1: Description of data
 
 ## Exploratory Data Analysis {.page_break_before}
 ### Statistical Analysis on Track Elements-Tie
-In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:A4 shows the total number of each tie material. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
+In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:A4 shows the total number of wooden and concrete ties. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
 
 ![Tie Material](images/A4.png){#fig:A4 height=4in}
 
 The data set provides condition ratings for each type of tie. Figure @fig:A1  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to eliminate the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
 
-![Condition of Concrete Ties](images/A1.png){#fig:A1 height=4in}
+![Concrete Tie Condition](images/A1.png){#fig:A1 height=4in}
 
 The same process was done to get the health condition of wooden ties. Figure @fig:A2 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties.  The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
 
-![Condition of Wooden (Timber) Ties](images/A2.png){#fig:A2 height=4in}
+![Wooden (Timber) Tie Condition](images/A2.png){#fig:A2 height=4in}
 
 Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this report.
 
@@ -204,17 +204,17 @@ Moving forward to the next elements of the track: tie plates, anchors, and spike
 Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of wooden ties. 
 Following the same methodology explained for ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure @fig:A3, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions. 
 
-![Condition of Tieplates](images/A3.png){#fig:A3 height=4in}
+![Tieplates Condition](images/A3.png){#fig:A3 height=4in}
 
 ### Statistical Analysis on Track Elements-Anchor
 We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 columns in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure @fig:A5 illustrates this.
 
-![Condition of Anchors](images/A5.png){#fig:A5 height=4in}
+![Anchors Condition](images/A5.png){#fig:A5 height=4in}
 
 ### Statistical Analysis on Track Elements-Fastener
 Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure @fig:fastener. 
 
-![Fastener Condition](images/fastener.PNG){#fig:fastener height=4in}
+![Fastener Condition per Region of Interest](images/fastener.PNG){#fig:fastener height=4in}
 
 ### Does Askew Angle relate to the number of anchors?
 Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle.  Figure @fig:Anchor shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie. 
@@ -238,13 +238,13 @@ Since we have only 0 or 1 for having or not having an anchor in the raw data, we
 
 The "describe" function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure @fig:describe_anc_ask represents the result. 
 
-![Description of the data](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=2in}
+![Data Description](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=2in}
 
 <u> Plotting corrplot for data: </u> 
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
 
-![Corrplot for askew angle and number of anchors](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
+![Corrplot for Askew Angle and Number of Anchors](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
 
 The corrplot indicates that there is no correlation between askew angle and anchors. However, this idea comes to mind that comparing the statistics for situations with a different total number of anchors assures us that we don't have any relationship between askew angle and anchors. Therefore, we filter the data based on each value we can have as the total number of anchors (0 to 4) and find their distribution of askew angle using the "histogram" function. 
 
@@ -252,11 +252,11 @@ The corrplot indicates that there is no correlation between askew angle and anch
 
 Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc shows these histograms. 
 
-![Histogram of different number of Anchors](images/hist_all_ask_anc.PNG){#fig:hist_all_ask_anc height=4in}
+![Histogram of Different Number of Anchors](images/hist_all_ask_anc.PNG){#fig:hist_all_ask_anc height=4in}
 
 Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
 
-![Normalized histogram](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=4in}
+![Normalized Histogram](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=4in}
 
 <u> Plotting boxplot: </u> 
 
@@ -280,11 +280,11 @@ To create the data frame, we select columns about askew angle and spikes, which 
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corr_ask_spi shows the corrplot for ROI 1. As the corrplot for other regions of interest are similar to ROI 1, we do not put it on the report. For the rest of this part, we just consider ROI 1 because the results are the same for all the regions. 
 
-![Corrplot for askew angle and the spikes](images/corrplot_ask_spi.PNG){#fig:corr_ask_spi}
+![Askew Angle and Spike Corrplot](images/corrplot_ask_spi.PNG){#fig:corr_ask_spi}
 
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatt_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
-![Scatter plot for askew angle and spike](images/scatter_ask_spi.PNG){#fig:scatt_ask_spi height=4in}
+![Askew Angle and Spike Scatter Plot](images/scatter_ask_spi.PNG){#fig:scatt_ask_spi height=4in}
 
 <u> Correlation between maximum askew angle and the number of spikes: </u> 
 
@@ -359,13 +359,13 @@ The median values showed with the lines inside each box indicate that bad ties c
 
 Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
 
-![Wooden Tie Rating vs Curve](images/5.png){#fig:5 height=4in}
+![Wooden Tie Rating vs Curvature](images/5.png){#fig:5 height=4in}
 
 ### Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
 
 We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![Number of Spikes per Tie vs Curve](images/6.png){#fig:6 height=4in}
+![Number of Spikes per Tie vs Curvature](images/6.png){#fig:6 height=4in}
 
 
 
@@ -424,33 +424,6 @@ Figure @fig:3NNRW illustrates the scatter plot of the best fitting three layer N
 
 
 ![Three Layer Neural Network Regression for Wooden Ties](images/3NNRW.png){#fig:3NNRW height=4in}
-
-### Regression 
-Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:
-
-1. Two Layer Neural Network model 
-    + Dense -> ReLU -> Dense -> ReLU
-    + Dense -> Tanh -> Dense -> Logit 
-
-We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure 16 and Figure 17 represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively. 
-
-![Two Layer NN for Wooden Ties](images/A.png){#fig:Two Layer NN for Wooden Ties height=4in}
-
-![Two Layer NN for Concrete Ties](images/B.png){#fig:Two Layer NN for Concrete Ties height=4in}
-
-We followed two methods to improve the accuracy of the model. First, we deleted some of the input values that based on the results of the explatory analysis phase of the priject, had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. Then we Tried to label the data as "bad and "good" samples. To do so, we set a threshold for the output data that labels observations with gauge values more than 0.75, "bad". Only 300 observations out of 180000 were labeled "bad". Given this, we decided to continue with gauge values, instead of labels. None of the methods mentioned above, provides improvement in model accuracy. 
-
-The second approach is similar to the first one, but it has three dense layers instead of two, to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. We calculated the RMSE for the test data to evaluate the model performance. The best three layer model has an RMSE of 0.104, which is insufficient. We also used two different combinations of acctivation functions, which is listed below:
-
-2. Three Layer Neuran Network model 
-    + Dense -> ReLU -> Dense -> ReLU -> Dense -> ReLU
-    + Dense -> Tanh -> Dense -> Tanh -> Dense -> Logit 
-
-Figure 18 illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.  
-
-
-![Three Layer NN for Wooden Ties](images/C.png){#fig:Three Layer NN for Wooden Ties height=4in}
-
 
 ### Classification
 ### Decision Tree for
