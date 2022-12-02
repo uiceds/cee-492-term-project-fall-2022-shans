@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f7bc3636255b1d7869521d5bb83e5646265ccb64">uiceds/cee-492-term-project-fall-2022-shans@f7bc363</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/85124658d959af61f25cd4b8cb19261c4d4eb5da">uiceds/cee-492-term-project-fall-2022-shans@8512465</a>
 on December 2, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -539,13 +539,13 @@ We followed four approaches to create the predictive model, including two layer 
 </ul></li>
 </ol>
 <h3 id="regression">Regression</h3>
-<p>Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:</p>
+<p>Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. We tried two different types of combination for activation functions to see which one works better. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:</p>
 <ol type="1">
 <li>Two Layer Neural Network model
 1.1 Dense -&gt; ReLU -&gt; Dense -&gt; ReLU
 1.2 Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
 </ol>
-<p>We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure <a href="#fig:2NNRW">26</a> and Figure <a href="#fig:2NNRC">27</a> represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
+<p>We calculated the Root Mean Square Error (RMSE) using the test data for the accuracy. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure <a href="#fig:2NNRW">26</a> and Figure <a href="#fig:2NNRC">27</a> represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
 <div id="fig:2NNRW" class="fignos">
 <figure>
 <img src="images/2NNRW.png" style="height:4in" alt="Figure 26: Two Layer Neural Network Regression for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 26:</span> Two Layer Neural Network Regression for Wooden Ties</figcaption>
@@ -569,8 +569,7 @@ We followed four approaches to create the predictive model, including two layer 
 <img src="images/3NNRW.png" style="height:4in" alt="Figure 28: Three Layer Neural Network Regression for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 28:</span> Three Layer Neural Network Regression for Wooden Ties</figcaption>
 </figure>
 </div>
-<h3 id="classification">Classification</h3>
-<h3 id="decision-tree-for">Decision Tree for</h3>
+<h3 id="decision-tree">Decision Tree</h3>
 <p>After failing with the regression models, we tried clasiification models. For having a classification model we need to create labels for the data set. This phase was only performed on the wooden ties. As it was mentioned in the regression section, setting a threshold which considers gauge values more than 0.75 to be “bad”, did not provide enough samples to work with. The deal with this issue, first, we changed the threshold to 0.5. The new “bad” sample size was 3000, which is better than the previous one, but still not enough compared to our dataframe size, which is 180000 sapmles. Then, we randomly selected 3000 samples from the “good” samples. Lastly we combined both samples, and created a new dataframe, which was no longer imbalanced. We shufled the rows, using the shufle function to make sure there is no pattern in the new dataframe. Same as the NN models, we split the data into two dataframes, 80% as the training data and the remaining 20% was used to test the accuracy of the model. We have a total number of 6000 samples for the wooden ties, including 4800 train samples, and 1200 test samples.
 In the regression phase, we created all the Neural Network models ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this phase and the next one, we used the functions using an existing julia package, DecisionTree.</p>
 <p>This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory.</p>
@@ -586,6 +585,7 @@ In the regression phase, we created all the Neural Network models ourselves, mea
 <img src="images/E.png" style="height:4in" alt="Figure 30: Random Forest for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 30:</span> Random Forest for Concrete Ties</figcaption>
 </figure>
 </div>
+<h3 id="classification">Classification</h3>
 <h3 id="conclusion">Conclusion</h3>
 <p>Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of these methods could provide a satisfactory level of accuracy and as we can see in their figures, all of them show no pattern. Our first hypothesis on this is maybe there is not an efficient way of predicting the gauge based on the track data we currently have. To be more specific, it is possible that there are other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set, or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the potential items that have an impact on the gauge are listed below:</p>
 <ol type="1">
