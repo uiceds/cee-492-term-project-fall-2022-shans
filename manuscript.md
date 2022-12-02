@@ -407,8 +407,10 @@ The Root Mean Squared Error (RMSE) was calculated for the test data, to evaluate
 
 The RMSE values suggest that the models needed some adjustments. We followed two methods to improve the accuracy. First, we deleted some of the input values that based on the results of the explotary data analysis section of the project, had a lower impact on the gauge, such as Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. We also tried to label our data into "bad" and "good" conditions. We set a threshold for the output data that considers just observations with a Gauge value more than 0.75 as the bad condition. Since the majority of the data is in good condition, the total number of "bad" data was 300 which compared to our dataframe size, is not considerable. However,  none of the mentioned methods lead to an improved model accuracy.
 The second approach is similar to the first one, but  it has three dense layers instead of two, to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. Two combinations of activation functions have been tested in this phase, which are listed below:
+
 1. Dense -> ReLU -> Dense -> ReLU -> Dense -> ReLU
 2. Dense -> Tanh -> Dense -> Tanh -> Dense -> Logit 
+
 The best three layer model's accuracy was 0.104, which is relatively low and close to the results of the two layer model. Figure 18 illustrates the scatter plot of the three layer model results for wooden ties.
 
 ![Three Layer NN for Wooden Ties](images/C.png){#fig:Three Layer NN for Wooden Ties height=4in}
@@ -436,7 +438,7 @@ Neural Networks, Decision Trees, and Random Forests use different mathematical c
   5. Speed of the trains ( It does not directly affect the gauge, but since the loads transferred from the wheels to track is heavily dependent on the speed, it could be a good idea to study speed individually.) 
 
 
-A better solution could be collecting multiple data sets from the same section of the track over time. This helps monitoring the track condition with the passage of time, which provides more insight on the pattern of the defections on the track, which in our case is the gauge. Adapting this method, we can track the gauge over time, and identify the sections of the track in which the gauge is getting wider aggressively, and by analyzing track features of those sections we can identify the elements with dominant impacts on the gauge, and new models could be applied to them to check for potential correlation, and ultimately having a working predictive model. It is also worth noting that if the current dataset had a time stamp, it was possible to compare the gauge situation with just one dataset. 
+A better solution could be collecting multiple data sets from the same section of the track over time. This helps monitoring the track condition with the passage of time, which provides more insight on the pattern of the defections on the track, which in our case is the gauge. Adapting this method, we can track the gauge over time, and identify the sections of the track in which the gauge is getting wider aggressively, and by analyzing track features of those sections we can identify the elements with dominant impacts on the gauge, and new models could be applied to them to check for potential correlation, and ultimately having a working predictive model. It is also worth noting that if the current dataset had a time stamp, it was possible to compare the gauge situation with just one dataset.  
 
 
 
