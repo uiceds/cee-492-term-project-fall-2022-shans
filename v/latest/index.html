@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d0d95da357a0a637a1695d3a0c8efe7b7b49890/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d0d95da357a0a637a1695d3a0c8efe7b7b49890/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d0d95da357a0a637a1695d3a0c8efe7b7b49890/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/45cb9aa84c58f0fe86c468e7ffde3fee9b751cfc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/45cb9aa84c58f0fe86c468e7ffde3fee9b751cfc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/45cb9aa84c58f0fe86c468e7ffde3fee9b751cfc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/9d0d95da357a0a637a1695d3a0c8efe7b7b49890/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/45cb9aa84c58f0fe86c468e7ffde3fee9b751cfc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/9d0d95da357a0a637a1695d3a0c8efe7b7b49890">uiceds/cee-492-term-project-fall-2022-shans@9d0d95d</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/45cb9aa84c58f0fe86c468e7ffde3fee9b751cfc">uiceds/cee-492-term-project-fall-2022-shans@45cb9aa</a>
 on December 2, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -148,15 +148,15 @@ Department of Civil and Environmental Engineering, University of Illinois at Urb
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="introduction">Introduction</h2>
-<p>Railroad tracks have four main components: rail, ties, fastening systems, and ballast. The rail is the main component that supports the loads transmitted by the trains. The fastening system is responsible for fastening the rail to the ties and keeping the rail in a proper position. Fastening systems are made of spikes, tie plates, anchors, and sometimes clips. The ties are the interface between the rails and ballast. The two main materials used for ties in the United States are timber and concrete. The last layer on the railroad superstructure is the ballast. Its main functions are to spread the loads on the ground and to provide proper drainage for the track system.
-These components are inspected using the LRAIL technology that combines 2D imagery and laser triangulation to assess the health and condition of each component. The collected data is processed through a DNN (Deep Convolutional Neural Network) model that identifies and classifies the components. This technology has been used under the scope of research led by the RailTEC group at UIUC, funded by the FRA-DOT with two Class I railroads in the US. The output of this technology, which will be used in this project, is described in an Excel file (filename: Datasets) attached to this proposal and Table 1.
-Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride. Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.
-The research question behind this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. This is important since track inspectors (railroad personnel that inspects the tracks in a weekly basis) can utilize this correlation to inspect the track when no geometry data is available or when the inspections are delayed. There is a paper that shows that one bad tie can affect the life of the adjacent ties. (Soufiane, Kenza &amp; Zarembski, Allan &amp; Palese, Joseph. (2022). Effect of Adjacent Support Condition on Premature Wood Crosstie Failure. Transportation Infrastructure Geotechnology. 9. 10.1007/s40515-021-00168-5). This research was conduct using only geometry data, not components’ data. Since the technology used to collect the component data is still under development, there are no previous work done.
-The first part of this project is EDA on the dataset, to better understand how the data is distributed, identify possible outliers and to identify possible relationships and linear dependencies between the measurements.
-After the EDA part, we will perform a predictive modelling using the components’ data to predict gauge (data from geometry cars). This part will fulfill the research question of the project with a model that from the components data is able to predict the gauge.
-With the insights from EDA part we are able to perform some data cleaning before moving on with the next phase This is important to keep the dataset out of outliers and measurement errors.
-It can be possible, at the end, that there is no directly correlation between components’ data and geometry data. In this case, new methods, data will be suggested to perform that task.
-The data can be found in <a href="https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7">Project</a> , the dataset used is already a combination of component and geometry data.</p>
+<p>Railroad tracks have four main components: rail, ties, fastening systems, and ballast. The rail is the main component that supports the loads transmitted by the trains. The fastening system is responsible for fastening the rail to the ties and keeping the rail in a proper position. Fastening systems are made of spikes, tie plates, anchors, and sometimes clips. The ties are the interface between the rails and ballast. The two main materials used for ties in the United States are timber and concrete. The last layer on the railroad superstructure is the ballast. Its main functions are to spread the loads on the ground and to provide proper drainage for the track system.</p>
+<p>These components are inspected using the LRAIL technology that combines 2D imagery and laser triangulation to assess the health and condition of each component. The collected data is processed through a DNN (Deep Convolutional Neural Network) model that identifies and classifies the components. This technology has been used under the scope of research led by the RailTEC group at UIUC, funded by the FRA-DOT with two Class I railroads in the US. The output of this technology, which will be used in this project, is described in an Excel file (filename: Datasets) attached to this proposal and Table 1.</p>
+<p>Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride. Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.</p>
+<p>The research question behind this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. This is important since track inspectors (railroad personnel that inspects the tracks in a weekly basis) can utilize this correlation to inspect the track when no geometry data is available or when the inspections are delayed. There is a paper that shows that one bad tie can affect the life of the adjacent ties. (Soufiane, Kenza &amp; Zarembski, Allan &amp; Palese, Joseph. (2022). Effect of Adjacent Support Condition on Premature Wood Crosstie Failure. Transportation Infrastructure Geotechnology. 9. 10.1007/s40515-021-00168-5). This research was conduct using only geometry data, not components’ data. Since the technology used to collect the component data is still under development, there are no previous work done.</p>
+<p>The first part of this project is EDA on the dataset, to better understand how the data is distributed, identify possible outliers and to identify possible relationships and linear dependencies between the measurements.</p>
+<p>After the EDA part, we will perform a predictive modelling using the components’ data to predict gauge (data from geometry cars). This part will fulfill the research question of the project with a model that from the components data is able to predict the gauge.</p>
+<p>With the insights from EDA part we are able to perform some data cleaning before moving on with the next phase This is important to keep the dataset out of outliers and measurement errors.</p>
+<p>It can be possible, at the end, that there is no directly correlation between components’ data and geometry data. In this case, new methods, data will be suggested to perform that task.</p>
+<p>The data can be found in <a href="https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7">Project</a> , the dataset used is already a combination of component and geometry data.</p>
 <style scoped>
 table {
   font-size: 10px;
@@ -335,7 +335,7 @@ Following the same methodology explained for ties, we plotted the histogram of d
 <p>Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure <a href="#fig:fastener">6</a>.</p>
 <div id="fig:fastener" class="fignos">
 <figure>
-<img src="images/fastener.PNG" style="height:4in" alt="Figure 6: " /><figcaption aria-hidden="true"><span>Figure 6:</span> </figcaption>
+<img src="images/fastener.PNG" style="height:4in" alt="Figure 6: Fastener Condition" /><figcaption aria-hidden="true"><span>Figure 6:</span> Fastener Condition</figcaption>
 </figure>
 </div>
 <h3 id="does-askew-angle-relate-to-the-number-of-anchors">Does Askew Angle relate to the number of anchors?</h3>
@@ -410,77 +410,87 @@ Following the same methodology explained for ties, we plotted the histogram of d
 <h3 id="relationship-between-gauge-deviation-and-concrete-tie-rating">Relationship between Gauge Deviation and Concrete Tie Rating</h3>
 <p>During the EDA section we tried to look for relationships between the gauge of the track and the component’s condition. The Gauge Deviation is the difference between the standard gauge (4’-8.5”) and the measured gauge. So a value close to 0 indicates that the gauge is correct. Due to the train traffic and tie degradation the gauge deviation tends to increase over time. When it reaches certain limits, it is called a defect and maintenance must be made to restore the gauge. Negative values usually mean that the tie was installed with a tighter gauge or that there was a measurement error and should be considered outliers if it is too tight, around -1 in or less.
 To be reasonable in this section, the analysis are divided between concrete and Wooden ties, since they have different characteristics that make it harder compare both together.
-The most directly relationship is the gauge of the track and the condition of the ties. Based on the technology used the concrete ties are graded from 0 (Good) to 2 (Bad). 1 (Fair) is a intermediate condition. The following graph represents the distribution of gauge deviation by each concrete tie rating.</p>
+The most directly relationship is the gauge of the track and the condition of the ties. Based on the technology used the concrete ties are graded from 0 (Good) to 2 (Bad). 1 (Fair) is a intermediate condition.Figure <a href="#fig:Gauge_and_Tie_Rating_Concrete_2">15</a> represents the distribution of gauge deviation by each concrete tie rating.</p>
+<div id="fig:Gauge_and_Tie_Rating_Concrete_2" class="fignos">
 <figure>
-<img src="images/Gauge_and_Tie_Rating_Concrete_2.png" />
+<img src="images/Gauge_and_Tie_Rating_Concrete_2.png" style="height:4in" alt="Figure 15: Gauge and Concrete Tie Condition" /><figcaption aria-hidden="true"><span>Figure 15:</span> Gauge and Concrete Tie Condition</figcaption>
 </figure>
+</div>
 <p>Intuitively we can think that bad ties would have wide gauge, but for this specific region it is not the case. Comparing the median values we see that the values are not too far from each other. Another interesting finding is that the max value does not have big changes when changing the tie rating, indicating that any tie rating can have a gauge defect.</p>
 <h3 id="relationship-between-gauge-deviation-and-wooden-tie-rating">Relationship between Gauge Deviation and Wooden Tie Rating</h3>
-<p>Now let’s look to the same criteria but for Wooden ties. Wooden ties have one more bin for classification, still following the same idea as 0 being Good and 3 being Bad. The following graph shows the distribution of gauge deviation by each wooden tie rating.</p>
+<p>Now let’s look to the same criteria but for Wooden ties. Wooden ties have one more bin for classification, still following the same idea as 0 being Good and 3 being Bad. Figure <a href="#fig:Gauge_and_Tie_Rating_Wooden_2">16</a> shows the distribution of gauge deviation by each wooden tie rating.</p>
+<div id="fig:Gauge_and_Tie_Rating_Wooden_2" class="fignos">
 <figure>
-<img src="images/Gauge_and_Tie_Rating_Wooden_2.png" />
+<img src="images/Gauge_and_Tie_Rating_Wooden_2.png" style="height:4in" alt="Figure 16: Gauge and Wooden Tie Condition" /><figcaption aria-hidden="true"><span>Figure 16:</span> Gauge and Wooden Tie Condition</figcaption>
 </figure>
+</div>
 <p>First thing to mention is that the Good ties (Condition 0) has more outliers than the other ones, this can be related to the fact that there are a lot more ties with this condition than the other ones. In contrast to the concrete ties, the median gets slightly higher when we have a bad condition tie, indicating that the condition of the tie can be related to the gauge of the track. Comparing the max values, only condition zero (Good) and 3 (Bad) have higher max values. It makes sense for condition 3 (Bad) ties but measurement errors should be account for condition 0 (Good) ties.</p>
 <h3 id="relationship-between-gauge-deviation-and-tie-plate-condition">Relationship between Gauge Deviation and Tie Plate Condition</h3>
-<p>The next component to be investigated is the tie plate. Only wooden ties have tie plates. Their main function is to support the rail and distribute the load on the ties. Normal wooden ties have two tie plates – one per rail. The metric used to analyze the data is the number of defective tie plates per tie, 0 being a tie with 2 tie plates and 2 a tie plate without tie plates in good condition. The following graph shows the distribution of gauge deviation by the number of defectives tie plates per wooden tie.</p>
+<p>The next component to be investigated is the tie plate. Only wooden ties have tie plates. Their main function is to support the rail and distribute the load on the ties. Normal wooden ties have two tie plates – one per rail. The metric used to analyze the data is the number of defective tie plates per tie, 0 being a tie with 2 tie plates and 2 a tie plate without tie plates in good condition. Figure <a href="#fig:Gauge_and_Tie_Plate_Wooden_2">17</a> shows the distribution of gauge deviation by the number of defectives tie plates per wooden tie.</p>
+<div id="fig:Gauge_and_Tie_Plate_Wooden_2" class="fignos">
 <figure>
-<img src="images/Gauge_and_Tie_Plate_Wooden_2.png" />
+<img src="images/Gauge_and_Tie_Plate_Wooden_2.png" style="height:4in" alt="Figure 17: Gauge and Tie Plate Condition for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 17:</span> Gauge and Tie Plate Condition for Wooden Ties</figcaption>
 </figure>
+</div>
 <p>Again, the number of outliers for ties with two tie plates must be taken into consideration since this is the highest population on the dataset. The main takeaway is that the number of defective tie plates are not directly related to the gauge.</p>
 <h3 id="relationship-between-gauge-deviation-and-number-of-defective-fasteners-on-wooden-ties">Relationship between Gauge Deviation and Number of Defective Fasteners on Wooden Ties</h3>
-<p>Fasteners are the components that have hold down force to hold the rails connected to the tie plates. They are used in very specific situations in the railroad, such as tight curves, switches and grade crossings. When used, each tie has four fasteners, two per rail, one on each side of the rail. Fasteners may or may not be used in wooden ties but must be used in concrete ties. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per wooden tie.</p>
+<p>Fasteners are the components that have hold down force to hold the rails connected to the tie plates. They are used in very specific situations in the railroad, such as tight curves, switches and grade crossings. When used, each tie has four fasteners, two per rail, one on each side of the rail. Fasteners may or may not be used in wooden ties but must be used in concrete ties. Figure <a href="#fig:Gauge_and_Fasteners_Wooden_2">18</a> shows the distribution of gauge deviation by the number of defectives fasteners per wooden tie.</p>
+<div id="fig:Gauge_and_Fasteners_Wooden_2" class="fignos">
 <figure>
-<img src="images/Gauge_and_Fasteners_Wooden_2.png" />
+<img src="images/Gauge_and_Fasteners_Wooden_2.png" style="height:4in" alt="Figure 18: Gauge and Number of Defective Fasteners per Wooden Tie" /><figcaption aria-hidden="true"><span>Figure 18:</span> Gauge and Number of Defective Fasteners per Wooden Tie</figcaption>
 </figure>
+</div>
 <p>Outside the outliers for ties without any defective fasteners, ties with only two defective fasteners have more variability in gauge. It can be explained by the fact that if the two missing fasteners are on the outside side of the rails, it is likely that the gauge will be widened. The ties with 3 and 4 bad fasteners are not that common, but when they happen they have wider gauge than the ties in better condition. Only one bad fastener does not have much influence in the gauge.
  
 <u> Relationship between Gauge Deviation and Number of Defective Fasteners on Concrete Ties </u></p>
-<p>For concrete ties there were no ties with zero defective fasteners (all four fasteners present) or with 4 defective fasteners (no fasteners at all). That can be related to the fact of having less concrete ties in the section analyzed. The following graph shows the distribution of gauge deviation by the number of defectives fasteners per concrete tie.</p>
+<p>For concrete ties there were no ties with zero defective fasteners (all four fasteners present) or with 4 defective fasteners (no fasteners at all). That can be related to the fact of having less concrete ties in the section analyzed. Figure <a href="#fig:Gauge_and_Fasteners_Concrete_2">19</a> shows the distribution of gauge deviation by the number of defectives fasteners per concrete tie.</p>
+<div id="fig:Gauge_and_Fasteners_Concrete_2" class="fignos">
 <figure>
-<img src="images/Gauge_and_Fasteners_Concrete_2.png" />
+<img src="images/Gauge_and_Fasteners_Concrete_2.png" style="height:4in" alt="Figure 19: Gauge and Number of Defective Fasteners per Concrete Tie" /><figcaption aria-hidden="true"><span>Figure 19:</span> Gauge and Number of Defective Fasteners per Concrete Tie</figcaption>
 </figure>
+</div>
 <p>Concrete ties are less prone to have gauge problems related to defective fasteners, as we can see by comparing the median of the distributions. It can be explained by the fact that they have metal shoulders that holds the rails in place, regardless of having a fastener or not. Concrete ties with 3 defective fasteners are more prone to have wide gauge, as shown by the higher median than the other conditions.</p>
 <h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-gauge-deviation">Is there a meaningful relation between the Degree of Curvature and Gauge Deviation?</h3>
 <p>Degree of curvature is a measure to determine the sharpness of a curve. The definition is found by connecting two points on an arc with a 100-foot chord, drawing radii from the center of the arc to the chord end-points, and then measuring the angle between these radii lines. The larger the degree of curvature, the sharper the curve is. A positive degree of curvature means the track route is towards right, and a negative degree of curvature represents a left turn.</p>
-<p>First, we looked at the correlation plot shown in figure <a href="#fig:1">15</a> to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate.</p>
+<p>First, we looked at the correlation plot shown in figure <a href="#fig:1">20</a> to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate.</p>
 <div id="fig:1" class="fignos">
 <figure>
-<img src="images/1.jpeg" style="height:4in" alt="Figure 15: Correlation Between Gauge and Degree of Curvature" /><figcaption aria-hidden="true"><span>Figure 15:</span> Correlation Between Gauge and Degree of Curvature</figcaption>
+<img src="images/1.jpeg" style="height:4in" alt="Figure 20: Correlation Between Gauge and Degree of Curvature" /><figcaption aria-hidden="true"><span>Figure 20:</span> Correlation Between Gauge and Degree of Curvature</figcaption>
 </figure>
 </div>
 <p>The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater.
-By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater than 0.1 and less than -0.1. Also, the Gauge histogram in <a href="#fig:2">16</a> suggests that a significant percentage of the measured gauges, are actually in good condition.</p>
+By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater than 0.1 and less than -0.1. Also, the Gauge histogram in <a href="#fig:2">21</a> suggests that a significant percentage of the measured gauges, are actually in good condition.</p>
 <div id="fig:2" class="fignos">
 <figure>
-<img src="images/2.PNG" style="height:4in" alt="Figure 16: Gauge Histogram" /><figcaption aria-hidden="true"><span>Figure 16:</span> Gauge Histogram</figcaption>
+<img src="images/2.png" style="height:4in" alt="Figure 21: Gauge Histogram" /><figcaption aria-hidden="true"><span>Figure 21:</span> Gauge Histogram</figcaption>
 </figure>
 </div>
 <div id="fig:3" class="fignos">
 <figure>
-<img src="images/3.PNG" style="height:4in" alt="Figure 17: Filtered Curvature Histogram" /><figcaption aria-hidden="true"><span>Figure 17:</span> Filtered Curvature Histogram</figcaption>
+<img src="images/3.png" style="height:4in" alt="Figure 22: Filtered Curvature Histogram" /><figcaption aria-hidden="true"><span>Figure 22:</span> Filtered Curvature Histogram</figcaption>
 </figure>
 </div>
 <p>We also looked at the positive and negative curvature separately. Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation was calculated using cor function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. Although we do not know what is causing this difference, this is an interesting finding and can be further discussed.</p>
 <h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-tie-condition">Is there a meaningful relation between the Degree of Curvature and Tie Condition?</h3>
 <p>So far, we know that there are two different tie materials in our data set with different condition rating ranges and overall characteristics. To perform a reasonable analyze, we split the dataset into two, one containing wooden ties, and the other including concrete ties. We also had to create a dataframe whit both geometry and Lrail data. To do so, we used Julia function innerjoin, and then filtered the dataset to eliminate no-curved track.
-Box plots for concrete tie is shown below in <a href="#fig:4">18</a>. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad).
+Box plots for concrete tie is shown below in <a href="#fig:4">23</a>. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad).
 The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.</p>
 <div id="fig:4" class="fignos">
 <figure>
-<img src="images/4.PNG" style="height:4in" alt="Figure 18: Concrete Tie Rateing vs Curve" /><figcaption aria-hidden="true"><span>Figure 18:</span> Concrete Tie Rateing vs Curve</figcaption>
+<img src="images/4.png" style="height:4in" alt="Figure 23: Concrete Tie Rateing vs Curve" /><figcaption aria-hidden="true"><span>Figure 23:</span> Concrete Tie Rateing vs Curve</figcaption>
 </figure>
 </div>
-<p>Box plots for wooden ties is shown below in <a href="#fig:5">19</a>. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties.</p>
+<p>Box plots for wooden ties is shown below in <a href="#fig:5">24</a>. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties.</p>
 <div id="fig:5" class="fignos">
 <figure>
-<img src="images/5.PNG" style="height:4in" alt="Figure 19: Wooden Tie Rating vs Curve" /><figcaption aria-hidden="true"><span>Figure 19:</span> Wooden Tie Rating vs Curve</figcaption>
+<img src="images/5.png" style="height:4in" alt="Figure 24: Wooden Tie Rating vs Curve" /><figcaption aria-hidden="true"><span>Figure 24:</span> Wooden Tie Rating vs Curve</figcaption>
 </figure>
 </div>
 <h3 id="is-there-a-meaningful-relation-between-the-degree-of-curvature-and-number-of-spikes-per-tie">Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?</h3>
 <p>We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes.</p>
 <div id="fig:6" class="fignos">
 <figure>
-<img src="images/6.PNG" style="height:4in" alt="Figure 20: Number of Spikes per Tie vs Curve" /><figcaption aria-hidden="true"><span>Figure 20:</span> Number of Spikes per Tie vs Curve</figcaption>
+<img src="images/6.png" style="height:4in" alt="Figure 25: Number of Spikes per Tie vs Curve" /><figcaption aria-hidden="true"><span>Figure 25:</span> Number of Spikes per Tie vs Curve</figcaption>
 </figure>
 </div>
 <h2 class="page_break_before" id="predictive-modeling">Predictive Modeling</h2>
@@ -535,15 +545,15 @@ We followed four approaches to create the predictive model, including two layer 
 1.1 Dense -&gt; ReLU -&gt; Dense -&gt; ReLU
 1.2 Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
 </ol>
-<p>We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure <a href="#fig:2NNRW">21</a> and Figure <a href="#fig:2NNRC">22</a> represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
+<p>We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure <a href="#fig:2NNRW">26</a> and Figure <a href="#fig:2NNRC">27</a> represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
 <div id="fig:2NNRW" class="fignos">
 <figure>
-<img src="images/2NNRW.png" style="height:4in" alt="Figure 21: Two Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 21:</span> Two Layer NN for Wooden Ties</figcaption>
+<img src="images/2NNRW.png" style="height:4in" alt="Figure 26: Two Layer Neural Network Regression for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 26:</span> Two Layer Neural Network Regression for Wooden Ties</figcaption>
 </figure>
 </div>
 <div id="fig:2NNRC" class="fignos">
 <figure>
-<img src="images/2NNRC.png" style="height:4in" alt="Figure 22: Two Layer NN for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 22:</span> Two Layer NN for Concrete Ties</figcaption>
+<img src="images/2NNRC.png" style="height:4in" alt="Figure 27: Two Layer Neural Network Regression for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 27:</span> Two Layer Neural Network Regression for Concrete Ties</figcaption>
 </figure>
 </div>
 <p>We followed two methods to improve the accuracy of the model. First, we deleted some of the input values that based on the results of the explatory analysis phase of the priject, had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. Then we Tried to label the data as “bad and”good” samples. To do so, we set a threshold for the output data that labels observations with gauge values more than 0.75, “bad”. Only 300 observations out of 180000 were labeled “bad”. Given this, we decided to continue with gauge values, instead of labels. None of the methods mentioned above, provides improvement in model accuracy.</p>
@@ -554,7 +564,7 @@ We followed four approaches to create the predictive model, including two layer 
 2.2 Dense -&gt; Tanh -&gt; Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
 </ol>
 <p>Figure ?? illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.</p>
-<p><img src="images/3NNRW.png" id="fig:3NNRW" style="height:4in" alt="Three Layer NN for Wooden Ties" />
+<p><img src="images/3NNRW.png" id="fig:3NNRW" style="height:4in" alt="Three Layer Neural Network Regression for Wooden Ties" />
 ### Regression
 Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:</p>
 <ol type="1">
@@ -567,12 +577,12 @@ Our first approach was creating a regression model of the relationship between t
 <p>We calculated the Root Mean Square Error (RMSE) using the test data. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure 16 and Figure 17 represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
 <div id="fig:Two" class="fignos">
 <figure>
-<img src="images/A.png" style="height:4in" alt="Figure 23: Two Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 23:</span> Two Layer NN for Wooden Ties</figcaption>
+<img src="images/A.png" style="height:4in" alt="Figure 28: Two Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 28:</span> Two Layer NN for Wooden Ties</figcaption>
 </figure>
 </div>
 <div id="fig:Two" class="fignos">
 <figure>
-<img src="images/B.png" style="height:4in" alt="Figure 24: Two Layer NN for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 24:</span> Two Layer NN for Concrete Ties</figcaption>
+<img src="images/B.png" style="height:4in" alt="Figure 29: Two Layer NN for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 29:</span> Two Layer NN for Concrete Ties</figcaption>
 </figure>
 </div>
 <p>We followed two methods to improve the accuracy of the model. First, we deleted some of the input values that based on the results of the explatory analysis phase of the priject, had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. Then we Tried to label the data as “bad and”good” samples. To do so, we set a threshold for the output data that labels observations with gauge values more than 0.75, “bad”. Only 300 observations out of 180000 were labeled “bad”. Given this, we decided to continue with gauge values, instead of labels. None of the methods mentioned above, provides improvement in model accuracy.</p>
@@ -587,7 +597,7 @@ Our first approach was creating a regression model of the relationship between t
 <p>Figure 18 illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.</p>
 <div id="fig:Three" class="fignos">
 <figure>
-<img src="images/C.png" style="height:4in" alt="Figure 25: Three Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 25:</span> Three Layer NN for Wooden Ties</figcaption>
+<img src="images/C.png" style="height:4in" alt="Figure 30: Three Layer NN for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 30:</span> Three Layer NN for Wooden Ties</figcaption>
 </figure>
 </div>
 <h3 id="classification">Classification</h3>
@@ -599,12 +609,12 @@ In the regression phase, we created all the Neural Network models ourselves, mea
 <p>The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively.</p>
 <div id="fig:RandomForestforWoodenTies" class="fignos">
 <figure>
-<img src="images/D.png" style="height:4in" alt="Figure 26: Random Forest for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 26:</span> Random Forest for Wooden Ties</figcaption>
+<img src="images/D.png" style="height:4in" alt="Figure 31: Random Forest for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 31:</span> Random Forest for Wooden Ties</figcaption>
 </figure>
 </div>
 <div id="fig:RandomForestforConcreteTies" class="fignos">
 <figure>
-<img src="images/E.png" style="height:4in" alt="Figure 27: Random Forest for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 27:</span> Random Forest for Concrete Ties</figcaption>
+<img src="images/E.png" style="height:4in" alt="Figure 32: Random Forest for Concrete Ties" /><figcaption aria-hidden="true"><span>Figure 32:</span> Random Forest for Concrete Ties</figcaption>
 </figure>
 </div>
 <h3 id="conclusion">Conclusion</h3>
