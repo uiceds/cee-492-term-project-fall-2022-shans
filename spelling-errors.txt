@@ -13,7 +13,7 @@ clasiification
 consistant
 contactless
 Convolutional
-corrplot
+Corrplot
 coulmns
 Crosstie
 dataframe
@@ -34,7 +34,7 @@ histask
 innerjoin
 Kenza
 Logit
-LRAIL
+Lrail
 milimeters
 modelling
 MSE
@@ -70,7 +70,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-tieplate
+Tieplate
 TieplateCondition
 Tieplates
 UIUC

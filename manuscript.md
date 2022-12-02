@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4ab190e111d29b653fc1ecb5d44520bf2102ca8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4ab190e111d29b653fc1ecb5d44520bf2102ca8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4ab190e111d29b653fc1ecb5d44520bf2102ca8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/85124658d959af61f25cd4b8cb19261c4d4eb5da/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f4ab190e111d29b653fc1ecb5d44520bf2102ca8/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@8512465](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/85124658d959af61f25cd4b8cb19261c4d4eb5da)
+from [uiceds/cee-492-term-project-fall-2022-shans@f4ab190](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f4ab190e111d29b653fc1ecb5d44520bf2102ca8)
 on December 2, 2022.
 </em></small>
 
@@ -409,6 +409,7 @@ First step towards creating a predictive model is having a proper data frame wit
         1. Gauge
 
 ### Regression 
+#### Neural Network Modeling
 Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. We tried two different types of combination for activation functions to see which one works better. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:
 
 1. Two Layer Neural Network model 
@@ -434,16 +435,12 @@ Figure @fig:3NNRW illustrates the scatter plot of the best fitting three layer N
 
 ![Three Layer Neural Network Regression for Wooden Ties](images/3NNRW.png){#fig:3NNRW height=4in}
 
-
-### Decision Tree 
-After failing with the regression models, we tried clasiification models. For having a classification model we need to create labels for the data set. This phase was only performed on the wooden ties. As it was mentioned in the regression section, setting a threshold which considers gauge values more than 0.75 to be "bad", did not provide enough samples to work with. The deal with this issue, first, we changed the threshold to 0.5. The new "bad" sample size was 3000, which is better than the previous one, but still not enough compared to our dataframe size, which is 180000 sapmles. Then, we randomly selected 3000 samples from the "good" samples. Lastly we combined both samples, and created a new dataframe, which was no longer imbalanced. We shufled the rows, using the shufle function to make sure there is no pattern in the new dataframe. Same as the NN models, we split the data into two dataframes, 80% as the training data and the remaining 20% was used to test the accuracy of the model. We have a total number of 6000 samples for the  wooden ties, including 4800 train samples, and 1200 test samples. 
-In the regression phase, we created all the Neural Network models ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this phase and the next one, we used the functions using an existing julia package, DecisionTree. 
-
-
+#### Decision Tree
+The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, "DecisionTree". In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
 
-### Random Forest
-The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively. 
+#### Random Forest
+The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 4 and figure 5 represent the results for wooden ties and concrete ties respectively. 
 
 ![Random Forest for Wooden Ties](images/D.png){#fig:RandomForestforWoodenTies height=4in}
 
@@ -451,6 +448,17 @@ The last approach is using a Random Forest regression model to predict the gauge
 
 
 ### Classification
+#### Decision Tree 
+After failing with the regression models, we tried clasiification models. For having a classification model we need to create labels for the data set. This phase was only performed on the wooden ties. As it was mentioned in the regression section, setting a threshold which considers gauge values more than 0.75 to be "bad", did not provide enough samples to work with. The deal with this issue, first, we changed the threshold to 0.5. The new "bad" sample size was 3000, which is better than the previous one, but still not enough compared to our dataframe size, which is 180000 sapmles. Then, we randomly selected 3000 samples from the "good" samples. Lastly we combined both samples, and created a new dataframe, which was no longer imbalanced. We shufled the rows, using the shufle function to make sure there is no pattern in the new dataframe. Same as the NN models, we split the data into two dataframes, 80% as the training data and the remaining 20% was used to test the accuracy of the model. We have a total number of 6000 samples for the  wooden ties, including 4800 train samples, and 1200 test samples. 
+In the regression phase, we created all the Neural Network models ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this phase and the next one, we used the functions using an existing julia package, DecisionTree. 
+
+
+This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory. 
+
+#### Random Forest
+The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively. 
+
+
 
 
 ### Conclusion
