@@ -47,7 +47,7 @@ NNRW
 Palese
 perdicted
 priject
-qiam
+Qiam
 RailTEC
 Rateing
 ReLU
