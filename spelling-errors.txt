@@ -34,7 +34,7 @@ histask
 innerjoin
 Kenza
 Logit
-LRAIL
+Lrail
 milimeters
 modelling
 MSE
@@ -47,7 +47,7 @@ NNRW
 Palese
 perdicted
 priject
-qiam
+Qiam
 RailTEC
 Rateing
 ReLU
