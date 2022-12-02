@@ -1,5 +1,5 @@
 ---
-title: Relationship Between Track Geometry and Track Components’ Health Conditions
+title: Relationship Between Track Geometry and Track Components’ Health Condition
 keywords:
 - markdown
 - publishing
