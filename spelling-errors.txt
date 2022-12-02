@@ -9,7 +9,6 @@ boxplot
 boxplots
 CFR
 Champaign
-clasiification
 consistant
 contactless
 Convolutional
@@ -37,7 +36,6 @@ innerjoin
 Kenza
 Logit
 LRAIL
-mdel
 milimeters
 modelling
 MSE
@@ -47,7 +45,6 @@ Neuran
 NN
 NNRC
 NNRW
-numbet
 Palese
 perdicted
 priject
@@ -62,15 +59,12 @@ RMSE
 ROI
 Sadaf
 sadafs
-sapmles
 scatt
 scatterplot
 SectionID
 sequance
 Shafie
 Shirin
-shufle
-shufled
 Soufiane
 spi
 SpikeMean
@@ -78,9 +72,10 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-Tieplate
+tieplate
 TieplateCondition
 Tieplates
+tottaly
 UIUC
 understimating
 Urbana
