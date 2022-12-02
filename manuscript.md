@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e685733e4327ebd83f17efd147b817a949a5d9f1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e685733e4327ebd83f17efd147b817a949a5d9f1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e685733e4327ebd83f17efd147b817a949a5d9f1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6b5761057ec7d15d2fa1dc4e00d9b2a69f8aec47/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6b5761057ec7d15d2fa1dc4e00d9b2a69f8aec47/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6b5761057ec7d15d2fa1dc4e00d9b2a69f8aec47/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/e685733e4327ebd83f17efd147b817a949a5d9f1/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/6b5761057ec7d15d2fa1dc4e00d9b2a69f8aec47/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@e685733](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/e685733e4327ebd83f17efd147b817a949a5d9f1)
+from [uiceds/cee-492-term-project-fall-2022-shans@6b57610](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/6b5761057ec7d15d2fa1dc4e00d9b2a69f8aec47)
 on December 2, 2022.
 </em></small>
 
@@ -145,7 +145,7 @@ These components are inspected using the LRAIL technology that combines 2D image
 Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride. Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.
 
 
-The research question behind this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. This is important since track inspectors (railroad personnel that inspects the tracks in a weekly basis) can utilize this correlation to inspect the track when no geometry data is available or when the inspections are delayed. There is a paper that shows that one bad tie can affect the life of the adjacent ties [@doi:10.1007/s40515-021-00168-5]. 
+The research question behind this project is to identify possible correlations between components’ health condition and geometry data collected over the same tracks to predict the geometry based on the components data. This is important since track inspectors (railroad personnel that inspects the tracks in a weekly basis) can utilize this correlation to inspect the track when no geometry data is available or when the inspections are delayed. There is a paper that shows that one bad tie can affect the life of the adjacent ties [@doi:10.1007/s40515-021-00168-5]. 
 
 
 The first part of this project is Exploratory Data Analysis (EDA) on the dataset, to better understand how the data is distributed, identify possible outliers, possible relationships and linear dependencies between the measurements. After the EDA part, we will perform a predictive modelling using the components’ data to predict gauge (data from geometry cars).  This part will fulfill the research question of the project with a model that from the components data is able to predict the gauge. With the insights from EDA part we are able to perform some data cleaning before moving on with the next phase. This is important to keep the dataset out of outliers and measurement errors. Different models including Neural Network, Decision Tree and Random Forest will use to achieve the goal. 
@@ -188,15 +188,15 @@ Table 1: Description of data
 ### Statistical Analysis on Track Elements-Tie
 In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:A4 shows the total number of each tie material. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
 
-![Tie Material](images/A4.png){#fig:A4 height=2in}
+![Tie Material](images/A4.png){#fig:A4 height=3in}
 
 The data set provides condition ratings for each type of tie. Figure @fig:A1  illustrates the distribution of different tie conditions for concrete ties. the rating goes from 0 to 2. Zero represents the good tie condition, and 2 represents the worst tie condition. To create this figure, first, we filtered the data frame to eliminate the wooden ties. Next, we plotted the histogram of the concrete tie ratings to get the number of ties with different conditions. In the end, we calculated each condition rate's percentage to better understand our tie health rate. The percentages are as follows: 79.5% of the ties are labeled as 0 (good), 13.5% have a rating of 1, and the remaining 7% are in poor condition. 
 
-![Concrete Tie Condition](images/A1.png){#fig:A1 height=2in}
+![Concrete Tie Condition](images/A1.png){#fig:A1 height=3in}
 
 The same process was done to get the health condition of wooden ties. Figure @fig:A2 shows the distribution of wooden tie ratings. The only difference between concrete and wooden tie ratings is we have a 3rd rate for wooden ties which represent the most damaged ties.  The percentages of different condition rates are as follows:  98% of the ties are labeled as 0 (good), 1.5 % are 1, and the remaining 0.5% are in poor condition (2 and 3). These figures suggest that the overall condition of wooden ties is better than concrete ties. 
 
-![Wooden (Timber) Tie Condition](images/A2.png){#fig:A2 height=2in}
+![Wooden (Timber) Tie Condition](images/A2.png){#fig:A2 height=3in}
 
 Moving forward to the next elements of the track: tie plates, anchors, and spikes. It is worth noting that concrete ties don’t require any of the mentioned components, which means this section of the project only focuses on wooden ties. we will get back to the concrete ties later in this report.
 
@@ -204,17 +204,17 @@ Moving forward to the next elements of the track: tie plates, anchors, and spike
 Our data set describes tie plate existence, along with their conditions. The condition of each tie is represented by a single rating value in the range of 1 to 5, 1 being the good tie plate condition, 2 meaning the plate is sunken, 3 meaning the plate is mildly damaged, 4 meaning the plate is covered, and lastly, 5 means the plate is twisted. To analyze the overall condition of tie plates, we counted the number of existing tie plates in right and left sides of the ties. To do so, first, we filtered out the rows of our data frame where the tie plate didn’t exist. Our results show that a total number of 33517 tie plates exist on the right side of the ties, and 33397 tie plates exist on the left side of the ties. As mentioned earlier, the total number of wooden ties is 33690. This means about 0.7% of the ties miss at least one tie plate. A total of 214 wooden ties, don’t have any tie plates, which is about 0.6% of wooden ties. 
 Following the same methodology explained for ties, we plotted the histogram of different tie plate conditions for each side of the ties. On the right side of figure @fig:A3, the distribution of right tie plate conditions is shown, and the left side illustrates the left tie plate conditions. 
 
-![Tieplates Condition](images/A3.png){#fig:A3 height=2in}
+![Tieplates Condition](images/A3.png){#fig:A3 height=3in}
 
 ### Statistical Analysis on Track Elements-Anchor
 We have four regions of interest on track, two on the left-hand side and two on the right side of each tie. This will be discussed in more detail further on the project. There are 4 columns in our data frame describing the anchors in each of the regions. In this section, we counted the number of existing anchors in each region, along with plotting their distribution. To do so, we selected the 4 channels from the data frame, then we filtered each region of interest to use in our calculations. And lastly, we plotted the bar chart of our selected channels. Given the fact that wooden ties require anchors on every other tie, we expect to have around 16850 anchors on the track. Based on our calculations there are 14470 anchors in the first region of interest, 14159 in the second one, 14444 in the third one, and 14355 in the last region. On average, 42% of the wooden ties have anchors on them (8% less than our expectations). Figure @fig:A5 illustrates this.
 
-![Anchors Condition](images/A5.png){#fig:A5 height=2in}
+![Anchors Condition](images/A5.png){#fig:A5 height=3in}
 
 ### Statistical Analysis on Track Elements-Fastener
 Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure @fig:fastener. 
 
-![Fastener Condition](images/fastener.PNG){#fig:fastener height=2in}
+![Fastener Condition](images/fastener.PNG){#fig:fastener height=3in}
 
 ### Does Askew Angle relate to the number of anchors?
 Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle.  Figure @fig:Anchor shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie. 
@@ -238,13 +238,13 @@ Since we have only 0 or 1 for having or not having an anchor in the raw data, we
 
 The "describe" function gives a good overview of the statistical features of the data frame. Using this function, we find the statistics for our data. Figure @fig:describe_anc_ask represents the result. 
 
-![Data Description](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=2in}
+![Data Description](images/describe_ask_anc.PNG){#fig:describe_anc_ask height=3in}
 
 <u> Plotting corrplot for data: </u> 
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
 
-![Askew Angle and Number of Anchors Corrplot](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
+![Askew Angle and Number of Anchors Corrplot](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask height=3in}
 
 The corrplot indicates that there is no correlation between askew angle and anchors. However, this idea comes to mind that comparing the statistics for situations with a different total number of anchors assures us that we don't have any relationship between askew angle and anchors. Therefore, we filter the data based on each value we can have as the total number of anchors (0 to 4) and find their distribution of askew angle using the "histogram" function. 
 
@@ -252,17 +252,17 @@ The corrplot indicates that there is no correlation between askew angle and anch
 
 Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc shows these histograms. 
 
-![Number of Anchors per Tie Histogram](images/hist_all_ask_anc.PNG){#fig:hist_all_ask_anc height=4in}
+![Number of Anchors per Tie Histogram](images/hist_all_ask_anc.PNG){#fig:hist_all_ask_anc height=3in}
 
 Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
 
-![Normalized Histogram](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=2in}
+![Normalized Histogram](images/norm_hist_ask_anc.PNG){#fig:norm_histask_anc height=3in}
 
 <u> Plotting boxplot: </u> 
 
 The last graph we plot is a boxplot which provides a good sense of statistics to compare skew angle with different total numbers of anchors. Figure @fig:bo_ask_anc shows these boxplots and confirms no such difference between the mean and other statistics of askew angle.
 
-![Box Plot](images/box_ask_anc.PNG){#fig:bo_ask_anc height=2in}
+![Box Plot](images/box_ask_anc.PNG){#fig:bo_ask_anc height=3in}
 
 <u> Conclusion: </u>
 
@@ -284,7 +284,7 @@ The first thing we can plot to check whether some variables are correlated or no
 
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatt_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
-![Askew Angle and Spike Scatter Plot](images/scatter_ask_spi.PNG){#fig:scatt_ask_spi height=2in}
+![Askew Angle and Spike Scatter Plot](images/scatter_ask_spi.PNG){#fig:scatt_ask_spi height=3in}
 
 <u> Correlation between maximum askew angle and the number of spikes: </u> 
 
@@ -338,14 +338,14 @@ Degree of curvature is a measure to determine the sharpness of a curve. The defi
 
 First, we looked at the correlation plot shown in figure @fig:1 to investigate a possible relationship between the Degree of Curvature and Gauge. We used the absolute value of the curvature here to make the resultant plot more accurate. 
 
-![Correlation Between Gauge and Degree of Curvature](images/1.jpeg){#fig:1 height=2in}
+![Correlation Between Gauge and Degree of Curvature](images/1.jpeg){#fig:1 height=3in}
 
 The correlation plot shows a slight positive correlation, meaning the greater the degree of curvature or in other words, for sharper curves, the changes in gauge are greater. 
 By looking at the Curve histogram we realized that the majority of this specific rail track is on a straight route with 0 degree of curvature. However, for better visualization we filtered the curve column for values greater than 0.1 and less than -0.1. Also, the Gauge histogram in @fig:2 suggests that a significant percentage of the measured gauges, are actually in good condition. 
 
-![Gauge Histogram](images/2.png){#fig:2 height=2in}
+![Gauge Histogram](images/2.png){#fig:2 height=3in}
 
-![Filtered Curvature Histogram](images/3.png){#fig:3 height=2in}
+![Filtered Curvature Histogram](images/3.png){#fig:3 height=3in}
 
  We also looked at the positive and negative curvature separately. Despite our initial assumption the absolute value of curvature does not provide more accurate results, while the correlation between negative curvature and gauge is greater than the one for positive curves. The correlation was calculated using cor function in Julia. The Pearson correlation for positive curves and gauge is 0.27, while it is -0.42 for negative curves and gauge. Although we do not know what is causing this difference, this is an interesting finding and can be further discussed. 
 
@@ -355,17 +355,17 @@ So far, we know that there are two different tie materials in our data set with 
 Box plots for concrete tie is shown below in @fig:4. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
 The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.
 
-![Concrete Tie Rateing vs Curvature](images/4.png){#fig:4 height=2in}
+![Concrete Tie Rateing vs Curvature](images/4.png){#fig:4 height=3in}
 
 Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
 
-![Wooden Tie Rating vs Curvature](images/5.png){#fig:5 height=2in}
+![Wooden Tie Rating vs Curvature](images/5.png){#fig:5 height=3in}
 
 ### Is there a meaningful relation between the Degree of Curvature and Number of Spikes per Tie?
 
 We know that spikes are only used for wooden ties, therefore we filtered all wooden ties. Next, we know that we have the number of spikes in each Region of interest but we need the total number of spikes per tie, so we created a new column with the total number of spikes per tie in it, and added it to our filtered data frame using Julia function hcat. Figure below shows a box plot of number of spikes per tie and curvature. What we learn from the maximums shown with lines above each box is that for greater curvature degrees, more spikes are used in each tie,which is consistant with our expectations. But the median, shown with lines inside each box do not follow the same pattern. But remember, the number of ties with more than 8 spikes is significantly lower than the number of ties with 4 to 8 spikes. 
 
-![Number of Spikes per Tie vs Curvature](images/6.png){#fig:6 height=2in}
+![Number of Spikes per Tie vs Curvature](images/6.png){#fig:6 height=3in}
 
 
 
@@ -409,9 +409,9 @@ Our first approach was creating a regression model of the relationship between t
 
 We calculated the Root Mean Square Error (RMSE) using the test data for the accuracy. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure @fig:2NNRW and Figure @fig:2NNRC represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively. 
 
-![Two Layer Neural Network Regression for Wooden Ties](images/2NNRW.png){#fig:2NNRW height=4in}
+![Two Layer Neural Network Regression for Wooden Ties](images/2NNRW.png){#fig:2NNRW height=3in}
 
-![Two Layer Neural Network Regression for Concrete Ties](images/2NNRC.png){#fig:2NNRC height=4in}
+![Two Layer Neural Network Regression for Concrete Ties](images/2NNRC.png){#fig:2NNRC height=3in}
 
 We followed two methods to improve the accuracy of the model. First, we deleted some of the input values that based on the results of the explatory analysis phase of the priject, had a lower impact on the gauge, including Rating, Frac_Def_TiePlate and Frac_Def_Fasteners. Then we Tried to label the data as "bad and "good" samples. To do so, we set a threshold for the output data that labels observations with gauge values more than 0.75, "bad". Only 300 observations out of 180000 were labeled "bad". Given this, we decided to continue with gauge values, instead of labels. None of the methods mentioned above, provides improvement in model accuracy. 
 
@@ -424,7 +424,7 @@ The second approach is similar to the first one, but it has three dense layers i
 Figure @fig:3NNRW illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.  
 
 
-![Three Layer Neural Network Regression for Wooden Ties](images/3NNRW.png){#fig:3NNRW height=4in}
+![Three Layer Neural Network Regression for Wooden Ties](images/3NNRW.png){#fig:3NNRW height=3in}
 
 ### Decision Tree
 The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, "DecisionTree". In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model. 
@@ -438,21 +438,21 @@ The last approach is using a Random Forest regression model to predict the gauge
 After failing with the regression models, we tried classification models. For having a classification model we need to create labels for the data set. As was mentioned in the regression section, setting a threshold that considers gauge values more than 0.75 to be "bad", did not provide enough samples to work with. To deal with this issue, first, we changed the threshold to 0.5. The new "bad" sample size was 3000 for wooden and about 700 for concrete ties, which is better than the previous one, still not enough compared to 180000 samples for wooden and 67000 for concrete that we tottaly have. Then, we randomly selected 3000 and 700 samples from the "good" observations for wooden and concrete, respectively. Lastly, for each material type (wooden or concrete), we combined good and bad samples and created a new data frame, which was no longer imbalanced. We shuffled the rows, using the shuffle function to make sure there is no pattern in the new data frame. Same as with the NN models, we split the data into two data frames, 80% as the training data, and the remaining 20% was used to test the accuracy of the model. We have a total number of 6000 samples for the wooden ties, including 4800 train samples, and 1200 test samples. These numbers are 1400 for the whole sample of the concrete, 180 for the test data, and 1120 for the train data.
 
 ### Neural Network
-As what we had for the regression part, we used our own three layer neural network model for predicting the Gauge as "Good" or "Bad" (0 or 1). The sequance of this three layer is Dense -> Tanh -> Dense -> Tanh -> Dense -> Logit. The loss function is the Binary Cross Entropy in this part. The accuracy which is the total number of correct predictions devided by total number of data is 84% for the Wooden ties and 64% for the concrete ties. The results for the Wooden ties can be acceptable and a confusion matrix of the results is shown in Figure @fig:3-layer Neural Network Classification for Wooden Tie.
+As what we had for the regression part, we used our own three layer neural network model for predicting the Gauge as "Good" or "Bad" (0 or 1). The sequance of this three layer is Dense -> Tanh -> Dense -> Tanh -> Dense -> Logit. The loss function is the Binary Cross Entropy in this part. The accuracy which is the total number of correct predictions devided by total number of data is 84% for the Wooden ties and 64% for the concrete ties. The results for the Wooden ties can be acceptable and a confusion matrix of the results is shown in Figure @fig:3-layer Neural Network Classification for Wooden Tie .
 
-![3-layer Neural Network Classification for Wooden Tie](images/3-layer Neural Network Classification for Wooden Tie.png){#fig:3-layer Neural Network Classification for Wooden Tie}
+![3-layer Neural Network Classification for Wooden Tie](images/3-layer Neural Network Classification for Wooden Tie.png){#fig:3-layer Neural Network Classification for Wooden Tie height=2in}
 
 We also used Desicion Tree and Random Forest methods for wooden and concrete, respectivly. 
 
 ### Decision Tree
 For the Wooden ties, we tried a decision tree model using DecisionTree package in Julia. The accuracy of this model after quantizing is 83% which is close to our Neural Network model. Figure @fig:Decision Tree Classification for Wooden Tie provides more detail. 
 
-![Decision Tree Classification for Wooden Tie](images/Decision Tree Classification for Wooden Tie.png){#fig:Decision Tree Classification for Wooden Tie}
+![Decision Tree Classification for Wooden Tie](images/Decision Tree Classification for Wooden Tie.png){#fig:Decision Tree Classification for Wooden Tie height=2in}
 
 ### Random Forest
 For concrete ties, we considered a random forest model using the same package in the Julia. The accuracy of this model after quantizing is 70% which is better than our Neural Network model.Figure @fig:Random Forest Classification for Concrete Tie provides a binary confusion matrix of the results. 
 
-![Random Forest Classification for Concrete Tie](images/Random Forest Classification for Concrete Tie.png){#fig:Random Forest Classification for Concrete Tie}
+![Random Forest Classification for Concrete Tie](images/Random Forest Classification for Concrete Tie.png){#fig:Random Forest Classification for Concrete Tie height=2in}
 
 It is worth mentioning that for all of these models in the classification part, the results of the models are not binary. Therefore, before calculating the accuracy, we quantized them to 0 or 1 using this logic that if the result is less than 0.5, we consider it as 0 and otherwise, it is 1.
 

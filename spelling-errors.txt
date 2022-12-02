@@ -67,7 +67,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-TiePlate
+tieplate
 TieplateCondition
 Tieplates
 tottaly
