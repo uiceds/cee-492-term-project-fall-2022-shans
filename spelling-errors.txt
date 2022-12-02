@@ -13,7 +13,7 @@ clasiification
 consistant
 contactless
 Convolutional
-corrplot
+Corrplot
 coulmns
 Crosstie
 dataframe
