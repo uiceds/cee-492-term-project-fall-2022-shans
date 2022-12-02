@@ -13,7 +13,7 @@ clasiification
 consistant
 contactless
 Convolutional
-Corrplot
+corrplot
 coulmns
 Crosstie
 dataframe
@@ -21,6 +21,8 @@ dataframes
 dataset
 Datasets
 DecisionTree
+Desicion
+devided
 DNN
 dont
 EDA
@@ -34,7 +36,8 @@ histask
 innerjoin
 Kenza
 Logit
-Lrail
+LRAIL
+mdel
 milimeters
 modelling
 MSE
@@ -44,13 +47,17 @@ Neuran
 NN
 NNRC
 NNRW
+numbet
 Palese
 perdicted
 priject
 Qiam
+quantized
+quantizing
 RailTEC
 Rateing
 ReLU
+respectivly
 RMSE
 ROI
 Sadaf
@@ -59,6 +66,7 @@ sapmles
 scatt
 scatterplot
 SectionID
+sequance
 Shafie
 Shirin
 shufle
@@ -70,7 +78,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-Tieplate
+tieplate
 TieplateCondition
 Tieplates
 UIUC
