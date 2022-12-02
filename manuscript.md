@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f2861ad1f76d8f2c32fae169bdc0ac9dc058378e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f2861ad1f76d8f2c32fae169bdc0ac9dc058378e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f2861ad1f76d8f2c32fae169bdc0ac9dc058378e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b46640c1b304756b4d3c5f0826afb945a3692c19/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b46640c1b304756b4d3c5f0826afb945a3692c19/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b46640c1b304756b4d3c5f0826afb945a3692c19/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f2861ad1f76d8f2c32fae169bdc0ac9dc058378e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b46640c1b304756b4d3c5f0826afb945a3692c19/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@f2861ad](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f2861ad1f76d8f2c32fae169bdc0ac9dc058378e)
+from [uiceds/cee-492-term-project-fall-2022-shans@b46640c](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b46640c1b304756b4d3c5f0826afb945a3692c19)
 on December 2, 2022.
 </em></small>
 
@@ -136,14 +136,15 @@ on December 2, 2022.
 
 ## Introduction {.page_break_before}
 
-Railroad tracks have four main components: rail, ties, fastening systems, and ballast. The rail is the main component that supports the loads transmitted by the trains. The fastening system is responsible for fastening the rail to the ties and keeping the rail in a proper position. Fastening systems are made of spikes, tie plates, anchors, and sometimes clips. The ties are the interface between the rails and ballast. The two main materials used for ties in the United States are timber and concrete. The last layer on the railroad superstructure is the ballast. Its main functions are to spread the loads on the ground and to provide proper drainage for the track system. 
-
-These components are inspected using the LRAIL technology that combines 2D imagery and laser triangulation to assess the health and condition of each component. The collected data is processed through a DNN (Deep Convolutional Neural Network) model that identifies and classifies the components. This technology has been used under the scope of research led by the RailTEC group at UIUC, funded by the FRA-DOT with two Class I railroads in the US. The output of this technology, which will be used in this project, is described in an Excel file (filename: Datasets) attached to this proposal and Table 1. 
-
-Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride.
-Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.
-
-The purpose of this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. The approaches of this project consist of but are not limited to EDA methods, regressions, and correlation models. The data can be found in [Project](https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7) , “LRAIL” contains the component health conditions,  “Geometry 1” and “Geometry 2” include the geometry data for that same track, and “Datasets” describes each of the above.  
+Railroad tracks have four main components: rail, ties, fastening systems, and ballast. The rail is the main component that supports the loads transmitted by the trains. The fastening system is responsible for fastening the rail to the ties and keeping the rail in a proper position. Fastening systems are made of spikes, tie plates, anchors, and sometimes clips. The ties are the interface between the rails and ballast. The two main materials used for ties in the United States are timber and concrete. The last layer on the railroad superstructure is the ballast. Its main functions are to spread the loads on the ground and to provide proper drainage for the track system.
+These components are inspected using the LRAIL technology that combines 2D imagery and laser triangulation to assess the health and condition of each component. The collected data is processed through a DNN (Deep Convolutional Neural Network) model that identifies and classifies the components. This technology has been used under the scope of research led by the RailTEC group at UIUC, funded by the FRA-DOT with two Class I railroads in the US. The output of this technology, which will be used in this project, is described in an Excel file (filename: Datasets) attached to this proposal and Table 1.
+Track geometry can be defined as the relative position of the rails. The common measurements are related to horizontal and vertical irregularities, gage, and superelevation. CFR 213 establishes safety limits that must be kept in order to provide the trains with a safe ride. Railroads use laser-based contactless systems to measure track geometry. Recently these systems have been installed in boxcars and locomotives to provide autonomous measurements, reduce inspection costs, and collect more data. Geometry cars, as they are called, collect measurements of each foot of the track to calculate the deviations.
+The research question behind this project is to look for relationships between components’ health and geometry data collected over the same tracks in a short period and to identify possible correlations. This is important since track inspectors (railroad personnel that inspects the tracks in a weekly basis) can utilize this correlation to inspect the track when no geometry data is available or when the inspections are delayed. There is a paper that shows that one bad tie can affect the life of the adjacent ties. (Soufiane, Kenza & Zarembski, Allan & Palese, Joseph. (2022). Effect of Adjacent Support Condition on Premature Wood Crosstie Failure. Transportation Infrastructure Geotechnology. 9. 10.1007/s40515-021-00168-5). This research was conduct using only geometry data, not components’ data. Since the technology used to collect the component data is still under development, there are no previous work done.
+The first part of this project is EDA on the dataset, to better understand how the data is distributed, identify possible outliers and to identify possible relationships and linear dependencies between the measurements. 
+After the EDA part, we will perform a predictive modelling using the components’ data to predict gauge (data from geometry cars).  This part will fulfill the research question of the project with a model that from the components data is able to predict the gauge.
+With the insights from EDA part we are able to perform some data cleaning before moving on with the next phase This is important to keep the dataset out of outliers and measurement errors.
+It can be possible, at the end, that there is no directly correlation between components’ data and geometry data. In this case, new methods, data will be suggested to perform that task.
+The data can be found in [Project](https://uillinoisedu-my.sharepoint.com/:f:/g/personal/arthurc4_illinois_edu/Eh9aZN9IoCJHvQiN_xHw2K0BBja-OZrkBTgf1JRtKFdTUw?e=yHjPx7) , the dataset used is already a combination of component and geometry data.
 
 <style scoped>
 table {
