@@ -14,7 +14,6 @@ contactless
 Convolutional
 corrplot
 coulmns
-Crosstie
 dataframe
 dataframes
 dataset
@@ -29,11 +28,9 @@ explatory
 FastenerConditionROI
 FRA
 Frac
-Geotechnology
 hcat
 histask
 innerjoin
-Kenza
 Logit
 LRAIL
 milimeters
@@ -45,7 +42,6 @@ Neuran
 NN
 NNRC
 NNRW
-Palese
 perdicted
 priject
 Qiam
@@ -65,14 +61,13 @@ SectionID
 sequance
 Shafie
 Shirin
-Soufiane
 spi
 SpikeMean
 SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-tieplate
+TiePlate
 TieplateCondition
 Tieplates
 tottaly
@@ -80,4 +75,3 @@ UIUC
 understimating
 Urbana
 XXXX
-Zarembski
