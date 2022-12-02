@@ -1,5 +1,5 @@
 ---
-title: Relationship Between Track Geometry and Track Components’ Health Conditions
+title: Relationship Between Track Tie Situation and Its Components Health Conditions
 keywords:
 - markdown
 - publishing
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d078edee5d74f7aee57b387d0d33182906670cf8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d078edee5d74f7aee57b387d0d33182906670cf8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d078edee5d74f7aee57b387d0d33182906670cf8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/d078edee5d74f7aee57b387d0d33182906670cf8/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@d078ede](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/d078edee5d74f7aee57b387d0d33182906670cf8)
+from [uiceds/cee-492-term-project-fall-2022-shans@a368d42](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a368d42e47bb9b5550f11d8dd9dba87819f888b0)
 on December 2, 2022.
 </em></small>
 
@@ -186,7 +186,7 @@ Table 1: Description of data
 
 ## Exploratory Data Analysis {.page_break_before}
 ### Statistical Analysis on Track Elements-Tie
-In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:A4 shows the total number of wooden and concrete ties. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
+In this project, we are studying a rail track with multiple elements. In this section, we study some of the most important elements that help us build our understanding of the track system. We started with ties.  There are two types of ties in the track under study: concrete ties, and wooden ties. Figure @fig:A4 shows the total number of each tie material. The total number of ties is 89985.  62.5% of the ties are made of concrete (56295 ties) and the remaining 37.5% are wooden ties (33690 ties).
 
 ![Tie Material](images/A4.png){#fig:A4 height=4in}
 
@@ -214,7 +214,7 @@ We have four regions of interest on track, two on the left-hand side and two on 
 ### Statistical Analysis on Track Elements-Fastener
 Our data frame describes the condition of the fasteners in each region of interest in 4 different channels, each belonging to one region. The condition rating is 1,2,3, or 20. 1 means the fastener is in good condition, 2 means the fastener is covered, 3 means the fastener is missing, and 20 means it is defective. To analyze our data, first, we selected 4 channels corresponding to fasteners from our data frame, then we filtered each region of interest to analyze them separately. We plotted the histogram of the fastener condition of each of the regions, then plotted all 4 plots together, which can be seen in Figure @fig:fastener. 
 
-![Fastener Condition per Region of Interest](images/fastener.PNG){#fig:fastener height=4in}
+![Fastener Condition](images/fastener.PNG){#fig:fastener height=4in}
 
 ### Does Askew Angle relate to the number of anchors?
 Anchors are spring steel clips that attach to the underside of the rail baseplate and bear against the sides of the sleepers to prevent longitudinal movement of the rail, either from changes in temperature or through vibration. Based on the definition of askew angle in table 1, the anchors may have a relationship with the askew angle.  Figure @fig:Anchor shows regions of interest 1 to 4 for anchors. The following parts describe the steps we do to investigate any relationship between the askew angle and the number of anchors in a tie. 
@@ -244,7 +244,7 @@ The "describe" function gives a good overview of the statistical features of the
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corrplot_anc_ask shows the corrplot for the data. 
 
-![Corrplot for Askew Angle and Number of Anchors](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
+![Askew Angle and Number of Anchors Corrplot](images/corrplot_ask_anc.PNG){#fig:corrplot_anc_ask}
 
 The corrplot indicates that there is no correlation between askew angle and anchors. However, this idea comes to mind that comparing the statistics for situations with a different total number of anchors assures us that we don't have any relationship between askew angle and anchors. Therefore, we filter the data based on each value we can have as the total number of anchors (0 to 4) and find their distribution of askew angle using the "histogram" function. 
 
@@ -252,7 +252,7 @@ The corrplot indicates that there is no correlation between askew angle and anch
 
 Plotting all five histograms in a graph shows us that they are so close and different numbers anchors have not caused different askew angles. Figure @fig:hist_all_ask_anc shows these histograms. 
 
-![Histogram of Different Number of Anchors](images/hist_all_ask_anc.PNG){#fig:hist_all_ask_anc height=4in}
+![Number of Anchors per Tie Histogram](images/hist_all_ask_anc.PNG){#fig:hist_all_ask_anc height=4in}
 
 Different numbers of bins are because of the different numbers of data we have in each situation. To make our conclusion more precise, we normalize the data and compare situations with no anchor and 4 anchors. Figure @fig:norm_histask_anc represents no meaningful difference between these two conditions. 
 
@@ -280,7 +280,7 @@ To create the data frame, we select columns about askew angle and spikes, which 
 
 The first thing we can plot to check whether some variables are correlated or not is a corrplot. Figure @fig:corr_ask_spi shows the corrplot for ROI 1. As the corrplot for other regions of interest are similar to ROI 1, we do not put it on the report. For the rest of this part, we just consider ROI 1 because the results are the same for all the regions. 
 
-![Askew Angle and Spike Corrplot](images/corrplot_ask_spi.PNG){#fig:corr_ask_spi}
+![Askew Angle and Spikes Corrplot](images/corrplot_ask_spi.PNG){#fig:corr_ask_spi}
 
 Like anchors, the corrplot indicates no correlation between askew angle and spike conditions. However, an interesting pattern can be seen in the scatter plots we have in corrplot. To illustrate this pattern better, figure @fig:scatt_ask_spi shows a scatter plot for the number of spikes in ROI1 and askew angle, which is one of the plots in corrplot. We can see that the range of the askew angle for fewer spikes is larger. It is reasonable and having no correlation between askew angle and spike condition is because a large share of ties are healthy and do not have defective spikes. However, the unsatisfactory situation is crucial for us. Therefore, as the askew angle is approximately symmetric relative to zero, we consider the maximum askew angle for the different numbers of spikes and find the correlation between it and the number of spikes. 
 
@@ -355,7 +355,7 @@ So far, we know that there are two different tie materials in our data set with 
 Box plots for concrete tie is shown below in @fig:4. Concrete tie rates ranges from 0 (good) to 1(fair), and 2 (bad). 
 The median values showed with the lines inside each box indicate that bad ties correspond to higher curvature degrees compared to good ties. But, the range of curve for each tie rating tells us the good ties are not limited to parts of the track with only low degrees of curvature, and curvature is not the only participating factor in tie deterioration.
 
-![Concrete Tie Rateing vs Curve](images/4.png){#fig:4 height=4in}
+![Concrete Tie Rateing vs Curvature](images/4.png){#fig:4 height=4in}
 
 Box plots for wooden ties is shown below in @fig:5. Wooden tie rates ranges from 0 (good) to 3 (bad). This plot shows that most of bad wooden ties are located in the parts of the railroad with a higher curvature degree compared to good wooden ties. In fact, the distribution of bad wooden ties suggest curvature is playing a stronger role in wooden tie deterioration compared to concrete ties. 
 
@@ -424,6 +424,7 @@ Figure @fig:3NNRW illustrates the scatter plot of the best fitting three layer N
 
 
 ![Three Layer Neural Network Regression for Wooden Ties](images/3NNRW.png){#fig:3NNRW height=4in}
+
 
 ### Classification
 ### Decision Tree for
