@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9059ea7f995526fd8b56c6ddd7f94cfc367996b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9059ea7f995526fd8b56c6ddd7f94cfc367996b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9059ea7f995526fd8b56c6ddd7f94cfc367996b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a8a661136fa14110e8da5a7878170afec2b3102c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a8a661136fa14110e8da5a7878170afec2b3102c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a8a661136fa14110e8da5a7878170afec2b3102c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/b9059ea7f995526fd8b56c6ddd7f94cfc367996b/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a8a661136fa14110e8da5a7878170afec2b3102c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/b9059ea7f995526fd8b56c6ddd7f94cfc367996b">uiceds/cee-492-term-project-fall-2022-shans@b9059ea</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a8a661136fa14110e8da5a7878170afec2b3102c">uiceds/cee-492-term-project-fall-2022-shans@a8a6611</a>
 on December 2, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -539,12 +539,14 @@ We followed four approaches to create the predictive model, including two layer 
 </ul></li>
 </ol>
 <h3 id="regression">Regression</h3>
-<h4 id="neural-network-modeling">Neural Network Modeling</h4>
+<h3 id="neural-network-modeling">Neural Network Modeling</h3>
 <p>Our first approach was creating a regression model of the relationship between the input values, and the gauge. We used multiple Neural Network models, with different combinations of activation functions. We split the dataframe into two dataframes. 80 percent of the input values, were randomly selected to be used for training the model, and the remaining 20% were used to evaluate the accuracy of the model. Initially, we created a two layer NN model, with two dense layers, followed by two activation functions, one at each layer. We tried two different types of combination for activation functions to see which one works better. The loss function that was apllied to the data, was Mean Square Error (MSE). Below, is the sequence of the activation functions used:</p>
 <ol type="1">
 <li>Two Layer Neural Network model
-- Dense -&gt; ReLU -&gt; Dense -&gt; ReLU
-- Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
+<ul>
+<li>Dense -&gt; ReLU -&gt; Dense -&gt; ReLU</li>
+<li>Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
+</ul></li>
 </ol>
 <p>We calculated the Root Mean Square Error (RMSE) using the test data for the accuracy. The RMSE for the best fitting model, was about 0.107 and 0.11 for the wooden ties and concrete ties respectively. Since the mean value of the output data is about 0.15, the RMSE value is not considered to be sufficient. Figure <a href="#fig:2NNRW">26</a> and Figure <a href="#fig:2NNRC">27</a> represent the scatterplot of the model performance on the test data, for wooden ties and concrete ties respectively.</p>
 <div id="fig:2NNRW" class="fignos">
@@ -561,8 +563,10 @@ We followed four approaches to create the predictive model, including two layer 
 <p>The second approach is similar to the first one, but it has three dense layers instead of two, to increase the complexity of the model and lead to a better performance. However, the results were close to the results of the first approach, and the accuracy is still very low. We calculated the RMSE for the test data to evaluate the model performance. The best three layer model has an RMSE of 0.104, which is insufficient. We also used two different combinations of acctivation functions, which is listed below:</p>
 <ol start="2" type="1">
 <li>Three Layer Neuran Network model
-- Dense -&gt; ReLU -&gt; Dense -&gt; ReLU -&gt; Dense -&gt; ReLU
-- Dense -&gt; Tanh -&gt; Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
+<ul>
+<li>Dense -&gt; ReLU -&gt; Dense -&gt; ReLU -&gt; Dense -&gt; ReLU</li>
+<li>Dense -&gt; Tanh -&gt; Dense -&gt; Tanh -&gt; Dense -&gt; Logit</li>
+</ul></li>
 </ol>
 <p>Figure <a href="#fig:3NNRW">28</a> illustrates the scatter plot of the best fitting three layer NN model for the test data. The results of the regression section shows that the models are constantly understimating, and the perdicted values are always lower than the actual values.</p>
 <div id="fig:3NNRW" class="fignos">
@@ -570,10 +574,10 @@ We followed four approaches to create the predictive model, including two layer 
 <img src="images/3NNRW.png" style="height:4in" alt="Figure 28: Three Layer Neural Network Regression for Wooden Ties" /><figcaption aria-hidden="true"><span>Figure 28:</span> Three Layer Neural Network Regression for Wooden Ties</figcaption>
 </figure>
 </div>
-<h4 id="decision-tree">Decision Tree</h4>
+<h3 id="decision-tree">Decision Tree</h3>
 <p>The third approach is regressing the input values and the gauge with a Decision Three model using an existing julia package, “DecisionTree”. In the first two approaches, we created the Neural Network model ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this approach and the next one, we used the functions defined within the packages to create the model.
 This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory.</p>
-<h4 id="random-forest">Random Forest</h4>
+<h3 id="random-forest">Random Forest</h3>
 <p>The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 4 and figure 5 represent the results for wooden ties and concrete ties respectively.</p>
 <div id="fig:RandomForestforWoodenTies" class="fignos">
 <figure>
@@ -586,24 +590,28 @@ This method provided better results than the previous ones, however the accuracy
 </figure>
 </div>
 <h3 id="classification">Classification</h3>
-<p>After failing with the regression models, we tried clasiification models. For having a classification model we need to create labels for the data set. As it was mentioned in the regression section, setting a threshold which considers gauge values more than 0.75 to be “bad”, did not provide enough samples to work with. The deal with this issue, first, we changed the threshold to 0.5. The new “bad” sample size was 3000 for wooden and about 700 for concrete ties, which is better than the previous one, but still not enough compared to our dataframe size, which is 180000 sapmles for wooden and 67000 for concrete. Then, we randomly selected 3000 and 700 samples from the “good” observations for wooden and concrete, respectively. Lastly for each material type (wooden or concrete), we combined good and bad samples, and created a new dataframe, which was no longer imbalanced. We shufled the rows, using the shufle function to make sure there is no pattern in the new dataframe. Same as the NN models, we split the data into two dataframes, 80% as the training data and the remaining 20% was used to test the accuracy of the model. We have a total number of 6000 samples for the wooden ties, including 4800 train samples, and 1200 test samples.
-In the regression phase, we created all the Neural Network models ourselves, meaning we defined the functions and put them together to form a model using the programming knowledge we gained during this course. In this phase and the next one, we used the functions using an existing julia package, DecisionTree.</p>
-<p>This method provided better results than the previous ones, however the accuracy is 0.097 which is still unsatisfactory.
-#### Decision Tree
-#### Random Forest
-The last approach is using a Random Forest regression model to predict the gauge. We used an existing julia package, DecisionTree, to create the model. This method gives the best results compared to the other models, and the accuracy is 0.095, which is not acceptable. Figure 19 and figure 20 represent the results for wooden ties and concrete ties respectively.</p>
+<p>After failing with the regression models, we tried clasiification models. For having a classification model we need to create labels for the data set. As it was mentioned in the regression section, setting a threshold which considers gauge values more than 0.75 to be “bad”, did not provide enough samples to work with. The deal with this issue, first, we changed the threshold to 0.5. The new “bad” sample size was 3000 for wooden and about 700 for concrete ties, which is better than the previous one, but still not enough compared to our dataframe size, which is 180000 sapmles for wooden and 67000 for concrete. Then, we randomly selected 3000 and 700 samples from the “good” observations for wooden and concrete, respectively. Lastly for each material type (wooden or concrete), we combined good and bad samples, and created a new dataframe, which was no longer imbalanced. We shufled the rows, using the shufle function to make sure there is no pattern in the new dataframe. Same as the NN models, we split the data into two dataframes, 80% as the training data and the remaining 20% was used to test the accuracy of the model. We have a total number of 6000 samples for the wooden ties, including 4800 train samples, and 1200 test samples. These numbers are 1400 for the whole sample of the concrete, 180 for the test data and 1120 for the train data.</p>
+<h3 id="neural-network">Neural Network</h3>
+<p>As what we had for the regression part, we used our own three layer neural network model for predicting the Gauge as “Good” or “Bad” (0 or 1). The sequance of this three layer is Dense -&gt; Tanh -&gt; Dense -&gt; Tanh -&gt; Dense -&gt; Logit. The loss function is the Binary Cross Entropy in this part. The accuracy which is the total number of correct predictions devided by total numbet of data, is 84% for the Wooden ties and 64% for the concrete ties. The results for the Wooden ties can be acceptable but it is not really good for the concrete. Therefore, we also used Desicion Tree and Random Forest methods for wooden and concrete, respectivly. It is worth to mention that for all of these models in the classification part, the results of the models are not binary. Therefore, before calculation the accuracy, we quantized them to 0 or 1 using this logic that if the result is less than 0.5, we consider it as 0 and otherwise, it is 1.</p>
+<h3 id="decision-tree-1">Decision Tree</h3>
+<p>For the Wooden ties, we tried a decision tree model using DecisionTree package in Julia. The accuracy of this model after quantizing is 83% which is so close to our Neural Network model.</p>
+<h3 id="random-forest-1">Random Forest</h3>
+<p>For concrete ties, we considered a random forest mdel using the same package in the Julia. The accuracy of this model after quantizing is 70% which is better than our Neural Network model.</p>
+<p>The figure (Sadaf) shows the results for the Wooden and concrete ties in the NN, Decision Tree and Random Forest models.</p>
 <h3 id="discussion">Discussion</h3>
-<p>The goal of this project was to find a relationship between the track components’ health conditions, and the track geometry. In the exploratory analysis phase, we learned that there is some extent of correlation between some specific track elements, and the gauge values. Based on this finding, we implemented multiple regression models to predict the actual values of the gauge based on the track components’ conditions. As discussed in the regression section, we were not able to achieve this goal. However, we were able to predict the defective gauge values using the classification method. Since the motivation of this research is to make the maintenance scheduling more efficient for railroad companies, we only need to know if there is a defective situation somewhere in the track or not, and we do not need to know the actual values of the gauge. Given this, we are confident to say we were able to achieve the goal of this project by identifying the hazardous gauge values. Further work can be done on defining a more precise threshold for the model, to be able to prioritize the maintenance required for different gauge conditions. Currently, we have two main categories, defective, and healthy gauges. It can be expanded to different levels of defectiveness. 
-Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of the regression methods could provide a satisfactory level of accuracy and as we can see in the corresponding figures, none of them illustrate any patterns. However, we achieved relatively good results implementing classification models. Besides having good results, we would discuss some of the possible reasons why the regression models did not perform as expected, to provide some insight for future projects.
-Our first hypothesis is that maybe there is not an efficient way of predicting the actual gauge values based on the track data we currently have. To be more specific, there may be other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the items that have a potential impact on the gauge are listed below, which can be used for making the regression method work better:
-1. Ballast condition
-2. Lateral strength of the track provided by the shoulder ballast
-3. The longitudinal strength of the track provided by crib ballast
-4. Vertical loads including static, dynamic, and impact loads
-5. Speed of the trains (It does not directly affect the gauge, but since the loads transferred from the wheels to the track are heavily dependent on the speed, it could be a good idea to study speed individually.)
-A better solution could be collecting multiple data sets from the same section of the track over time. This helps monitor the track condition with the passage of time, which provides more insight into the pattern of the defections on the track, which in our case is the gauge. Adapting this method, we can track the gauge over time, and identify the sections of the track in which the gauge is getting wider aggressively, and by analyzing track features of those sections we can identify the elements with dominant impacts on the gauge, and new models could be applied to them to check for potential correlation, and ultimately having a working predictive model. It is also worth noting that if the current dataset had a time stamp, it was possible to compare the gauge situation with just one dataset.
-We believe trying to predict the actual values of the gauge, is not possible using the current data. Based on that, we decided to implement classification models. We labeled the data into “bad” and “good” samples, and as mentioned before, the total number of bad samples was very low compared to the good ones. The fact that the data was imbalanced, could be another reason why we were not successful in creating a model with our initial data frame. Furthermore, we believe changing the threshold from 0.75 to 0.5 played a big role in having better results in the classification section. 
-We were able to answer our initial question using the classification method, and the errors we have are considered to be at satisfactory level.  </p>
+<p>The goal of this project was to find a relationship between the track components’ health conditions, and the track geometry. In the exploratory analysis phase, we learned that there is some extent of correlation between some specific track elements, and the gauge values. Based on this finding, we implemented multiple regression models to predict the actual values of the gauge based on the track components’ conditions. As discussed in the regression section, we were not able to achieve this goal. However, we were able to predict the defective gauge values using the classification method. Since the motivation of this research is to make the maintenance scheduling more efficient for railroad companies, we only need to know if there is a defective situation somewhere in the track or not, and we do not need to know the actual values of the gauge. Given this, we are confident to say we were able to achieve the goal of this project by identifying the hazardous gauge values. Further work can be done on defining a more precise threshold for the model, to be able to prioritize the maintenance required for different gauge conditions. Currently, we have two main categories, defective, and healthy gauges. It can be expanded to different levels of defectiveness. </p>
+<p>Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of the regression methods could provide a satisfactory level of accuracy and as we can see in the corresponding figures, none of them illustrate any patterns. However, we achieved relatively good results implementing classification models. Besides having good results, we would discuss some of the possible reasons why the regression models did not perform as expected, to provide some insight for future projects.
+Our first hypothesis is that maybe there is not an efficient way of predicting the actual gauge values based on the track data we currently have. To be more specific, there may be other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the items that have a potential impact on the gauge are listed below, which can be used for making the regression method work better:</p>
+<ol type="1">
+<li>Ballast condition</li>
+<li>Lateral strength of the track provided by the shoulder ballast</li>
+<li>The longitudinal strength of the track provided by crib ballast</li>
+<li>Vertical loads including static, dynamic, and impact loads</li>
+<li>Speed of the trains (It does not directly affect the gauge, but since the loads transferred from the wheels to the track are heavily dependent on the speed, it could be a good idea to study speed individually.)</li>
+<li>A better solution could be collecting multiple data sets from the same section of the track over time. This helps monitor the track condition with the passage of time, which provides more insight into the pattern of the defections on the track, which in our case is the gauge. Adapting this method, we can track the gauge over time, and identify the sections of the track in which the gauge is getting wider aggressively, and by analyzing track features of those sections we can identify the elements with dominant impacts on the gauge, and new models could be applied to them to check for potential correlation, and ultimately having a working predictive model. It is also worth noting that if the current dataset had a time stamp, it was possible to compare the gauge situation with just one dataset.</li>
+</ol>
+<p>We believe trying to predict the actual values of the gauge, is not possible using the current data. Based on that, we decided to implement classification models. We labeled the data into “bad” and “good” samples, and as mentioned before, the total number of bad samples was very low compared to the good ones. The fact that the data was imbalanced, could be another reason why we were not successful in creating a model with our initial data frame. Furthermore, we believe changing the threshold from 0.75 to 0.5 played a big role in having better results in the classification section. </p>
+<p>We were able to answer our initial question using the classification method, and the errors we have are considered to be at satisfactory level.  </p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
