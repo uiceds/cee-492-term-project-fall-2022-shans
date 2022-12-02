@@ -1,5 +1,5 @@
 ---
-title: Relationship Between Track Tie Situation and Its Components Health Conditions
+title: Relationship Between Track Geometry and Track Components’ Health Conditions
 keywords:
 - markdown
 - publishing
@@ -17,10 +17,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
-  <meta name="citation_title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
-  <meta property="og:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
-  <meta property="twitter:title" content="Relationship Between Track Tie Situation and Its Components Health Conditions" />
+  <meta name="dc.title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
+  <meta name="citation_title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
+  <meta property="og:title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
+  <meta property="twitter:title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
   <meta name="dc.date" content="2022-12-02" />
   <meta name="citation_publication_date" content="2022-12-02" />
   <meta name="dc.language" content="en-US" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/a368d42e47bb9b5550f11d8dd9dba87819f888b0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/f7bc3636255b1d7869521d5bb83e5646265ccb64/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@a368d42](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/a368d42e47bb9b5550f11d8dd9dba87819f888b0)
+from [uiceds/cee-492-term-project-fall-2022-shans@f7bc363](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/f7bc3636255b1d7869521d5bb83e5646265ccb64)
 on December 2, 2022.
 </em></small>
 
