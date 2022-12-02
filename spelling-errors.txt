@@ -34,7 +34,7 @@ histask
 innerjoin
 Kenza
 Logit
-Lrail
+LRAIL
 milimeters
 modelling
 MSE
@@ -45,7 +45,7 @@ NN
 Palese
 perdicted
 priject
-Qiam
+qiam
 RailTEC
 Rateing
 ReLU
@@ -68,7 +68,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-TiePlate
+Tieplate
 TieplateCondition
 Tieplates
 UIUC
