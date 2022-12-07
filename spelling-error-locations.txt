@@ -72,6 +72,7 @@ content/01.abstract.md:268:dataframe
 content/01.abstract.md:268:dataframes
 content/01.abstract.md:268:MSE
 content/01.abstract.md:268:NN
+content/01.abstract.md:268:NN
 content/01.abstract.md:271:ReLU
 content/01.abstract.md:271:ReLU
 content/01.abstract.md:272:Logit
@@ -81,7 +82,6 @@ content/01.abstract.md:274:RMSE
 content/01.abstract.md:274:RMSE
 content/01.abstract.md:274:scatterplot
 content/01.abstract.md:280:explatory
-content/01.abstract.md:280:priject
 content/01.abstract.md:282:acctivation
 content/01.abstract.md:282:RMSE
 content/01.abstract.md:282:RMSE
@@ -96,7 +96,9 @@ content/01.abstract.md:288:NN
 content/01.abstract.md:288:perdicted
 content/01.abstract.md:288:understimating
 content/01.abstract.md:294:DecisionTree
+content/01.abstract.md:295:RMSE
 content/01.abstract.md:298:DecisionTree
+content/01.abstract.md:298:RMSE
 content/01.abstract.md:302:NN
 content/01.abstract.md:302:tottaly
 content/01.abstract.md:305:devided
@@ -104,7 +106,7 @@ content/01.abstract.md:305:Logit
 content/01.abstract.md:305:sequance
 content/01.abstract.md:305:Tanh
 content/01.abstract.md:305:Tanh
-content/01.abstract.md:309:Desicion
+content/01.abstract.md:309:desicion
 content/01.abstract.md:309:respectivly
 content/01.abstract.md:312:DecisionTree
 content/01.abstract.md:312:quantizing

@@ -12,14 +12,14 @@ Champaign
 consistant
 contactless
 Convolutional
-corrplot
+Corrplot
 coulmns
 dataframe
 dataframes
 dataset
 Datasets
 DecisionTree
-Desicion
+desicion
 devided
 DNN
 dont
@@ -32,7 +32,7 @@ hcat
 histask
 innerjoin
 Logit
-LRAIL
+Lrail
 milimeters
 modelling
 MSE
@@ -43,8 +43,7 @@ NN
 NNRC
 NNRW
 perdicted
-priject
-Qiam
+qiam
 quantized
 quantizing
 RailTEC
@@ -67,7 +66,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-tieplate
+Tieplate
 TieplateCondition
 Tieplates
 tottaly
