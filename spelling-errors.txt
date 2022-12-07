@@ -32,7 +32,7 @@ hcat
 histask
 innerjoin
 Logit
-Lrail
+LRAIL
 milimeters
 modelling
 MSE
@@ -66,7 +66,7 @@ SpikeNearRailROI
 SpikeTotalROI
 superelevation
 Tanh
-Tieplate
+TiePlate
 TieplateCondition
 Tieplates
 tottaly
