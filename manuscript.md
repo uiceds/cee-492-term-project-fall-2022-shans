@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-12-07'
+date-meta: '2022-12-09'
 author-meta:
 - Arthur Bilheri
 - Negin Shafie
@@ -21,8 +21,8 @@ header-includes: |-
   <meta name="citation_title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
   <meta property="og:title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
   <meta property="twitter:title" content="Relationship Between Track Geometry and Track Components’ Health Conditions" />
-  <meta name="dc.date" content="2022-12-07" />
-  <meta name="citation_publication_date" content="2022-12-07" />
+  <meta name="dc.date" content="2022-12-09" />
+  <meta name="citation_publication_date" content="2022-12-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/348e8ca8983e1f7e8086a3a7a9f473190f410698/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/348e8ca8983e1f7e8086a3a7a9f473190f410698/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/348e8ca8983e1f7e8086a3a7a9f473190f410698/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/348e8ca8983e1f7e8086a3a7a9f473190f410698/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@348e8ca](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/348e8ca8983e1f7e8086a3a7a9f473190f410698)
-on December 7, 2022.
+from [uiceds/cee-492-term-project-fall-2022-shans@effb441](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/effb441f0e154125481939ed2a0fa9e2eebe5eda)
+on December 9, 2022.
 </em></small>
 
 ## Authors
@@ -475,7 +475,7 @@ We believe trying to predict the actual values of the gauge, is not possible usi
 
 We were able to answer our initial question using the classification method, and the errors we have are considered to be at satisfactory level.  
 
-
+ 
 
 
 

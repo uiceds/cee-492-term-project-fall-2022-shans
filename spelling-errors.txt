@@ -12,7 +12,7 @@ Champaign
 consistant
 contactless
 Convolutional
-Corrplot
+corrplot
 coulmns
 dataframe
 dataframes
