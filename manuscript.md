@@ -51,9 +51,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/773f5139644f6046187c40790e70181574c79281/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/773f5139644f6046187c40790e70181574c79281/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/773f5139644f6046187c40790e70181574c79281/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/effb441f0e154125481939ed2a0fa9e2eebe5eda/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-shans/v/773f5139644f6046187c40790e70181574c79281/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-shans@effb441](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/effb441f0e154125481939ed2a0fa9e2eebe5eda)
+from [uiceds/cee-492-term-project-fall-2022-shans@773f513](https://github.com/uiceds/cee-492-term-project-fall-2022-shans/tree/773f5139644f6046187c40790e70181574c79281)
 on December 9, 2022.
 </em></small>
 
@@ -461,7 +461,7 @@ It is worth mentioning that for all of these models in the classification part, 
 The goal of this project was to find a relationship between the track components’ health conditions, and the track geometry. In the exploratory analysis phase, we learned that there is some extent of correlation between some specific track elements, and the gauge values. Based on this finding, we implemented multiple regression models to predict the actual values of the gauge based on the track components' conditions. As discussed in the regression section, we were not able to achieve this goal. However, we were able to predict the defective gauge values using the classification method. Since the motivation of this research is to make the maintenance scheduling more efficient for railroad companies, we only need to know if there is a defective situation somewhere in the track or not, and we do not need to know the actual values of the gauge. Given this, we are confident to say we were able to achieve the goal of this project by identifying the hazardous gauge values. Further work can be done on defining a more precise threshold for the model, to be able to prioritize the maintenance required for different gauge conditions. Currently, we have two main categories, defective, and healthy gauges. It can be expanded to different levels of defectiveness. 
 
 Neural Networks, Decision Trees, and Random Forests use different mathematical calculations to regress the data, and each of them has its practical applications. We tried all of them to account for all of the possibilities that exist regarding finding a meaningful relation between the chosen track features, and the gauge. Unfortunately, none of the regression methods could provide a satisfactory level of accuracy and as we can see in the corresponding figures, none of them illustrate any patterns. However, we achieved relatively good results implementing classification models. Besides having good results, we would discuss some of the possible reasons why the regression models did not perform as expected, to provide some insight for future projects. 
-Our first hypothesis is that maybe there is not an efficient way of predicting the actual gauge values based on the track data we currently have. To be more specific, there may be other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the items that have a potential impact on the gauge are listed below, which can be used for making the regression method work better:
+Our first hypothesis is that maybe there is not an efficient way of predicting the actual gauge values based on the track data we currently have. To be more specific, there may be other factors that have higher impacts on the gauge, or at least, the features we picked are not correlated enough to the gauge. One probable solution to this issue is changing the data set or collecting different types of data from the track, but sometimes this is not possible to obtain a whole new data set. Some of the items that have a potential impact on the gauge are listed below, which can be used for making the regression method work better: 
 
 1.	Ballast condition
 2.	Lateral strength of the track provided by the shoulder ballast
