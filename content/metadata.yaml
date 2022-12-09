@@ -1,26 +1,39 @@
 ---
-title: "Manuscript Title"
+title: "Relationship Between Track Geometry and Track Components’ Health Conditions"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
+  - github: artbil94
+    name: Arthur Bilheri
+    initials: AB
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
-    affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
+    twitter: I dont like birds 
+    email: arthurc4@illinois.edu
+    affiliations: Hogwarts school of witchcraft
+  - github: negins2
+    name: Negin Shafie 
+    initials: NS
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+    twitter: NA
+    email: negins2@illinois.edu
+    affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+    funders: none
+  - github: Shirin-qiam
+    name: Shirin Qiam
+    initials: SQ
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: NA
+    email: sqiam2@illinois.edu
+    affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+    funders: none
+  - github: sadafs2
+    name: Sadaf Shafie
+    initials: SS
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: NA
+    email: sadafs2@illinois.edu
+    affiliations: Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
+    funders: none
